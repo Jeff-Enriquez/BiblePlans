@@ -1,0 +1,365 @@
+Genesis 1:1,Genesis 3:24,2071
+Genesis 4:1,Genesis 7:24,2213
+Genesis 8:1,Genesis 11:32,2208
+Genesis 12:1,Genesis 15:21,1985
+Genesis 16:1,Genesis 18:33,1941
+Genesis 19:1,Genesis 21:21,2057
+Genesis 21:22,Genesis 24:14,1813
+Genesis 24:15,Genesis 25:34,2003
+Genesis 26:1,Genesis 27:46,2101
+Genesis 28:1,Genesis 30:24,1933
+Genesis 30:25,Genesis 31:55,1944
+Genesis 32:1,Genesis 34:31,2073
+Genesis 35:1,Genesis 37:17,1957
+Genesis 37:18,Genesis 39:23,1915
+Genesis 40:1,Genesis 41:57,1971
+Genesis 42:1,Genesis 43:34,1947
+Genesis 44:1,Genesis 46:34,2310
+Genesis 47:1,Genesis 49:28,2108
+Genesis 49:29,Exodus 3:9,2193
+Exodus 3:10,Exodus 5:23,1995
+Exodus 6:1,Exodus 8:32,2328
+Exodus 9:1,Exodus 11:10,2221
+Exodus 12:1,Exodus 13:22,2120
+Exodus 14:1,Exodus 16:21,2188
+Exodus 16:22,Exodus 19:17,2040
+Exodus 19:18,Exodus 22:15,2158
+Exodus 22:16,Exodus 25:22,2154
+Exodus 25:23,Exodus 27:21,1908
+Exodus 28:1,Exodus 29:30,2085
+Exodus 29:31,Exodus 32:10,2103
+Exodus 32:11,Exodus 34:28,2316
+Exodus 34:29,Exodus 36:38,1876
+Exodus 37:1,Exodus 39:43,2508
+Exodus 40:1,Leviticus 3:17,2308
+Leviticus 4:1,Leviticus 6:7,2092
+Leviticus 6:8,Leviticus 7:38,1691
+Leviticus 8:1,Leviticus 10:20,2344
+Leviticus 11:1,Leviticus 12:8,1321
+Leviticus 13:1,Leviticus 13:59,1850
+Leviticus 14:1,Leviticus 15:33,2543
+Leviticus 16:1,Leviticus 18:30,2349
+Leviticus 19:1,Leviticus 21:24,2369
+Leviticus 22:1,Leviticus 23:44,2083
+Leviticus 24:1,Leviticus 25:55,2041
+Leviticus 26:1,Leviticus 27:34,2193
+Numbers 1:1,Numbers 3:24,2250
+Numbers 3:25,Numbers 4:49,1998
+Numbers 5:1,Numbers 6:27,1696
+Numbers 7:1,Numbers 8:4,1932
+Numbers 8:5,Numbers 10:36,2130
+Numbers 11:1,Numbers 13:33,2210
+Numbers 14:1,Numbers 15:31,2042
+Numbers 15:32,Numbers 18:7,2162
+Numbers 18:8,Numbers 20:22,2137
+Numbers 20:23,Numbers 22:41,2237
+Numbers 23:1,Numbers 25:18,1787
+Numbers 26:1,Numbers 27:23,1934
+Numbers 28:1,Numbers 30:16,2174
+Numbers 31:1,Numbers 32:42,2123
+Numbers 33:1,Numbers 35:34,2478
+Numbers 36:1,Deuteronomy 1:46,1689
+Deuteronomy 2:1,Deuteronomy 3:29,1835
+Deuteronomy 4:1,Deuteronomy 5:21,1997
+Deuteronomy 5:22,Deuteronomy 7:26,1929
+Deuteronomy 8:1,Deuteronomy 10:22,2177
+Deuteronomy 11:1,Deuteronomy 12:32,1963
+Deuteronomy 13:1,Deuteronomy 15:23,1980
+Deuteronomy 16:1,Deuteronomy 18:22,2019
+Deuteronomy 19:1,Deuteronomy 21:23,1994
+Deuteronomy 22:1,Deuteronomy 24:22,2257
+Deuteronomy 25:1,Deuteronomy 28:14,2228
+Deuteronomy 28:15,Deuteronomy 29:29,2482
+Deuteronomy 30:1,Deuteronomy 31:30,1683
+Deuteronomy 32:1,Deuteronomy 34:12,2193
+Joshua 1:1,Joshua 3:17,1904
+Joshua 4:1,Joshua 6:27,2124
+Joshua 7:1,Joshua 8:35,2120
+Joshua 9:1,Joshua 10:43,2173
+Joshua 11:1,Joshua 13:33,2026
+Joshua 14:1,Joshua 17:18,2304
+Joshua 18:1,Joshua 20:9,1930
+Joshua 21:1,Joshua 22:34,2346
+Joshua 23:1,Judges 1:26,2251
+Judges 1:27,Judges 3:31,1806
+Judges 4:1,Judges 6:27,2265
+Judges 6:28,Judges 8:27,2138
+Judges 8:28,Judges 10:18,2259
+Judges 11:1,Judges 13:25,2360
+Judges 14:1,Judges 16:27,2306
+Judges 16:28,Judges 18:31,1581
+Judges 19:1,Judges 20:48,2448
+Judges 21:1,Ruth 2:23,2101
+Ruth 3:1,1 Samuel 2:11,2178
+1 Samuel 2:12,1 Samuel 4:22,2095
+1 Samuel 5:1,1 Samuel 8:22,2219
+1 Samuel 9:1,1 Samuel 11:15,2306
+1 Samuel 12:1,1 Samuel 14:23,2144
+1 Samuel 14:24,1 Samuel 16:11,2204
+1 Samuel 16:12,1 Samuel 17:58,2029
+1 Samuel 18:1,1 Samuel 20:29,2397
+1 Samuel 20:30,1 Samuel 23:14,2034
+1 Samuel 23:15,1 Samuel 25:38,2322
+1 Samuel 25:39,1 Samuel 28:25,2227
+1 Samuel 29:1,2 Samuel 1:16,2174
+2 Samuel 1:17,2 Samuel 3:30,2028
+2 Samuel 3:31,2 Samuel 7:7,2184
+2 Samuel 7:8,2 Samuel 10:19,2088
+2 Samuel 11:1,2 Samuel 12:31,1793
+2 Samuel 13:1,2 Samuel 14:33,2277
+2 Samuel 15:1,2 Samuel 17:14,2258
+2 Samuel 17:15,2 Samuel 19:7,1834
+2 Samuel 19:8,2 Samuel 20:26,2067
+2 Samuel 21:1,2 Samuel 23:7,1811
+2 Samuel 23:8,1 Kings 1:10,1821
+1 Kings 1:11,1 Kings 2:27,2062
+1 Kings 2:28,1 Kings 4:34,2164
+1 Kings 5:1,1 Kings 7:12,1839
+1 Kings 7:13,1 Kings 8:21,1734
+1 Kings 8:22,1 Kings 9:28,2286
+1 Kings 10:1,1 Kings 11:43,2093
+1 Kings 12:1,1 Kings 13:34,2165
+1 Kings 14:1,1 Kings 16:5,2067
+1 Kings 16:6,1 Kings 18:19,2093
+1 Kings 18:20,1 Kings 20:12,1978
+1 Kings 20:13,1 Kings 21:29,1953
+1 Kings 22:1,2 Kings 1:18,2137
+2 Kings 2:1,2 Kings 4:17,2187
+2 Kings 4:18,2 Kings 6:7,1965
+2 Kings 6:8,2 Kings 8:15,2257
+2 Kings 8:16,2 Kings 10:17,2185
+2 Kings 10:18,2 Kings 12:21,2028
+2 Kings 13:1,2 Kings 15:16,2087
+2 Kings 15:17,2 Kings 17:23,2006
+2 Kings 17:24,2 Kings 19:13,2135
+2 Kings 19:14,2 Kings 21:26,2078
+2 Kings 22:1,2 Kings 23:37,2125
+2 Kings 24:1,1 Chronicles 1:54,2147
+1 Chronicles 2:1,1 Chronicles 4:43,1932
+1 Chronicles 5:1,1 Chronicles 7:12,2163
+1 Chronicles 7:13,1 Chronicles 10:10,2106
+1 Chronicles 10:11,1 Chronicles 12:40,1990
+1 Chronicles 13:1,1 Chronicles 16:43,2164
+1 Chronicles 17:1,1 Chronicles 20:8,2051
+1 Chronicles 21:1,1 Chronicles 23:32,2139
+1 Chronicles 24:1,1 Chronicles 27:15,2080
+1 Chronicles 27:16,1 Chronicles 29:30,2135
+2 Chronicles 1:1,2 Chronicles 4:22,2060
+2 Chronicles 5:1,2 Chronicles 7:10,2141
+2 Chronicles 7:11,2 Chronicles 10:19,2277
+2 Chronicles 11:1,2 Chronicles 15:7,2138
+2 Chronicles 15:8,2 Chronicles 18:34,2175
+2 Chronicles 19:1,2 Chronicles 21:20,2066
+2 Chronicles 22:1,2 Chronicles 24:27,2121
+2 Chronicles 25:1,2 Chronicles 28:4,1962
+2 Chronicles 28:5,2 Chronicles 30:12,2280
+2 Chronicles 30:13,2 Chronicles 32:33,2214
+2 Chronicles 33:1,2 Chronicles 34:33,1924
+2 Chronicles 35:1,Ezra 2:35,2230
+Ezra 2:36,Ezra 5:5,1998
+Ezra 5:6,Ezra 7:28,2009
+Ezra 8:1,Ezra 10:17,2111
+Ezra 10:18,Nehemiah 3:32,2281
+Nehemiah 4:1,Nehemiah 6:19,1876
+Nehemiah 7:1,Nehemiah 8:18,1614
+Nehemiah 9:1,Nehemiah 11:19,2326
+Nehemiah 11:20,Nehemiah 13:31,2126
+Esther 1:1,Esther 3:15,2035
+Esther 4:1,Esther 8:7,2032
+Esther 8:8,Job 1:22,2054
+Job 2:1,Job 7:21,2266
+Job 8:1,Job 13:28,2186
+Job 14:1,Job 19:29,2127
+Job 20:1,Job 26:4,2121
+Job 26:5,Job 31:40,2383
+Job 32:1,Job 36:33,2089
+Job 37:1,Job 41:34,2195
+Job 42:1,Psalms 9:20,2100
+Psalms 10:1,Psalms 18:50,2191
+Psalms 19:1,Psalms 27:14,2186
+Psalms 28:1,Psalms 34:22,1903
+Psalms 35:1,Psalms 39:13,1944
+Psalms 40:1,Psalms 48:14,2172
+Psalms 49:1,Psalms 57:11,2177
+Psalms 58:1,Psalms 67:7,2001
+Psalms 68:1,Psalms 72:20,2092
+Psalms 73:1,Psalms 78:72,2531
+Psalms 79:1,Psalms 88:18,2223
+Psalms 89:1,Psalms 95:11,2139
+Psalms 96:1,Psalms 104:35,2240
+Psalms 105:1,Psalms 108:13,2124
+Psalms 109:1,Psalms 118:29,2084
+Psalms 119:1,Psalms 119:176,2199
+Psalms 120:1,Psalms 136:26,2114
+Psalms 137:1,Psalms 146:10,2167
+Psalms 147:1,Proverbs 3:35,1913
+Proverbs 4:1,Proverbs 8:36,2125
+Proverbs 9:1,Proverbs 13:25,2084
+Proverbs 14:1,Proverbs 17:28,1968
+Proverbs 18:1,Proverbs 22:29,2197
+Proverbs 23:1,Proverbs 26:28,2009
+Proverbs 27:1,Proverbs 31:9,2042
+Proverbs 31:10,Ecclesiastes 4:16,2249
+Ecclesiastes 5:1,Ecclesiastes 9:9,2251
+Ecclesiastes 9:10,Song of Solomon 3:11,2097
+Song of Solomon 4:1,Isaiah 1:20,2005
+Isaiah 1:21,Isaiah 5:30,2230
+Isaiah 6:1,Isaiah 9:21,2119
+Isaiah 10:1,Isaiah 13:22,1937
+Isaiah 14:1,Isaiah 18:7,1976
+Isaiah 19:1,Isaiah 23:18,2259
+Isaiah 24:1,Isaiah 28:13,1961
+Isaiah 28:14,Isaiah 30:33,2017
+Isaiah 31:1,Isaiah 35:10,1892
+Isaiah 36:1,Isaiah 38:22,2289
+Isaiah 39:1,Isaiah 42:13,2040
+Isaiah 42:14,Isaiah 45:7,2084
+Isaiah 45:8,Isaiah 49:13,2199
+Isaiah 49:14,Isaiah 53:12,2100
+Isaiah 54:1,Isaiah 58:14,2109
+Isaiah 59:1,Isaiah 63:14,2167
+Isaiah 63:15,Jeremiah 1:10,2138
+Jeremiah 1:11,Jeremiah 3:25,1939
+Jeremiah 4:1,Jeremiah 6:21,2069
+Jeremiah 6:22,Jeremiah 8:22,1790
+Jeremiah 9:1,Jeremiah 11:23,2053
+Jeremiah 12:1,Jeremiah 15:14,2312
+Jeremiah 15:15,Jeremiah 18:23,2315
+Jeremiah 19:1,Jeremiah 22:12,1933
+Jeremiah 22:13,Jeremiah 24:10,1955
+Jeremiah 25:1,Jeremiah 26:24,1925
+Jeremiah 27:1,Jeremiah 29:32,2280
+Jeremiah 30:1,Jeremiah 32:15,2287
+Jeremiah 32:16,Jeremiah 33:26,1779
+Jeremiah 34:1,Jeremiah 36:19,2086
+Jeremiah 36:20,Jeremiah 38:28,2026
+Jeremiah 39:1,Jeremiah 41:18,1892
+Jeremiah 42:1,Jeremiah 44:19,1966
+Jeremiah 44:20,Jeremiah 47:7,1593
+Jeremiah 48:1,Jeremiah 49:39,2180
+Jeremiah 50:1,Jeremiah 50:46,1387
+Jeremiah 51:1,Jeremiah 51:64,1667
+Jeremiah 52:1,Lamentations 2:22,2418
+Lamentations 3:1,Ezekiel 1:21,2116
+Ezekiel 1:22,Ezekiel 5:17,2391
+Ezekiel 6:1,Ezekiel 9:11,2249
+Ezekiel 10:1,Ezekiel 12:28,2109
+Ezekiel 13:1,Ezekiel 15:8,1702
+Ezekiel 16:1,Ezekiel 17:10,2042
+Ezekiel 17:11,Ezekiel 19:14,1662
+Ezekiel 20:1,Ezekiel 21:17,2039
+Ezekiel 21:18,Ezekiel 23:49,2620
+Ezekiel 24:1,Ezekiel 26:21,1950
+Ezekiel 27:1,Ezekiel 29:21,2219
+Ezekiel 30:1,Ezekiel 32:32,2299
+Ezekiel 33:1,Ezekiel 34:31,2014
+Ezekiel 35:1,Ezekiel 37:23,2293
+Ezekiel 37:24,Ezekiel 40:4,1994
+Ezekiel 40:5,Ezekiel 41:26,2021
+Ezekiel 42:1,Ezekiel 44:14,1899
+Ezekiel 44:15,Ezekiel 46:24,2224
+Ezekiel 47:1,Daniel 1:7,1969
+Daniel 1:8,Daniel 3:7,2153
+Daniel 3:8,Daniel 4:37,2055
+Daniel 5:1,Daniel 7:8,2198
+Daniel 7:9,Daniel 9:19,2126
+Daniel 9:20,Daniel 11:45,2502
+Daniel 12:1,Hosea 5:15,2230
+Hosea 6:1,Hosea 12:14,2254
+Hosea 13:1,Joel 3:17,2268
+Joel 3:18,Amos 5:27,2293
+Amos 6:1,Obadiah 1:14,2057
+Obadiah 1:15,Micah 2:13,2229
+Micah 3:1,Micah 7:20,1986
+Nahum 1:1,Habakkuk 2:20,1956
+Habakkuk 3:1,Haggai 1:15,2283
+Haggai 2:1,Zechariah 4:14,2231
+Zechariah 5:1,Zechariah 9:10,2069
+Zechariah 9:11,Zechariah 14:8,2097
+Zechariah 14:9,Malachi 3:18,2113
+Malachi 4:1,Matthew 4:25,2175
+Matthew 5:1,Matthew 7:12,2159
+Matthew 7:13,Matthew 10:15,2238
+Matthew 10:16,Matthew 12:37,2118
+Matthew 12:38,Matthew 14:21,2139
+Matthew 14:22,Matthew 17:13,2068
+Matthew 17:14,Matthew 20:16,2238
+Matthew 20:17,Matthew 22:22,1972
+Matthew 22:23,Matthew 24:41,2105
+Matthew 24:42,Matthew 26:46,2253
+Matthew 26:47,Matthew 27:66,2084
+Matthew 28:1,Mark 2:28,2033
+Mark 3:1,Mark 5:20,2032
+Mark 5:21,Mark 7:13,2059
+Mark 7:14,Mark 9:37,2201
+Mark 9:38,Mark 11:26,2073
+Mark 11:27,Mark 14:11,2250
+Mark 14:12,Mark 15:41,2127
+Mark 15:42,Luke 1:80,2196
+Luke 2:1,Luke 4:13,2271
+Luke 4:14,Luke 6:19,2176
+Luke 6:20,Luke 8:3,2070
+Luke 8:4,Luke 9:27,2048
+Luke 9:28,Luke 11:13,2082
+Luke 11:14,Luke 12:48,2161
+Luke 12:49,Luke 15:7,2145
+Luke 15:8,Luke 17:37,2220
+Luke 18:1,Luke 20:8,2114
+Luke 20:9,Luke 22:23,2069
+Luke 22:24,Luke 23:56,2154
+Luke 24:1,John 1:51,2110
+John 2:1,John 4:38,2089
+John 4:39,John 6:40,2289
+John 6:41,John 8:11,1951
+John 8:12,John 9:41,2027
+John 10:1,John 11:57,2046
+John 12:1,John 14:6,2148
+John 14:7,John 16:33,2091
+John 17:1,John 19:15,2028
+John 19:16,John 21:25,2177
+Acts 1:1,Acts 3:26,2313
+Acts 4:1,Acts 6:15,2291
+Acts 7:1,Acts 8:40,2317
+Acts 9:1,Acts 10:48,2119
+Acts 11:1,Acts 13:43,2386
+Acts 13:44,Acts 16:13,2078
+Acts 16:14,Acts 18:28,2217
+Acts 19:1,Acts 21:14,2240
+Acts 21:15,Acts 23:22,2094
+Acts 23:23,Acts 26:32,2489
+Acts 27:1,Romans 1:17,2296
+Romans 1:18,Romans 4:25,2128
+Romans 5:1,Romans 8:25,2343
+Romans 8:26,Romans 11:36,2326
+Romans 12:1,Romans 15:33,2119
+Romans 16:1,1 Corinthians 3:23,2043
+1 Corinthians 4:1,1 Corinthians 7:40,2376
+1 Corinthians 8:1,1 Corinthians 11:22,2170
+1 Corinthians 11:23,1 Corinthians 14:40,2110
+1 Corinthians 15:1,2 Corinthians 1:24,2252
+2 Corinthians 2:1,2 Corinthians 6:18,2075
+2 Corinthians 7:1,2 Corinthians 10:18,1848
+2 Corinthians 11:1,Galatians 1:24,2197
+Galatians 2:1,Galatians 4:31,1916
+Galatians 5:1,Ephesians 3:21,2243
+Ephesians 4:1,Philippians 1:20,2206
+Philippians 1:21,Colossians 1:12,2122
+Colossians 1:13,1 Thessalonians 1:10,2110
+1 Thessalonians 2:1,2 Thessalonians 1:12,2019
+2 Thessalonians 2:1,1 Timothy 4:16,2206
+1 Timothy 5:1,2 Timothy 2:26,2002
+2 Timothy 3:1,Philemon 1:25,2126
+Hebrews 1:1,Hebrews 6:8,2041
+Hebrews 6:9,Hebrews 9:28,2003
+Hebrews 10:1,Hebrews 12:17,2137
+Hebrews 12:18,James 3:12,2249
+James 3:13,1 Peter 2:20,2090
+1 Peter 2:21,2 Peter 1:21,1984
+2 Peter 2:1,1 John 2:29,2080
+1 John 3:1,3 John 1:15,2208
+Jude 1:1,Revelation 2:29,2018
+Revelation 3:1,Revelation 7:3,2063
+Revelation 7:4,Revelation 11:14,2074
+Revelation 11:15,Revelation 15:8,2131
+Revelation 16:1,Revelation 19:10,2115
+Revelation 19:11,Revelation 22:22,2113
