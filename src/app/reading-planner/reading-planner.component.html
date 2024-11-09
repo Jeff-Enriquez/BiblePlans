@@ -6,9 +6,10 @@
             explicabo tempora ea similique placeat sed ratione culpa et provident blanditiis? Et sunt veritatis qui
             consequatur minima cum harum commodi aut fugiat omnis aut nesciunt accusamus.</p>
     </summary>
-    <form action="/action_page.php"><label for="translations">Translation:</label>
-        <select name="translations" id="translations">
-            <option value="csb">All Translations</option>
+    <form [formGroup]="applyForm" (submit)="submitForm()">
+        <label for="translation">Translation:</label>
+        <select id="translation" formControlName="translation">
+            <option value="all-translations">All Translations</option>
             <option value="csb">CSB</option>
             <option value="esv">ESV</option>
             <option value="nasb">NASB</option>
@@ -17,9 +18,15 @@
             <option value="nlt">NLT</option>
         </select>
         <label for="from-date">From:</label>
-        <input type="date" id="from-date" name="from-date">
+        <input type="date" id="from-date" formControlName="fromDate">
         <label for="to-date">To:</label>
-        <input type="date" id="to-date" name="to-date">
-        <input type="submit">
+        <input type="date" id="to-date" formControlName="toDate">
+        <button type="submit" class="primary">Create</button>
     </form>
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Reading</th>
+        </tr>
+    </table>
 </div>
