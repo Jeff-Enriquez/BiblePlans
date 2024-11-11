@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BiblesService } from '../services/bibles/bibles.service';
-import { Bible } from '../interfaces/bible';
+import { Translation } from '../interfaces/bible';
 
 @Component({
   selector: 'app-reading-planner',
@@ -20,7 +20,7 @@ export class ReadingPlannerComponent {
   submitForm() {
     console.log(
       this.biblesService.getScheduleFor(
-        "NASB", this.applyForm.value.fromDate!, this.applyForm.value.toDate!)
+        this.applyForm.value.translation as Translation, this.applyForm.value.fromDate!, this.applyForm.value.toDate!)
     )
   }
 }

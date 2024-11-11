@@ -111,6 +111,8 @@ export class BiblesService {
     return BIBLES;
   }
   getScheduleFor(translation: Translation, fromDate: string, toDate: string): Heading[] {
+    if(translation === 'all-translations')
+      return this.getScheduleForAllTranslations();
     let headingsSchedule: Heading[] = []
     let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
     let wordsRemaining: number = this.totalWordCounts.get(translation)!
@@ -151,6 +153,10 @@ export class BiblesService {
       }
       wordsRemaining -= wordCount
     }
+    return headingsSchedule
+  }
+  private getScheduleForAllTranslations(): Heading[] {
+    let headingsSchedule: Heading[] = []
     return headingsSchedule
   }
   private newHeading(fromheading: Heading, toHeading: Heading): Heading {
