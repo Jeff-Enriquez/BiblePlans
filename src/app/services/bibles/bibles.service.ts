@@ -9,7 +9,13 @@ import { Heading } from '../../interfaces/heading';
 export class BiblesService {
   totalWordCounts = new Map<Translation, number>();
   constructor() {
-    this.initWordCounts();
+    this.totalWordCounts.set("NASB", 768400)
+    this.totalWordCounts.set("ESV", 741480)
+    this.totalWordCounts.set("NKJV", 752071)
+    this.totalWordCounts.set("NIV", 706821)
+    this.totalWordCounts.set("NLT", 727812)
+    this.totalWordCounts.set("CSB", 699004)
+    this.totalWordCounts.set("all-translations", 732598)
   }
   getNasbHeaders() {
     let csbBible: Bible = BIBLES.at(5)!
@@ -104,52 +110,89 @@ export class BiblesService {
   getBibles(): Bible[] {
     return BIBLES;
   }
-  // getScheduleFor(translation: Translation, fromDate: Date, toDate: Date) {
-  //   let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
-  //   let wordsRemaining: number = this.totalWordCounts.get(translation)!
-  //   let bible: Bible | null = null;
-  //   for(let b of BIBLES)
-  //     if(b.translation === translation){
-  //       bible = b
-  //       break
-  //     }
-  //   if(bible === null)
-  //     return null;
-  //   let prevDayIdx: BibleIndex = {
-  //     book: 0,
-  //     chapter: 0,
-  //     verse: 0
-  //   }
-  //   while(daysRemaining > 0) {
-  //     let wordGoal: number = wordsRemaining / daysRemaining
-  //     daysRemaining -= 1
-  //     let wordCount = 0;
-  //     let verseBeforeHeading: BibleIndex = {
-  //       book: prevDayIdx.book,
-  //       chapter: prevDayIdx.chapter,
-  //       verse: prevDayIdx.verse
-  //     }
-  //     let currIdx: BibleIndex = this.nextIndex(bible, prevDayIdx)
-  //     let nextIdx: BibleIndex = this.nextIndex(bible, currIdx)
-  //     let currVerse: Verse = this.getVerse(bible, currIdx)
-  //     let nextVerse: Verse = this.getVerse(bible, nextIdx)
-  //     while(((wordCount < wordGoal && (nextIdx.verse != 0 || nextVerse.heading === undefined))) || (currIdx.book !== 65 && currIdx.chapter !== 21 && currIdx.verse !== 21)) {
-  //       currVerse = this.getVerse(bible, currIdx)
-  //       wordCount += (currVerse.wordCount == null ? 0 : currVerse.wordCount)
-  //       currIdx = nextIdx
-  //       nextIdx = this.nextIndex(bible, nextIdx)
-  //       currVerse = nextVerse
-  //       nextVerse = this.getVerse(bible, nextIdx)
-  //     }
-  //     if(currIdx.book !== 65 && currIdx.chapter !== 21 && currIdx.verse !== 21) {
-
-  //     }
-  //     else if(wordCount === wordGoal){
-
-  //     }
-  //     return null
-  //   }
-  // }
+  getScheduleFor(translation: Translation, fromDate: string, toDate: string): Heading[] {
+    let headingsSchedule: Heading[] = []
+    let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
+    let wordsRemaining: number = this.totalWordCounts.get(translation)!
+    let headings: Heading[] = this.getHeading(translation)
+    let hIdx = 0;
+    while(daysRemaining > 0 && hIdx < headings.length) {
+      let wordGoal: number = wordsRemaining / daysRemaining
+      daysRemaining--
+      let startHeading: Heading = headings.at(hIdx)!
+      let endHeading: Heading;
+      let wordCount: number = 0
+      do {
+        endHeading = headings.at(hIdx)!
+        wordCount += endHeading.wordCount
+        hIdx++
+      } while(wordCount < wordGoal && hIdx < headings.length);
+      let h: Heading
+      if(startHeading === endHeading) {
+        h = this.newHeading(startHeading, endHeading)
+        h.wordCount = wordCount
+        headingsSchedule.push(h)
+      }
+      else if(wordCount === wordGoal || hIdx === headings.length) {
+        h = this.newHeading(startHeading, endHeading)
+        h.wordCount = wordCount
+        headingsSchedule.push(h)
+      }
+      else {
+        let prevWordCount = wordCount - endHeading.wordCount
+        if(wordGoal - prevWordCount < wordCount - wordGoal) {
+          hIdx--
+          endHeading = headings.at(hIdx - 1)!
+          wordCount = prevWordCount
+        }
+        h = this.newHeading(startHeading, endHeading)
+        h.wordCount = wordCount
+        headingsSchedule.push(h)
+      }
+      wordsRemaining -= wordCount
+    }
+    return headingsSchedule
+  }
+  private newHeading(fromheading: Heading, toHeading: Heading): Heading {
+    let h: Heading = {
+      from: {
+        book: 0,
+        chapter: 0,
+        verse: 0
+      },
+      to: {
+        book: 0,
+        chapter: 0,
+        verse: 0
+      },
+      wordCount: 0
+    }
+    h.from.book = fromheading.from.book
+    h.from.chapter = fromheading.from.chapter
+    h.from.verse = fromheading.from.verse
+    h.to.book = toHeading.to.book
+    h.to.chapter = toHeading.to.chapter
+    h.to.verse = toHeading.to.verse
+    return h
+  }
+  private getHeading(translation: Translation): Heading[] {
+    if(translation === "NASB")
+      return NASB_HEADINGS
+    else if(translation === "ESV")
+      return ESV_HEADINGS
+    else if(translation === "NIV")
+      return NIV_HEADINGS
+    else if(translation === "CSB")
+      return CSB_HEADINGS
+    else if(translation === "NKJV")
+      return NKJV_HEADINGS
+    else if(translation === "NLT")
+      return NLT_HEADINGS
+    else if(translation === "all-translations")
+      return ALL_TRANSLATIONS_HEADINGS
+    else
+      return []
+  }
   private getVerse(bible: Bible, currentIndex: BibleIndex): Verse {
     return bible.books.at(currentIndex.book)?.chapters.at(currentIndex.chapter)?.verses.at(currentIndex.verse)!;
   }
@@ -205,10 +248,14 @@ export class BiblesService {
     }
     return newIdx
   }
-  private getDaysBetweenDates(startDate: Date, endDate: Date): number {
-    const oneDay = 24 * 60 * 60 * 1000; // milliseconds in a day
-    const diffInMs = endDate.getTime() - startDate.getTime();
-    return Math.round(diffInMs / oneDay);
+  private getDaysBetweenDates(startDate: string, endDate: string): number {
+    const date1 = new Date(startDate);
+    const date2 = new Date(endDate);
+    // Calculate the difference in time (milliseconds)
+    const differenceInTime = Math.abs(date2.getTime() - date1.getTime());
+    // Convert milliseconds to days
+    const differenceInDays = differenceInTime / (1000 * 60 * 60 * 24);
+    return Math.floor(differenceInDays); 
   }
   private initWordCounts() {
     let totalWordCount = 0;

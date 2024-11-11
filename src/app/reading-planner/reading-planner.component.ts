@@ -18,6 +18,9 @@ export class ReadingPlannerComponent {
     toDate: new FormControl(new Date(new Date().getFullYear(), 11, 31).toISOString().slice(0,10))
   })
   submitForm() {
-    this.biblesService.getNasbHeaders();
+    console.log(
+      this.biblesService.getScheduleFor(
+        "NASB", this.applyForm.value.fromDate!, this.applyForm.value.toDate!)
+    )
   }
 }
