@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Bible, Book, Chapter, Verse, Translation, BibleIndex } from '../../interfaces/bible';
+import { NASB_HEADINGS, ESV_HEADINGS, NKJV_HEADINGS, NIV_HEADINGS, NLT_HEADINGS, CSB_HEADINGS, ALL_TRANSLATIONS_HEADINGS } from './headings';
 import { BIBLES } from './bibles';
+import { Heading } from '../../interfaces/heading';
 @Injectable({
   providedIn: 'root'
 })
@@ -10,7 +12,7 @@ export class BiblesService {
     this.initWordCounts();
   }
   getNasbHeaders() {
-    let bible: Bible = BIBLES.at(0)!
+    let csbBible: Bible = BIBLES.at(5)!
     let headings = []
     let idx: BibleIndex = {
       book: 0,
@@ -18,29 +20,77 @@ export class BiblesService {
       verse: -1
     }
     do {
-      let heading = {
-        from: "",
-        to: "",
+      let heading: Heading = {
+        from: {
+          book: 0,
+          chapter: 0,
+          verse: 0
+        },
+        to: {
+          book: 0,
+          chapter: 0,
+          verse: 0
+        },
+        missingTranslations: [],
         wordCount: 0
       }
-      idx = this.nextIndex(bible, idx)
-      let verse: Verse = this.getVerse(bible, idx)
-      heading.from = idx.book + "-" + idx.chapter + "-" + idx.verse
-      let wordCount = (verse.wordCount === null ? 0 : verse.wordCount)
-      console.log(idx)
-      do {
-        idx = this.nextIndex(bible, idx)
-        verse = this.getVerse(bible, idx)
+      idx = this.nextIndex(csbBible, idx)
+      let verses: Verse[] = []
+      for(let bible of BIBLES)
+        verses.push(this.getVerse(bible, idx))
+      heading.from.book = idx.book
+      heading.from.chapter = idx.chapter
+      heading.from.verse = idx.verse
+      let wordCount = 0
+      for(let verse of verses)
         wordCount += (verse.wordCount === null ? 0 : verse.wordCount)
-        console.log(idx)
-      } while(!this.isHeading(idx.verse, verse.heading) && !this.isEnd(idx));
+      let isHeading = false
+      do {
+        idx = this.nextIndex(csbBible, idx)
+        verses = []
+        for(let bible of BIBLES)
+          verses.push(this.getVerse(bible, idx))
+        for(let verse of verses)
+          wordCount += (verse.wordCount === null ? 0 : verse.wordCount)
+        for(let verse of verses)
+          if(this.isHeading(idx.verse, verse.heading)){
+            isHeading = true
+            break;
+          }
+      } while(!isHeading && !this.isEnd(idx));
+      let missing: string[] = []
       if(!this.isEnd(idx)) {
-        wordCount -= (verse.wordCount === null ? 0 : verse.wordCount)
-        idx = this.prevIndex(bible, idx)
-        verse = this.getVerse(bible, idx)
+        for(let verse of verses)
+          wordCount -= (verse.wordCount === null ? 0 : verse.wordCount)
+        if(idx.verse !== 0) {
+          for(let j = 0; j < 6; j++) {
+            let v: Verse = verses.at(j)!
+            if(v.heading !== undefined)
+              continue
+            if(j === 0)
+              missing.push("NASB")
+            else if(j === 1)
+              missing.push("ESV")
+            else if(j === 2)
+              missing.push("NKJV")
+            else if(j === 3)
+              missing.push("NIV")
+            else if(j === 4)
+              missing.push("NLT")
+            else if(j === 5)
+              missing.push("CSB")
+          }
+        }
+        idx = this.prevIndex(csbBible, idx)
+        verses = []
+        for(let bible of BIBLES)
+          verses.push(this.getVerse(bible, idx))
       }
-      heading.to = idx.book + "-" + idx.chapter + "-" + idx.verse
-      heading.wordCount = wordCount
+      heading.to.book = idx.book
+      heading.to.chapter = idx.chapter
+      heading.to.verse = idx.verse
+      heading.wordCount = Math.round(wordCount / 6)
+      heading.missingTranslations = missing
       headings.push(heading)
     } while(!this.isEnd(idx));
     console.log(headings)
