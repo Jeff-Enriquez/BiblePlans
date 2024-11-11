@@ -112,7 +112,7 @@ export class BiblesService {
   }
   getScheduleFor(translation: Translation, fromDate: string, toDate: string): Heading[] {
     if(translation === 'all-translations')
-      return this.getScheduleForAllTranslations();
+      return this.getScheduleForAllTranslations(fromDate, toDate);
     let headingsSchedule: Heading[] = []
     let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
     let wordsRemaining: number = this.totalWordCounts.get(translation)!
@@ -155,8 +155,61 @@ export class BiblesService {
     }
     return headingsSchedule
   }
-  private getScheduleForAllTranslations(): Heading[] {
+  private getScheduleForAllTranslations(fromDate: string, toDate: string): Heading[] {
     let headingsSchedule: Heading[] = []
+    let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
+    let wordsRemaining: number = this.totalWordCounts.get("all-translations")!
+    let headings: Heading[] = this.getHeading("all-translations")
+    let hIdx = 0
+    let minInCommon = 3
+    while(daysRemaining > 0 && hIdx < headings.length) {
+      let wordGoal: number = wordsRemaining / daysRemaining
+      daysRemaining--
+      let startHeading: Heading = headings.at(hIdx)!
+      let prevEndHeading: Heading | undefined
+      let endHeading: Heading
+      let wordCount: number = 0
+      do {
+        endHeading = headings.at(hIdx)!
+        wordCount += endHeading.wordCount
+        hIdx++
+        minInCommon = endHeading.to.book < 39 ? 3 : 5
+        if(endHeading.missingTranslations?.length! <= minInCommon || hIdx === headings.length) {
+          if(wordCount >= wordGoal || hIdx === headings.length) {
+            break;
+          }
+          else {
+            prevEndHeading = endHeading
+          }
+        }
+      } while(true);
+      let h: Heading
+      if(startHeading === endHeading || wordCount === wordGoal || hIdx === headings.length) {
+        h = this.newHeading(startHeading, endHeading)
+        h.wordCount = wordCount
+        headingsSchedule.push(h)
+      }
+      else {
+        if(prevEndHeading !== undefined) {
+          let prevWordCount: number = wordCount
+          let prevIdx = hIdx - 1
+          while(headings.at(prevIdx) !== prevEndHeading) {
+            prevWordCount -= headings.at(prevIdx)?.wordCount!
+            prevIdx--
+          }
+          prevIdx++
+          if(wordGoal - prevWordCount < wordCount - wordGoal) {
+            hIdx = prevIdx
+            endHeading = prevEndHeading
+            wordCount = prevWordCount
+          }
+        }
+        h = this.newHeading(startHeading, endHeading)
+        h.wordCount = wordCount
+        headingsSchedule.push(h)
+      }
+      wordsRemaining -= wordCount
+    }
     return headingsSchedule
   }
   private newHeading(fromheading: Heading, toHeading: Heading): Heading {
