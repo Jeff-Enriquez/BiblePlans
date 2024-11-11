@@ -1,5 +1,5 @@
 export interface Bible {
-    translation: string,
+    translation: Translation,
     fullName: string,
     publisher: string,
     publicationYears: number[],
@@ -16,6 +16,13 @@ export interface Chapter {
 export interface Verse {
     verse: number,
     wordCount: number | null,
-    heading?: string | null,
-    subHeading?: string | null
+    heading?: string | undefined,
+    subHeading?: string | undefined
 }
+export interface BibleIndex {
+    book: number,
+    chapter: number,
+    verse: number
+}
+export const translations = ["all-translations", "CSB", "ESV", "NASB", "NIV", "NKJV", "NLT"] as const;
+export type Translation = typeof translations[number];

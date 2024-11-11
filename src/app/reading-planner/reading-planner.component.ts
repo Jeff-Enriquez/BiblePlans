@@ -18,6 +18,6 @@ export class ReadingPlannerComponent {
     toDate: new FormControl(new Date(new Date().getFullYear(), 11, 31).toISOString().slice(0,10))
   })
   submitForm() {
-    console.log(this.biblesService.getBibles());
+    this.biblesService.getNasbHeaders();
   }
 }
