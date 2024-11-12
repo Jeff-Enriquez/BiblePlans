@@ -8,6 +8,7 @@ import { Heading } from '../../interfaces/heading';
 })
 export class BiblesService {
   totalWordCounts = new Map<Translation, number>();
+  books = new Map<Translation, string[]>();
   constructor() {
     this.totalWordCounts.set("NASB", 768400)
     this.totalWordCounts.set("ESV", 741480)
@@ -16,6 +17,14 @@ export class BiblesService {
     this.totalWordCounts.set("NLT", 727812)
     this.totalWordCounts.set("CSB", 699004)
     this.totalWordCounts.set("all-translations", 732598)
+    for(let bible of BIBLES) {
+      let books: string[] = []
+      for(let book of bible.books) {
+        books.push(book.title)
+      }
+      this.books.set(bible.translation, books)
+    }
+    this.books.set("all-translations", this.books.get("NASB")!)
   }
   getNasbHeaders() {
     let csbBible: Bible = BIBLES.at(5)!
@@ -95,7 +104,7 @@ export class BiblesService {
       heading.to.book = idx.book
       heading.to.chapter = idx.chapter
       heading.to.verse = idx.verse
-      heading.wordCount = Math.round(wordCount / 6)
+      heading.wordCount = (wordCount / 6)
       heading.missingTranslations = missing
       headings.push(heading)
     } while(!this.isEnd(idx));
@@ -110,11 +119,14 @@ export class BiblesService {
   getBibles(): Bible[] {
     return BIBLES;
   }
-  getScheduleFor(translation: Translation, fromDate: string, toDate: string): Heading[] {
+  getBooksFor(translation: Translation): string[] {
+    return this.books.get(translation)!
+  }
+  getScheduleFor(translation: Translation, numberOfDays: number): Heading[] {
     if(translation === 'all-translations')
-      return this.getScheduleForAllTranslations(fromDate, toDate);
+      return this.getScheduleForAllTranslations(numberOfDays);
     let headingsSchedule: Heading[] = []
-    let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
+    let daysRemaining: number = numberOfDays
     let wordsRemaining: number = this.totalWordCounts.get(translation)!
     let headings: Heading[] = this.getHeading(translation)
     let hIdx = 0;
@@ -155,9 +167,9 @@ export class BiblesService {
     }
     return headingsSchedule
   }
-  private getScheduleForAllTranslations(fromDate: string, toDate: string): Heading[] {
+  private getScheduleForAllTranslations(numberOfDays: number): Heading[] {
     let headingsSchedule: Heading[] = []
-    let daysRemaining: number = this.getDaysBetweenDates(fromDate, toDate)
+    let daysRemaining: number = numberOfDays
     let wordsRemaining: number = this.totalWordCounts.get("all-translations")!
     let headings: Heading[] = this.getHeading("all-translations")
     let hIdx = 0
@@ -307,15 +319,7 @@ export class BiblesService {
     }
     return newIdx
   }
-  private getDaysBetweenDates(startDate: string, endDate: string): number {
-    const date1 = new Date(startDate);
-    const date2 = new Date(endDate);
-    // Calculate the difference in time (milliseconds)
-    const differenceInTime = Math.abs(date2.getTime() - date1.getTime());
-    // Convert milliseconds to days
-    const differenceInDays = differenceInTime / (1000 * 60 * 60 * 24);
-    return Math.floor(differenceInDays); 
-  }
+  
   private initWordCounts() {
     let totalWordCount = 0;
     for(const bible of BIBLES) {
