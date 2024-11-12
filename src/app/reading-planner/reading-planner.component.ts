@@ -26,6 +26,7 @@ export class ReadingPlannerComponent {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
+    console.log(numberOfDays)
     this.dates = this.getFormattedDatesInRange(fromDate, toDate)
     let translation: Translation = this.applyForm.value.translation as Translation
     this.books = this.biblesService.getBooksFor(translation)
@@ -52,7 +53,7 @@ export class ReadingPlannerComponent {
       this.bibleSchedule = this.biblesService.getScheduleFor(
         translation, numberOfDays)
     }
-    console.log(this.bibleSchedule)
+    console.log(this.dates)
   }
   private getFormattedDatesInRange(startDate: string, endDate: string): string[] {
     const result: string[] = []
@@ -109,6 +110,7 @@ export class ReadingPlannerComponent {
     // Format the date
     return `${monthName} ${day}${daySuffix}, ${year}`;
   }
+  // Returns number of days between the dates, includes the dates given
   private getDaysBetweenDates(startDate: string, endDate: string): number {
     const date1 = new Date(startDate);
     const date2 = new Date(endDate);
@@ -116,6 +118,6 @@ export class ReadingPlannerComponent {
     const differenceInTime = Math.abs(date2.getTime() - date1.getTime());
     // Convert milliseconds to days
     const differenceInDays = differenceInTime / (1000 * 60 * 60 * 24);
-    return Math.floor(differenceInDays); 
+    return Math.floor(differenceInDays) + 1; 
   }
 }
