@@ -1,17 +1,17 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Heading } from '../interfaces/heading';
-import { DATES, YEAR_PLAN } from './mainBiblePlan';
-import { BiblesService } from '../services/bibles/bibles.service';
+import { Heading } from '../../interfaces/heading';
+import { DATES, YEAR_PLAN } from '../mainBiblePlan';
+import { BiblesService } from '../../services/bibles/bibles.service';
 
 @Component({
-  selector: 'app-main-page',
+  selector: 'app-unity-plan-main',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './main-page.component.html',
-  styleUrl: './main-page.component.scss'
+  templateUrl: './unity-plan-main.component.html',
+  styleUrl: './unity-plan-main.component.scss'
 })
-export class MainPageComponent {
+export class UnityPlanMainComponent {
   dayOfYear: number
   todaysReading: string
   yearPlan: Heading[]

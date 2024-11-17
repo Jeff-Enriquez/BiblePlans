@@ -1,16 +1,27 @@
 import { Routes } from '@angular/router';
+import { IntroductionMainComponent } from './introduction/introduction-main/introduction-main.component';
 import { ReadingPlannerComponent } from './reading-planner/reading-planner.component';
-import { MainPageComponent } from './main-page/main-page.component';
+import { UnityPlanMainComponent } from './unity-plan/unity-plan-main/unity-plan-main.component';
 
 export const routes: Routes = [
+    {
+        path: 'introduction',
+        component: IntroductionMainComponent,
+        title: 'Introduction'
+    },
     {
         path: 'plan-generator',
         component: ReadingPlannerComponent,
         title: 'Reading Planner'
     },
     {
-        path: '',
-        component: MainPageComponent,
+        path: 'unity-in-bible-reading',
+        component: UnityPlanMainComponent,
         title: 'Unity in Bible Reading'
+    },
+    {
+        path: '',
+        redirectTo: '/unity-in-bible-reading',
+        pathMatch: 'full'
     }
 ];

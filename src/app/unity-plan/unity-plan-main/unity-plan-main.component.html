@@ -1,0 +1,27 @@
+<div id="main-page" class="component">
+    <h1>Unity in Bible Reading</h1>
+    <p>Coming together in unity to read the word of God.</p>
+    <h2>Today's Reading</h2>
+    <p>{{todaysReading}}</p>
+    <h2>Reading Plan</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let b of yearPlan; index as i">
+                <td [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">
+                    {{dates.at(i)}}</td>
+                <td *ngIf="b.from.book === b.to.book"
+                [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">
+                    {{books.at(b.from.book) + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
+                <td *ngIf="b.from.book !== b.to.book"
+                [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">
+                    {{books.at(b.from.book) + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + books.at(b.to.book) + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
