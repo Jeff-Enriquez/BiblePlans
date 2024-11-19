@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Heading } from '../../interfaces/heading';
 import { DATES, YEAR_PLAN } from '../mainBiblePlan';
 import { BiblesService } from '../../services/bibles/bibles.service';
+import { NavBarComponent } from "../../nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-unity-plan-main',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NavBarComponent],
   templateUrl: './unity-plan-main.component.html',
   styleUrl: './unity-plan-main.component.scss'
 })
