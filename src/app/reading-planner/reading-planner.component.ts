@@ -15,7 +15,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './reading-planner.component.scss'
 })
 export class ReadingPlannerComponent {
-  dates: string[] = []
+  dates: DateParts[] = []
   books: string[] = []
   bibleSchedule: Heading[] = []
   biblesService: BiblesService = inject(BiblesService)
@@ -40,8 +40,11 @@ export class ReadingPlannerComponent {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
-    console.log(numberOfDays)
-    this.dates = this.getFormattedDatesInRange(fromDate, toDate)
+    let dates: DateParts[] = []
+    this.getDatesInRange(fromDate, toDate).forEach(date => {
+      dates.push(this.formatDate(date))
+    })
+    this.dates = dates
     let translation: Translation = this.applyForm.value.translation as Translation
     this.books = this.biblesService.getBooksFor(translation)
     const leapIndex = this.includesLeapDay(this.dates)
@@ -67,62 +70,56 @@ export class ReadingPlannerComponent {
       this.bibleSchedule = this.biblesService.getScheduleFor(
         translation, numberOfDays)
     }
-    console.log(this.dates)
   }
-  private getFormattedDatesInRange(startDate: string, endDate: string): string[] {
-    const result: string[] = []
+  private getDatesInRange(startDate: string, endDate: string): Date[] {
+    const result: Date[] = []
     let current = new Date(startDate)
     current.setDate(current.getDate() + 1)
     const end = new Date(endDate)
     end.setDate(end.getDate() + 1)
-    
-    const options: Intl.DateTimeFormatOptions = { month: 'long', day: 'numeric', year: 'numeric' }
-
     while (current <= end) {
-        const formattedDate = current.toLocaleDateString('en-US', options)
-
-        // Add ordinal suffix to the day
-        const day = current.getDate()
-        const suffix = day === 1 || day === 21 || day === 31 ? 'st' :
-                       day === 2 || day === 22 ? 'nd' :
-                       day === 3 || day === 23 ? 'rd' : 'th'
-        
-        // Format as "January 1st, 2024"
-        result.push(formattedDate.replace(/\d+/, `${day}${suffix}`))
-
-        // Increment the date by one day
-        current.setDate(current.getDate() + 1)
+      const date = new Date(current)
+      result.push(date)
+      current.setDate(current.getDate() + 1)
     }
-
     return result
   }
-  private includesLeapDay(dates: string[]): number {
+  
+  private formatDate(date: Date): DateParts {
+    const formattedDate = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+    // Add ordinal suffix to the day
+    const day = date.getDate()
+    const suffix = day === 1 || day === 21 || day === 31 ? 'st' :
+                    day === 2 || day === 22 ? 'nd' :
+                    day === 3 || day === 23 ? 'rd' : 'th'
+    const monthNum = date.getMonth()
+    const month = monthNum === 0 ? "Jan." :
+      monthNum === 1 ? "Feb." :
+      monthNum === 2 ? "Mar." :
+      monthNum === 3 ? "Apr." :
+      monthNum === 4 ? "May" : 
+      monthNum === 5 ? "Jun." :
+      monthNum === 6 ? "Jul." :
+      monthNum === 7 ? "Aug." :
+      monthNum === 8 ? "Sep." :
+      monthNum === 9 ? "Oct." :
+      monthNum === 10 ? "Nov." :  "Dec."
+    const year = date.getFullYear()
+    return {
+      month: month,
+      day: day,
+      daySuffix: suffix,
+      year: (year % 1000) % 100
+    }
+  }
+  private includesLeapDay(dates: DateParts[]): number {
+    let date: DateParts;
     for(let i = 0; i < dates.length; i++) {
-      if(dates.at(i)!.startsWith("February 29"))
+      date = dates.at(i)!
+      if(date.day === 29 && date.month === "February")
         return i
     }
     return -1
-  }
-  private formatDate(dateString: string): string {
-    const months = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
-    ];
-
-    const suffixes = ["th", "st", "nd", "rd"];
-
-    // Parse the input date string
-    const [month, day, year] = dateString.split("/").map(Number);
-
-    // Get month name
-    const monthName = months[month - 1];
-
-    // Determine suffix
-    const daySuffix =
-        day % 10 <= 3 && Math.floor(day / 10) !== 1 ? suffixes[day % 10] : "th";
-
-    // Format the date
-    return `${monthName} ${day}${daySuffix}, ${year}`;
   }
   // Returns number of days between the dates, includes the dates given
   private getDaysBetweenDates(startDate: string, endDate: string): number {
@@ -134,4 +131,10 @@ export class ReadingPlannerComponent {
     const differenceInDays = differenceInTime / (1000 * 60 * 60 * 24);
     return Math.floor(differenceInDays) + 1; 
   }
+}
+interface DateParts {
+  month: string,
+  day: number,
+  daySuffix: string | undefined,
+  year: number
 }

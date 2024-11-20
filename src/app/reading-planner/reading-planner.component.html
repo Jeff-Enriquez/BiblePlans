@@ -5,23 +5,29 @@
         <p>Create your own custom reading plan.</p>
     </summary>
     <form [formGroup]="applyForm" (submit)="submitForm()">
-        <label for="translation">Translation:</label>
-        <select id="translation" formControlName="translation">
-            <option value="all-translations">All Translations</option>
-            <option value="CSB">CSB</option>
-            <option value="ESV">ESV</option>
-            <option value="NASB">NASB</option>
-            <option value="NIV">NIV</option>
-            <option value="NKJV">NKJV</option>
-            <option value="NLT">NLT</option>
-        </select>
-        <label for="from-date">From:</label>
-        <input type="date" id="from-date" formControlName="fromDate">
-        <label for="to-date">To:</label>
-        <input type="date" id="to-date" formControlName="toDate">
+        <div>
+            <label for="translation">Translation:</label>
+            <select id="translation" formControlName="translation">
+                <option value="all-translations">All Translations</option>
+                <option value="CSB">CSB</option>
+                <option value="ESV">ESV</option>
+                <option value="NASB">NASB</option>
+                <option value="NIV">NIV</option>
+                <option value="NKJV">NKJV</option>
+                <option value="NLT">NLT</option>
+            </select>
+        </div>
+        <div>
+            <label for="from-date">From:</label>
+            <input type="date" id="from-date" formControlName="fromDate">
+        </div>
+        <div>
+            <label for="to-date">To:</label>
+            <input type="date" id="to-date" formControlName="toDate">
+        </div>
         <button type="submit" class="primary">Create</button>
     </form>
-    <table>
+    <table *ngIf="bibleSchedule.length > 0">
         <thead>
             <tr>
                 <th>Date</th>
@@ -30,8 +36,9 @@
         </thead>
         <tbody>
             <tr *ngFor="let b of bibleSchedule; index as i">
-                <td>{{dates.at(i)}}</td>
-                <td *ngIf="b.wordCount !== -100">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + books[b.to.book] + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
+                <td class="date">{{dates.at(i)?.month}} {{dates.at(i)?.day}}<span class="day-suffix" *ngIf="dates.at(i)?.daySuffix !== undefined">{{dates.at(i)?.daySuffix}}</span> '{{dates.at(i)?.year}}</td>
+                <td *ngIf="b.wordCount !== -100 && b.from.book === b.to.book">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
+                <td *ngIf="b.wordCount !== -100 && b.from.book !== b.to.book">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + books[b.to.book] + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
                 <td *ngIf="b.wordCount === -100">LEAP DAY</td>
             </tr>
         </tbody>
