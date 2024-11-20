@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Heading } from '../../interfaces/heading';
 import { DATES, YEAR_PLAN } from '../mainBiblePlan';
 import { BiblesService } from '../../services/bibles/bibles.service';
 import { NavBarComponent } from "../../nav-bar/nav-bar.component";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-unity-plan-main',
@@ -19,7 +20,7 @@ export class UnityPlanMainComponent {
   books: string[] = []
   dates: string[] = DATES
   biblesService: BiblesService = inject(BiblesService);
-  constructor() {
+  constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller) {
     const today = new Date()
     this.books = this.biblesService.getBooksFor("NASB")
     this.dayOfYear = this.getDayOfYear(today)
@@ -40,6 +41,16 @@ export class UnityPlanMainComponent {
     }
     this.yearPlan = YEAR_PLAN
   }
+
+  ngOnInit() {
+    this.viewportScroller.setOffset([0,70])
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        this.viewportScroller.scrollToAnchor(fragment);
+      }
+    });
+  }
+
   // excludes leap years
   private getDayOfYear(today: Date): number {
     if(today.getMonth() === 1 && today.getDate() === 29)

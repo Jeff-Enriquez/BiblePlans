@@ -18,11 +18,9 @@ export class NavBarComponent {
     if(isOpen === null) {
       this.isSideNavOpen = "false"
       sessionStorage.setItem("isSideNavOpen", this.isSideNavOpen)
-      console.log("i" + isOpen + "|" + this.isSideNavOpen)
     }
     else {
       this.isSideNavOpen = isOpen
-      console.log("e" + isOpen + "|" + this.isSideNavOpen)
     }
   }
   
@@ -32,6 +30,5 @@ export class NavBarComponent {
     else
       this.isSideNavOpen = "true"
     sessionStorage.setItem("isSideNavOpen", this.isSideNavOpen)
-    console.log("click" + this.isSideNavOpen)
   }
 }

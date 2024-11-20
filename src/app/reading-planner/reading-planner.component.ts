@@ -1,10 +1,11 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BiblesService } from '../services/bibles/bibles.service';
 import { Translation } from '../interfaces/bible';
 import { Heading } from '../interfaces/heading';
 import { NavBarComponent } from "../nav-bar/nav-bar.component";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-reading-planner',
@@ -23,6 +24,18 @@ export class ReadingPlannerComponent {
     fromDate: new FormControl(new Date(new Date().getFullYear(), 0, 1).toISOString().slice(0,10)),
     toDate: new FormControl(new Date(new Date().getFullYear(), 11, 31).toISOString().slice(0,10))
   })
+
+  constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
+
+  ngOnInit() {
+    this.viewportScroller.setOffset([0,70])
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        this.viewportScroller.scrollToAnchor(fragment);
+      }
+    });
+  }
+
   submitForm() {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!

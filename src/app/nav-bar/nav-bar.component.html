@@ -12,12 +12,12 @@
     <div id="nav-bar-space"></div>
     <div id="nav-bar-side" [ngStyle]="{'transform': isSideNavOpen === 'true' ? 'translate(0%)' : 'translate(-100%)'}">
         <div id="nav-bar-side-background"></div>
-        <a class="nav-bar-link" [routerLink]="['/introduction']"><p class="nav-h1 nav-bar-text">Introduction</p></a>
-        <a class="nav-bar-link" [routerLink]="['/introduction']"><p class="nav-h2 nav-bar-text">Why Unity In Bible Reading?</p></a>
-        <a class="nav-bar-link" [routerLink]="['/introduction']"><p class="nav-h2 nav-bar-text">How It Was Made</p></a>
-        <a class="nav-bar-link" [routerLink]="['/introduction']"><p class="nav-h2 nav-bar-text">Why Canonical Order?</p></a>
-        <a class="nav-bar-link" [routerLink]="['/unity-in-bible-reading']"><p class="nav-h1 nav-bar-text">Today's Reading</p></a>
-        <a class="nav-bar-link" [routerLink]="['/unity-in-bible-reading']"><p class="nav-h2 nav-bar-text">Reading Plan</p></a>
-        <a class="nav-bar-link" [routerLink]="['/reading-planner']"><p class="nav-h1 nav-bar-text">Reading Planner</p></a>
+        <a class="nav-bar-link" [routerLink]="'/introduction'"><p class="nav-h1 nav-bar-text">Introduction</p></a>
+        <a class="nav-bar-link" [routerLink]="'/introduction'" fragment="why-unity-in-bible-reading"><p class="nav-h2 nav-bar-text">Why Unity In Bible Reading?</p></a>
+        <a class="nav-bar-link" [routerLink]="'/introduction'" fragment="how-it-was-made"><p class="nav-h2 nav-bar-text">How It Was Made</p></a>
+        <a class="nav-bar-link" [routerLink]="'/introduction'" fragment="why-canonical-order"><p class="nav-h2 nav-bar-text">Why Canonical Order?</p></a>
+        <a class="nav-bar-link" [routerLink]="'/unity-in-bible-reading'"><p class="nav-h1 nav-bar-text">Today's Reading</p></a>
+        <a class="nav-bar-link" [routerLink]="'/unity-in-bible-reading'" fragment="reading-plan"><p class="nav-h2 nav-bar-text">Reading Plan</p></a>
+        <a class="nav-bar-link" [routerLink]="'/reading-planner'"><p class="nav-h1 nav-bar-text">Reading Planner</p></a>
     </div>
 </div>
