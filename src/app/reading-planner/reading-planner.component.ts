@@ -4,11 +4,12 @@ import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BiblesService } from '../services/bibles/bibles.service';
 import { Translation } from '../interfaces/bible';
 import { Heading } from '../interfaces/heading';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-reading-planner',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, NavBarComponent],
   templateUrl: './reading-planner.component.html',
   styleUrl: './reading-planner.component.scss'
 })
@@ -16,7 +17,7 @@ export class ReadingPlannerComponent {
   dates: string[] = []
   books: string[] = []
   bibleSchedule: Heading[] = []
-  biblesService: BiblesService = inject(BiblesService);
+  biblesService: BiblesService = inject(BiblesService)
   applyForm = new FormGroup({
     translation: new FormControl('all-translations'),
     fromDate: new FormControl(new Date(new Date().getFullYear(), 0, 1).toISOString().slice(0,10)),

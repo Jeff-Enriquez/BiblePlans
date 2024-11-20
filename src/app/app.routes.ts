@@ -10,7 +10,7 @@ export const routes: Routes = [
         title: 'Introduction'
     },
     {
-        path: 'plan-generator',
+        path: 'reading-planner',
         component: ReadingPlannerComponent,
         title: 'Reading Planner'
     },
