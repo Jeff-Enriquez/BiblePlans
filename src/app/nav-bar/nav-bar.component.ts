@@ -24,7 +24,7 @@ export class NavBarComponent {
     }
   }
   
-  onClickHamburgerMenu() {
+  openCloseNav() {
     if(sessionStorage.getItem("isSideNavOpen") === "true")
       this.isSideNavOpen = "false"
     else

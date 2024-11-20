@@ -2,7 +2,7 @@
     <div id="nav-bar-top">
         <div id="nav-bar-hamburger-container">
             <img id="nav-bar-hamburger-image" src="hamburger.png" alt="navigation arrow"/>
-            <button id="nav-bar-button" (click)="onClickHamburgerMenu()"></button>
+            <button id="nav-bar-button" (click)="openCloseNav()"></button>
         </div>
         <div id="nav-bar-top-heading-container">
             <p id="nav-bar-top-heading-text">Unity In Bible Reading</p>
@@ -10,6 +10,7 @@
     </div>
     <!-- This is needed because the nav bar has an absolute position. This nav bar space prevents other elements from being positioned underneath it. -->
     <div id="nav-bar-space"></div>
+    <button *ngIf="isSideNavOpen === 'true'" id="nav-bar-clickable-background" (click)="openCloseNav()"></button>
     <div id="nav-bar-side" [ngStyle]="{'transform': isSideNavOpen === 'true' ? 'translate(0%)' : 'translate(-100%)'}">
         <div id="nav-bar-side-background"></div>
         <a class="nav-bar-link" [routerLink]="'/introduction'"><p class="nav-h1 nav-bar-text">Introduction</p></a>
@@ -20,4 +21,5 @@
         <a class="nav-bar-link" [routerLink]="'/unity-in-bible-reading'" fragment="reading-plan"><p class="nav-h2 nav-bar-text">Reading Plan</p></a>
         <a class="nav-bar-link" [routerLink]="'/reading-planner'"><p class="nav-h1 nav-bar-text">Reading Planner</p></a>
     </div>
+    
 </div>

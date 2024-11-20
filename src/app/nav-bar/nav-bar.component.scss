@@ -31,15 +31,17 @@
   height: 100%;
   width: 100%;
 }
-#nav-bar-button {
+#nav-bar-button, #nav-bar-clickable-background {
   position: absolute;
   height: 100%;
   width: 100%;
   padding: 0;
   border: none;
-  cursor: pointer;
   outline: none;
   opacity: 0;
+}
+#nav-bar-button {
+  cursor: pointer;
 }
 #nav-bar-hamburger-image {
   filter: grayscale(100%);
