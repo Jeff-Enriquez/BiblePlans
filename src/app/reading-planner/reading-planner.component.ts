@@ -15,7 +15,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './reading-planner.component.scss'
 })
 export class ReadingPlannerComponent {
-  newPlanMessage: string = "All Translations"
+  newPlanMessage: Plan[] = []
   errorMessage: string = ""
   dates: DateParts[] = []
   books: string[] = []
@@ -42,19 +42,19 @@ export class ReadingPlannerComponent {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
-    console.log(numberOfDays)
     if(numberOfDays < 1) {
       this.errorMessage = "'From' date must be before 'To' date."
       this.bibleSchedule = []
-      this.newPlanMessage = ""
+      this.newPlanMessage = []
       return
     }
     else {
       this.errorMessage = ""
+      this.newPlanMessage = []
       if(this.applyForm.value.translation! === 'all-translations')
-        this.newPlanMessage = 'All Translations'
+        this.newPlanMessage.push({value:'All Translations'})
       else
-        this.newPlanMessage = this.applyForm.value.translation!
+        this.newPlanMessage.push({value:this.applyForm.value.translation!})
     }
     let dates: DateParts[] = []
     this.getDatesInRange(fromDate, toDate).forEach(date => {
@@ -153,4 +153,9 @@ interface DateParts {
   day: number,
   daySuffix: string | undefined,
   year: number
+}
+
+// Need interface so that Angular recognizes the changes
+interface Plan {
+  value: string
 }

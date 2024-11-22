@@ -28,7 +28,7 @@
         <button id="submit-button" type="submit" class="primary">Create</button>
     </form>
     <p *ngIf="errorMessage !== ''" id="error-message">{{errorMessage}}</p>
-    <p *ngIf="newPlanMessage !== ''" id="new-plan-message">New plan for '{{newPlanMessage}}' was created!</p>
+    <p *ngFor="let planMessage of newPlanMessage" id="new-plan-message">Reading plan for '{{planMessage.value}}' was created!</p>
     <table id="reading-plan-table" *ngIf="bibleSchedule.length > 0">
         <thead>
             <tr>
