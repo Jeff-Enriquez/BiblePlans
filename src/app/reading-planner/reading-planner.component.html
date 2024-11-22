@@ -4,8 +4,16 @@
     <summary>
         <p>Create your own custom reading plan.</p>
     </summary>
-    <form [formGroup]="applyForm" (submit)="submitForm()">
-        <div>
+    <form id="form" [formGroup]="applyForm" (submit)="submitForm()">
+        <div id="date-div1">
+            <label for="from-date">From:</label>
+            <input type="date" id="from-date" formControlName="fromDate">
+        </div>
+        <div id="date-div2">
+            <label for="to-date">To:</label>
+            <input type="date" id="to-date" formControlName="toDate">
+        </div>
+        <div id="translation-div">
             <label for="translation">Translation:</label>
             <select id="translation" formControlName="translation">
                 <option value="all-translations">All Translations</option>
@@ -17,17 +25,11 @@
                 <option value="NLT">NLT</option>
             </select>
         </div>
-        <div>
-            <label for="from-date">From:</label>
-            <input type="date" id="from-date" formControlName="fromDate">
-        </div>
-        <div>
-            <label for="to-date">To:</label>
-            <input type="date" id="to-date" formControlName="toDate">
-        </div>
-        <button type="submit" class="primary">Create</button>
+        <button id="submit-button" type="submit" class="primary">Create</button>
     </form>
-    <table *ngIf="bibleSchedule.length > 0">
+    <p *ngIf="errorMessage !== ''" id="error-message">{{errorMessage}}</p>
+    <p *ngIf="newPlanMessage !== ''" id="new-plan-message">New plan for '{{newPlanMessage}}' was created!</p>
+    <table id="reading-plan-table" *ngIf="bibleSchedule.length > 0">
         <thead>
             <tr>
                 <th>Date</th>

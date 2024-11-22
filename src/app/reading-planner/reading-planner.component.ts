@@ -15,6 +15,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './reading-planner.component.scss'
 })
 export class ReadingPlannerComponent {
+  newPlanMessage: string = "All Translations"
+  errorMessage: string = ""
   dates: DateParts[] = []
   books: string[] = []
   bibleSchedule: Heading[] = []
@@ -40,6 +42,20 @@ export class ReadingPlannerComponent {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
+    console.log(numberOfDays)
+    if(numberOfDays < 1) {
+      this.errorMessage = "'From' date must be before 'To' date."
+      this.bibleSchedule = []
+      this.newPlanMessage = ""
+      return
+    }
+    else {
+      this.errorMessage = ""
+      if(this.applyForm.value.translation! === 'all-translations')
+        this.newPlanMessage = 'All Translations'
+      else
+        this.newPlanMessage = this.applyForm.value.translation!
+    }
     let dates: DateParts[] = []
     this.getDatesInRange(fromDate, toDate).forEach(date => {
       dates.push(this.formatDate(date))
@@ -126,7 +142,7 @@ export class ReadingPlannerComponent {
     const date1 = new Date(startDate);
     const date2 = new Date(endDate);
     // Calculate the difference in time (milliseconds)
-    const differenceInTime = Math.abs(date2.getTime() - date1.getTime());
+    const differenceInTime = date2.getTime() - date1.getTime();
     // Convert milliseconds to days
     const differenceInDays = differenceInTime / (1000 * 60 * 60 * 24);
     return Math.floor(differenceInDays) + 1; 
