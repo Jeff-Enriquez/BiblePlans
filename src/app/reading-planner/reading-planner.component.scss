@@ -80,6 +80,12 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+.date {
+    min-width: 154px;
+}
+.reading-parts {
+    display: inline-block
+}
 .fade-out {
     animation: fadeInAnimation cubic-bezier(1, 0, 1, 1) 4s;
 }
