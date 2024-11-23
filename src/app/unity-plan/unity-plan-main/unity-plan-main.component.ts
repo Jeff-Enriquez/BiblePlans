@@ -18,7 +18,7 @@ export class UnityPlanMainComponent {
   todaysReading: string
   yearPlan: Heading[]
   books: string[] = []
-  dates: string[] = DATES
+  dates = DATES
   biblesService: BiblesService = inject(BiblesService);
   constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller) {
     const today = new Date()
