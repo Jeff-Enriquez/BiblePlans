@@ -87,5 +87,33 @@ export class UnityPlanMainComponent {
         return 30
     return 31
   }
+  downloadPlan() {
+    let csvData = ["Date,Reading"];
+    for(let i = 0; i < YEAR_PLAN.length; i++) {
+      let heading = YEAR_PLAN.at(i)!
+      let dateParts = DATES.at(i)!
+      let date = dateParts.month + " " + dateParts.day + dateParts.daySuffix
+      let reading;
+      if(heading.from.book === heading.to.book) {
+        reading = this.books.at(heading.from.book) + " " + (heading.from.chapter + 1) + ":"
+          + (heading.from.verse + 1) + " - " + (heading.to.chapter + 1) + ":" + (heading.to.verse + 1)
+      }
+      else {
+        reading = this.books.at(heading.from.book) + " " + (heading.from.chapter + 1) + ":"
+          + (heading.from.verse + 1) + " - " + this.books.at(heading.to.book) + " " + (heading.to.chapter + 1)
+          + ":" + (heading.to.verse + 1)
+      }
+      csvData.push(date + "," + reading)
+    }
+    const blob = new Blob([csvData.join("\n")], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.setAttribute('href', url);
+    a.setAttribute('download', 'unity-in-reading.csv');
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 }
 
