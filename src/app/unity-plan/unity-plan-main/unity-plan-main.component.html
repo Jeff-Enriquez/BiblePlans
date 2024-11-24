@@ -3,22 +3,25 @@
     <h1>Today's Reading</h1>
     <p>{{todaysReading}}</p>
     <h2 id="reading-plan">Reading Plan</h2>
-    <button class="download" (click)="downloadPlan()">download</button>
-    <table id="reading-plan-table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Reading</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let b of yearPlan; index as i">
-                <td class="date" [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">{{dates.at(i)?.month}} {{dates.at(i)?.day}}<span class="day-suffix">{{dates.at(i)?.daySuffix}}</span></td>
-                <td *ngIf="b.from.book === b.to.book"
-                [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">{{books.at(b.from.book) + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
-                <td *ngIf="b.from.book !== b.to.book"
-                [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}"><span class="reading-parts">{{books.at(b.from.book) + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1)}}&nbsp;</span><span class="reading-parts">- {{books.at(b.to.book) + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</span></td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="table-container">
+        <button id="download-button" (click)="downloadPlan()">download</button>
+        <table id="reading-plan-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Reading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let b of yearPlan; index as i">
+                    <td class="date" [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">{{dates.at(i)?.month}} {{dates.at(i)?.day}}<span class="day-suffix">{{dates.at(i)?.daySuffix}}</span></td>
+                    <td *ngIf="b.from.book === b.to.book"
+                    [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}">{{books.at(b.from.book) + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
+                    <td *ngIf="b.from.book !== b.to.book"
+                    [ngStyle]="{'font-weight': i === dayOfYear ? 'bold' : 'normal'}"><span class="reading-parts">{{books.at(b.from.book) + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1)}}&nbsp;</span><span class="reading-parts">- {{books.at(b.to.book) + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</span></td>
+                </tr>
+            </tbody>
+        </table>
+    <!-- <button id="download-button" (click)="downloadPlan()">download</button> -->
+    </div>
 </div>
