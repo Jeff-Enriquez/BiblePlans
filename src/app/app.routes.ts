@@ -15,13 +15,13 @@ export const routes: Routes = [
         title: 'Reading Planner'
     },
     {
-        path: 'unity-in-bible-reading',
+        path: 'todays-reading',
         component: UnityPlanMainComponent,
         title: 'Unity in Bible Reading'
     },
     {
         path: '',
-        redirectTo: '/unity-in-bible-reading',
+        redirectTo: '/todays-reading',
         pathMatch: 'full'
     }
 ];
