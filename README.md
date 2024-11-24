@@ -1,27 +1,8 @@
-# BiblePlans
+# Unity In Bible Reading
+This app is so that people can join together in reading the Bible. It also has a feature for people to create their own Bible reading plans.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+## Technology Used
+- Angular 18.2.11
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Build and Deploy
+The app is deployed through GitHub Pages. GitHub Pages uses the `main` branch `docs` folder. To build your changes for deployment, run the following command `ng build --base-href /unity-in-bible-reading/`. The base-href is needed because GitHub Pages adds the repo name to the uri.
