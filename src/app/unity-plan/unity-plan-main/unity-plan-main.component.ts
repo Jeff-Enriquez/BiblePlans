@@ -47,6 +47,8 @@ export class UnityPlanMainComponent {
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
         this.viewportScroller.scrollToAnchor(fragment);
+      } else {
+        this.viewportScroller.scrollToPosition([0,0]);
       }
     });
   }
