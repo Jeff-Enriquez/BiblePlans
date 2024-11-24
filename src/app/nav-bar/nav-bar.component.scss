@@ -13,6 +13,9 @@
   border-bottom: 1px solid black;
   position: fixed;
 }
+#nav-bar-top, #nav-bar-side, #nav-bar-clickable-background {
+  z-index: 1000;
+}
 #nav-bar-top-heading-container {
   padding: 12px;
   display: flex;

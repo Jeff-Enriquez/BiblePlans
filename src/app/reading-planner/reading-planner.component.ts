@@ -125,7 +125,7 @@ export class ReadingPlannerComponent {
       month: month,
       day: day,
       daySuffix: suffix,
-      year: (year % 1000) % 100
+      year: year
     }
   }
   private includesLeapDay(dates: DateParts[]): number {
@@ -146,6 +146,52 @@ export class ReadingPlannerComponent {
     // Convert milliseconds to days
     const differenceInDays = differenceInTime / (1000 * 60 * 60 * 24);
     return Math.floor(differenceInDays) + 1; 
+  }
+
+  downloadPlan() {
+    let csvData = ["Date (mm/dd/yyyy),Reading"]
+    let dates = []
+    for(let i = 0; i < this.bibleSchedule.length; i++) {
+      let heading = this.bibleSchedule.at(i)!
+      let dateParts = this.dates.at(i)!
+      let m = dateParts.month
+      const month = m === "Jan." ? "01" :
+        m === "Feb." ? "02" :
+        m === "Mar." ? "03" :
+        m === "Apr." ? "04" :
+        m === "May" ? "05" : 
+        m === "Jun." ? "06" :
+        m === "Jul." ? "07" :
+        m === "Aug." ? "08" :
+        m === "Sep." ? "09" :
+        m === "Oct." ? "10" :
+        m === "Nov." ? "11" :  "12"
+      let day = "" + dateParts.day
+      if(day.length === 1)
+        day = "0" + day
+      let date = month + "/" + day + "/" + dateParts.year
+      let reading
+      if(heading.from.book === heading.to.book) {
+        reading = this.books.at(heading.from.book) + " " + (heading.from.chapter + 1) + ":"
+          + (heading.from.verse + 1) + " - " + (heading.to.chapter + 1) + ":" + (heading.to.verse + 1)
+      }
+      else {
+        reading = this.books.at(heading.from.book) + " " + (heading.from.chapter + 1) + ":"
+          + (heading.from.verse + 1) + " - " + this.books.at(heading.to.book) + " " + (heading.to.chapter + 1)
+          + ":" + (heading.to.verse + 1)
+      }
+      dates.push(date)
+      csvData.push(date + "," + reading)
+    }
+    const blob = new Blob([csvData.join("\n")], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const docName = this.applyForm.value.translation?.toLowerCase() + "-reading-plan-" + dates.at(0)?.replaceAll("/", "-") + "-to-" + dates.at(dates.length-1)?.replaceAll("/", "-") + ".csv"
+    const a = document.createElement('a');
+    a.setAttribute('href', url);
+    a.setAttribute('download', docName);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   }
 }
 interface DateParts {

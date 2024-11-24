@@ -88,7 +88,7 @@ export class UnityPlanMainComponent {
     return 31
   }
   downloadPlan() {
-    let csvData = ["Date,Reading"];
+    let csvData = ["Date,Reading"]
     for(let i = 0; i < YEAR_PLAN.length; i++) {
       let heading = YEAR_PLAN.at(i)!
       let dateParts = DATES.at(i)!

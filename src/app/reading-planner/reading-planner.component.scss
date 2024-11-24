@@ -80,6 +80,26 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
+#table-container{
+    position: relative;
+    width: fit-content;
+}
+#download-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #616161;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    transform: translateY(-110%);
+}
+#download-button:hover {
+    color: #2639a1;
+}
 .date {
     min-width: 154px;
 }

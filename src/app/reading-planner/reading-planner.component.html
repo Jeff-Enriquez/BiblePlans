@@ -29,20 +29,23 @@
     </form>
     <p *ngIf="errorMessage !== ''" id="error-message">{{errorMessage}}</p>
     <p *ngFor="let planMessage of newPlanMessage" id="new-plan-message">Reading plan for '{{planMessage.value}}' was created!</p>
-    <table id="reading-plan-table" *ngIf="bibleSchedule.length > 0">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Reading</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let b of bibleSchedule; index as i">
-                <td class="date">{{dates.at(i)?.month}} {{dates.at(i)?.day}}<span class="day-suffix" *ngIf="dates.at(i)?.daySuffix !== undefined">{{dates.at(i)?.daySuffix}}</span> '{{dates.at(i)?.year}}</td>
-                <td *ngIf="b.wordCount !== -100 && b.from.book === b.to.book">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
-                <td *ngIf="b.wordCount !== -100 && b.from.book !== b.to.book"><span class="reading-parts">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1)}}&nbsp;</span><span class="reading-parts">- {{books[b.to.book] + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</span></td>
-                <td *ngIf="b.wordCount === -100">LEAP DAY</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="table-container" *ngIf="bibleSchedule.length > 0">
+        <button id="download-button" (click)="downloadPlan()">download</button>
+        <table id="reading-plan-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Reading</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let b of bibleSchedule; index as i">
+                    <td class="date">{{dates.at(i)?.month}} {{dates.at(i)?.day}}<span class="day-suffix" *ngIf="dates.at(i)?.daySuffix !== undefined">{{dates.at(i)?.daySuffix}}</span> '{{(dates.at(i)?.year! % 1000) % 100}}</td>
+                    <td *ngIf="b.wordCount !== -100 && b.from.book === b.to.book">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1) + " - " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</td>
+                    <td *ngIf="b.wordCount !== -100 && b.from.book !== b.to.book"><span class="reading-parts">{{books[b.from.book] + " " + (b.from.chapter + 1) + ":" + (b.from.verse + 1)}}&nbsp;</span><span class="reading-parts">- {{books[b.to.book] + " " + (b.to.chapter + 1) + ":" + (b.to.verse + 1)}}</span></td>
+                    <td *ngIf="b.wordCount === -100">LEAP DAY</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
