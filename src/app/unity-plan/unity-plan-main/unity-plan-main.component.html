@@ -1,7 +1,14 @@
 <app-nav-bar />
 <div id="main-container">
     <h1>Today's Reading</h1>
-    <p>{{todaysReading}}</p>
+    <p id="todays-reading" *ngIf="yearPlan.at(dayOfYear)?.from?.book! !== yearPlan.at(dayOfYear)?.to?.book!"><span class="reading-parts">{{
+        books.at(yearPlan.at(dayOfYear)?.from?.book!) + " " + yearPlan.at(dayOfYear)?.from?.chapter + ":" + yearPlan.at(dayOfYear)?.from?.verse}}&nbsp;</span><span class="reading-parts">- {{
+        books.at(yearPlan.at(dayOfYear)?.to?.book!) + " " + yearPlan.at(dayOfYear)?.to?.chapter + ":" + yearPlan.at(dayOfYear)?.to?.verse
+    }}</span></p>
+    <p id="todays-reading" *ngIf="yearPlan.at(dayOfYear)?.from?.book! === yearPlan.at(dayOfYear)?.to?.book!"><span class="reading-parts">{{
+        books.at(yearPlan.at(dayOfYear)?.from?.book!) + " " + yearPlan.at(dayOfYear)?.from?.chapter + ":" + yearPlan.at(dayOfYear)?.from?.verse}}&nbsp;</span><span class="reading-parts">- {{
+        yearPlan.at(dayOfYear)?.to?.chapter + ":" + yearPlan.at(dayOfYear)?.to?.verse
+    }}</span></p>
     <h2 id="reading-plan">Reading Plan</h2>
     <div id="table-container">
         <button id="download-button" (click)="downloadPlan()">download</button>
