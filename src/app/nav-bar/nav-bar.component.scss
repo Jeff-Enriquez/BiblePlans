@@ -89,3 +89,23 @@
   font-size: 13px;
   padding: 5px 18px 5px 20px;
 }
+#source-code {
+  position: absolute;
+  bottom: 0;
+  transform: translate(12px, -5px);
+  color: #afafaf;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+#source-code > svg {
+  fill: #afafaf;
+  width: 14px;
+  padding-bottom: 5px;
+}
+#source-code:hover {
+  color: #81d6f1;
+}
+#source-code:hover > svg {
+  fill: #81d6f1;
+}
