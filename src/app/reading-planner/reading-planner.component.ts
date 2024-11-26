@@ -30,14 +30,30 @@ export class ReadingPlannerComponent {
   constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
 
   ngOnInit() {
-    this.viewportScroller.setOffset([0,70])
     this.route.fragment.subscribe(fragment => {
       if (fragment) {
-        this.viewportScroller.scrollToAnchor(fragment);
+        this.scrollToElementWithOffset(fragment, 70)
       } else {
-        this.viewportScroller.scrollToPosition([0,0]);
+        this.scrollToTop(0)
       }
     });
+  }
+  scrollToTop(offset: number) {
+    window.scrollTo({
+      top: offset,
+      behavior: 'smooth'
+    });
+  }
+  scrollToElementWithOffset(elementId: string, offset: number): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition - offset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
   }
 
   submitForm() {
