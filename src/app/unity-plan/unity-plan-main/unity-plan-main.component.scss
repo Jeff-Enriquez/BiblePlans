@@ -6,7 +6,7 @@
     font-style: oblique;
     padding-left: 30px
 }
-#todays-reading-link {
+#todays-reading > a > span {
     text-decoration: underline;
 }
 #table-container {
@@ -56,5 +56,4 @@
 }
 .reading-parts {
     display: inline-block;
-    text-decoration: underline;
 }
