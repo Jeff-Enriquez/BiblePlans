@@ -4,12 +4,12 @@ import { Heading } from '../../interfaces/heading';
 import { DATES, YEAR_PLAN } from '../mainBiblePlan';
 import { BiblesService } from '../../services/bibles/bibles.service';
 import { NavBarComponent } from "../../nav-bar/nav-bar.component";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-unity-plan-main',
   standalone: true,
-  imports: [CommonModule, NavBarComponent],
+  imports: [CommonModule, NavBarComponent, RouterModule],
   templateUrl: './unity-plan-main.component.html',
   styleUrl: './unity-plan-main.component.scss'
 })

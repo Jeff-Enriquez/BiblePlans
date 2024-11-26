@@ -4,8 +4,10 @@
 #todays-reading {
     font-size: 20px;
     font-style: oblique;
-    text-decoration: underline;
     padding-left: 30px
+}
+#todays-reading-link {
+    text-decoration: underline;
 }
 #table-container {
     position: relative;
@@ -53,5 +55,6 @@
     min-width: 154px;
 }
 .reading-parts {
-    display: inline-block
+    display: inline-block;
+    text-decoration: underline;
 }
