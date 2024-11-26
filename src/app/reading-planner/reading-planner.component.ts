@@ -5,12 +5,12 @@ import { BiblesService } from '../services/bibles/bibles.service';
 import { Translation } from '../interfaces/bible';
 import { Heading } from '../interfaces/heading';
 import { NavBarComponent } from "../nav-bar/nav-bar.component";
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-reading-planner',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, NavBarComponent],
+  imports: [ReactiveFormsModule, CommonModule, NavBarComponent, RouterModule],
   templateUrl: './reading-planner.component.html',
   styleUrl: './reading-planner.component.scss'
 })

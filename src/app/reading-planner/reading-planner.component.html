@@ -2,7 +2,9 @@
 <div id="main-container">
     <h1 id="reading-planner">Reading Planner</h1>
     <summary>
-        <p>For additional reading, you can create your own custom reading plan.</p>
+        <p>This tool is intended for additional reading. It is highly recommended to follow the reading plan from <a [routerLink]="'/todays-reading'">Today's Reading</a>.</p>
+        <p></p>
+        <p>When you select a translation, all of the headings for that translation will be used. See <a [routerLink]="'/introduction'" fragment="how-it-was-made">How It Was Made</a> for more details.</p>
     </summary>
     <form id="form" [formGroup]="applyForm" (submit)="submitForm()">
         <div id="date-div1">
