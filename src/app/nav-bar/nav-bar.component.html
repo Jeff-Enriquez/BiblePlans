@@ -11,7 +11,10 @@
     <!-- This is needed because the nav bar has an absolute position. This nav bar space prevents other elements from being positioned underneath it. -->
     <div id="nav-bar-space"></div>
     <button *ngIf="isSideNavOpen === 'true'" id="nav-bar-clickable-background" (click)="openCloseNav()"></button>
-    <div id="nav-bar-side" [ngStyle]="{'transform': isSideNavOpen === 'true' ? 'translate(0%)' : 'translate(-100%)'}">
+    <div id="nav-bar-side" [ngStyle]="{
+        'transform': (isSideNavOpen === 'true' ? 'translate(0%)' : 'translate(-100%)'),
+        'transition-duration':(isLoaded === false ? '0ms' : '600ms')
+        }">
         <div id="nav-bar-side-background"></div>
         <a class="nav-bar-link" [routerLink]="'/introduction'"><p class="nav-h1 nav-bar-text">Introduction</p></a>
         <a class="nav-bar-link" [routerLink]="'/introduction'" fragment="why-unity-in-bible-reading"><p class="nav-h2 nav-bar-text">Why Unity In Bible Reading?</p></a>

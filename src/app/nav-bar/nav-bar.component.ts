@@ -13,7 +13,9 @@ import { SessionStorageService } from '../services/session-storage/session-stora
 export class NavBarComponent {
   sessionStorage: SessionStorageService = inject(SessionStorageService)
   isSideNavOpen: string
+  isLoaded: boolean
   constructor() {
+    this.isLoaded = false
     let isOpen = sessionStorage.getItem("isSideNavOpen")
     if(isOpen === null) {
       this.isSideNavOpen = "false"
@@ -25,6 +27,7 @@ export class NavBarComponent {
   }
   
   openCloseNav() {
+    this.isLoaded = true
     if(sessionStorage.getItem("isSideNavOpen") === "true")
       this.isSideNavOpen = "false"
     else
