@@ -2,10 +2,10 @@ import { Component, inject } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { BiblesService } from '../services/bibles/bibles.service';
-import { Translation } from '../interfaces/bible';
+import { Translation, translations } from '../interfaces/bible';
 import { Heading } from '../interfaces/heading';
 import { NavBarComponent } from "../nav-bar/nav-bar.component";
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-reading-planner',
@@ -27,7 +27,8 @@ export class ReadingPlannerComponent {
     toDate: new FormControl(new Date(new Date().getFullYear(), 11, 31).toISOString().slice(0,10))
   })
 
-  constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller) {}
+  constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller, 
+    private router: Router) {}
 
   ngOnInit() {
     this.route.fragment.subscribe(fragment => {
@@ -36,7 +37,30 @@ export class ReadingPlannerComponent {
       } else {
         this.scrollToTop(0)
       }
-    });
+    })
+    this.route.queryParamMap.subscribe((params) => {
+      let from = params.get('from')
+      let to = params.get('to')
+      let translation = params.get('translation')
+      if(from === null || to === null || !this.isValidDate(from) || !this.isValidDate(to) || translation === null)
+        return
+      let isValidTranslation = false
+      for(let t of translations) {
+        if(t.toLowerCase() === translation.toLowerCase()) {
+          isValidTranslation = true
+          translation = t
+          break
+        }
+      }
+      if(!isValidTranslation)
+        return
+      this.applyForm.patchValue({
+        fromDate: from,
+        toDate: to,
+        translation: translation
+      })
+      this.buildPlan()
+    })
   }
   scrollToTop(offset: number) {
     window.scrollTo({
@@ -57,6 +81,20 @@ export class ReadingPlannerComponent {
   }
 
   submitForm() {
+    let queryParams = {
+      from: [this.applyForm.value.fromDate],
+      to: [this.applyForm.value.toDate],
+      translation: [this.applyForm.value.translation]
+    }
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: queryParams,
+      queryParamsHandling: 'merge' // Preserves existing query parameters
+    })
+    this.buildPlan()
+  }
+
+  buildPlan() {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
@@ -210,6 +248,10 @@ export class ReadingPlannerComponent {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+  }
+
+  isValidDate(date:string):boolean {
+    return !Number.isNaN(Date.parse(date))
   }
 }
 interface DateParts {
