@@ -242,25 +242,43 @@ export class BiblesService {
     let isValidChapter: boolean = false
     let isValidVerse: boolean = false
     let fromBookIdx = 0
-    while(fromBookIdx < bible!.books.length) {
+    if(fromBook.toLowerCase() === "song of songs" || fromBook.toLowerCase() === "song of solomon") {
+      fromBookIdx = 21
       let book = bible!.books.at(fromBookIdx)!
-      if(book.title.toLowerCase() === fromBook.toLowerCase()) {
-        isValidBook = true
-        for(let chapter of book.chapters) {
-          if(fromChapter === chapter.chapter) {
-            isValidChapter = true
-            for(let verse of chapter.verses) {
-              if(fromVerse === verse.verse) {
-                isValidVerse = true
-                break
-              }
+      isValidBook = true
+      for(let chapter of book.chapters) {
+        if(fromChapter === chapter.chapter) {
+          isValidChapter = true
+          for(let verse of chapter.verses) {
+            if(fromVerse === verse.verse) {
+              isValidVerse = true
+              break
             }
-            break
           }
+          break
         }
-        break
       }
-      fromBookIdx++
+    } else {
+      while(fromBookIdx < bible!.books.length) {
+        let book = bible!.books.at(fromBookIdx)!
+        if(book.title.toLowerCase() === fromBook.toLowerCase()) {
+          isValidBook = true
+          for(let chapter of book.chapters) {
+            if(fromChapter === chapter.chapter) {
+              isValidChapter = true
+              for(let verse of chapter.verses) {
+                if(fromVerse === verse.verse) {
+                  isValidVerse = true
+                  break
+                }
+              }
+              break
+            }
+          }
+          break
+        }
+        fromBookIdx++
+      }
     }
     if(!isValidBook)
       return "The starting book '" + fromBook + "' is not valid for translation '" + translation + "'."
@@ -274,26 +292,45 @@ export class BiblesService {
     isValidChapter = false
     isValidVerse = false
     let toBookIdx = fromBookIdx
-    while(toBookIdx < bible!.books.length) {
+    if(toBook.toLowerCase() === "song of songs" || toBook.toLowerCase() === "song of solomon") {
+      toBookIdx  = 21
       let book = bible!.books.at(toBookIdx)!
-      if(book.title.toLowerCase() === toBook.toLowerCase()) {
-        isValidBook = true
-        for(let chapter of book.chapters) {
-          if(toChapter === chapter.chapter) {
-            isValidChapter = true
-            for(let verse of chapter.verses) {
-              if(toVerse === verse.verse) {
-                isValidVerse = true
-                break
-              }
+      isValidBook = true
+      for(let chapter of book.chapters) {
+        if(toChapter === chapter.chapter) {
+          isValidChapter = true
+          for(let verse of chapter.verses) {
+            if(toVerse === verse.verse) {
+              isValidVerse = true
+              break
             }
-            break
           }
+          break
         }
-        break
       }
-      toBookIdx++
+    } else {
+      while(toBookIdx < bible!.books.length) {
+        let book = bible!.books.at(toBookIdx)!
+        if(book.title.toLowerCase() === toBook.toLowerCase()) {
+          isValidBook = true
+          for(let chapter of book.chapters) {
+            if(toChapter === chapter.chapter) {
+              isValidChapter = true
+              for(let verse of chapter.verses) {
+                if(toVerse === verse.verse) {
+                  isValidVerse = true
+                  break
+                }
+              }
+              break
+            }
+          }
+          break
+        }
+        toBookIdx++
+      }
     }
+    
     if(!isValidBook)
       return "The ending book '" + toBook + "' is not valid for translation '" + translation + "'."
     if(!isValidChapter)
