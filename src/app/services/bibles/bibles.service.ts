@@ -350,10 +350,8 @@ export class BiblesService {
     // get starting heading
     while(idx < allHeadings.length) {
       let h = allHeadings.at(idx)!
-      if(h.from.book === fromBookIdx && h.from.chapter === fromChapter && h.from.verse === fromVerse) {
-        break
-      } else if(h.from.book >= fromBookIdx || (h.from.book === fromBookIdx && h.from.chapter >= fromChapter) ||
-      (h.from.book === fromBookIdx && h.from.chapter === fromChapter && h.from.verse > fromVerse)) {
+      if(h.to.book >= fromBookIdx || (h.to.book === fromBookIdx && h.to.chapter >= fromChapter) ||
+      (h.to.book === fromBookIdx && h.to.chapter === fromChapter && h.to.verse >= fromVerse)) {
         // Calculate word count before heading
         let wordCount: number = 0
         let currIndex: BibleIndex = {
@@ -361,12 +359,13 @@ export class BiblesService {
           chapter: fromChapter,
           verse: fromVerse
         }
-        while(currIndex.book < h.from.book || currIndex.chapter < h.from.chapter || currIndex.verse < h.from.verse) {
+        while(currIndex.book < h.to.book || currIndex.chapter < h.to.chapter || currIndex.verse < h.to.verse) {
           const verse = bible.books.at(currIndex.book)!.chapters.at(currIndex.chapter)!.verses.at(currIndex.verse)!
           wordCount += (verse.wordCount === null ? 0 : verse.wordCount)
           currIndex = this.nextIndex(bible, currIndex)
         }
-        currIndex = this.prevIndex(bible, currIndex)
+        const verse = bible.books.at(currIndex.book)!.chapters.at(currIndex.chapter)!.verses.at(currIndex.verse)!
+        wordCount += (verse.wordCount === null ? 0 : verse.wordCount)
         let heading: Heading = {
           from: {
             book: fromBookIdx,
@@ -374,19 +373,19 @@ export class BiblesService {
             verse: fromVerse
           },
           to: {
-            book: currIndex.book,
-            chapter: currIndex.chapter,
-            verse: currIndex.verse
+            book: h.to.book,
+            chapter: h.to.chapter,
+            verse: h.to.verse
           },
           wordCount: wordCount
         }
         headings.push(heading)
+        idx++
         break
       }
       idx++
     }
     // Add middle headings
-    let startingOfEnd: BibleIndex = { book: 0, chapter: 0, verse: 0 }
     while(idx < allHeadings.length) {
       let h = allHeadings.at(idx)!
       // heading is equal to ending
@@ -396,20 +395,20 @@ export class BiblesService {
       // heading is greater than ending
       } else if(h.to.book > toBookIdx || (h.to.book === toBookIdx && h.to.chapter > toChapter) 
         || (h.to.book === toBookIdx && h.to.chapter === toChapter && h.to.verse > toVerse)) {
-        let wordCount = h.wordCount
+        let wordCount = 0
         let currIndex: BibleIndex = this.nextIndex(bible,{
-          book: toBookIdx,
-          chapter: toChapter,
-          verse: toVerse
+          book: h.from.book,
+          chapter: h.from.chapter,
+          verse: h.from.verse
         })
         // Subtract all word count of all extra verses from current heading
-        while(currIndex.book <= h.to.book || currIndex.chapter <= h.to.chapter || currIndex.verse <= h.to.verse) {
+        while(currIndex.book < toBookIdx || currIndex.chapter < toChapter || currIndex.verse < toVerse) {
           const verse = bible.books.at(currIndex.book)!.chapters.at(currIndex.chapter)!.verses.at(currIndex.verse)!
-          wordCount -= (verse.wordCount === null ? 0 : verse.wordCount)
-          if(currIndex.book === 65 && currIndex.chapter == 21 && currIndex.verse === 20)
-            break;
+          wordCount += (verse.wordCount === null ? 0 : verse.wordCount)
           currIndex = this.nextIndex(bible, currIndex)
         }
+        const verse = bible.books.at(currIndex.book)!.chapters.at(currIndex.chapter)!.verses.at(currIndex.verse)!
+        wordCount += (verse.wordCount === null ? 0 : verse.wordCount)
         let heading: Heading = {
           from: {
             book: h.from.book,
@@ -430,7 +429,7 @@ export class BiblesService {
         headings.push(h)
       }
     }
-    if(headings.length === 0 ) {
+    if(headings.length === 0) {
       headings.push({
         from: {
           book: fromBookIdx,
@@ -445,7 +444,6 @@ export class BiblesService {
         wordCount: 1
       })
     }
-
     // Calculate word count
     let wordsRemaining: number = 0
     for(let heading of headings) {
@@ -587,5 +585,26 @@ export class BiblesService {
       newIdx.verse = 20
     }
     return newIdx
+  }
+
+  printAllTranslations() {
+    let allTranslationsBible: Bible = BIBLES.at(0)!
+    let books: Book[] = allTranslationsBible.books
+    for(let bookIdx = 0; bookIdx < books.length; bookIdx++) {
+      let chapters: Chapter[] = books.at(bookIdx)!.chapters
+      for(let chapterIdx = 0; chapterIdx < chapters.length; chapterIdx++) {
+        let verses: Verse[] = chapters.at(chapterIdx)!.verses
+        for(let verseIdx = 0; verseIdx < verses.length; verseIdx++) {
+          let verse: Verse = verses.at(verseIdx)!
+          let wordCount = verse.wordCount!
+          for(let bibleIdx = 1; bibleIdx < BIBLES.length; bibleIdx++) {
+            let v: Verse = BIBLES.at(bibleIdx)!.books.at(bookIdx)!.chapters.at(chapterIdx)!.verses.at(verseIdx)!
+            wordCount += v.wordCount!
+          }
+          verse.wordCount = (wordCount / 6.0)
+        }
+      }
+    }
+    console.log(allTranslationsBible)
   }
 }

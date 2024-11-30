@@ -92,6 +92,7 @@ export class ReadingPlannerComponent {
       queryParamsHandling: 'merge' // Preserves existing query parameters
     })
     this.buildPlan()
+    
   }
 
   buildPlan() {
