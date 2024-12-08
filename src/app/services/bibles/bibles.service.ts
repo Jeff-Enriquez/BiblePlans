@@ -169,7 +169,9 @@ export class BiblesService {
   private getScheduleForAllTranslations(headings: Heading[], numberOfDays: number): Heading[] {
     let headingsSchedule: Heading[] = []
     let daysRemaining: number = numberOfDays
-    let wordsRemaining: number = this.totalWordCounts.get("all-translations")!
+    let wordsRemaining: number = 0
+    for(let h of headings)
+      wordsRemaining += h.wordCount
     let hIdx = 0
     let minInCommon = 3
     while(daysRemaining > 0 && hIdx < headings.length) {
@@ -183,8 +185,8 @@ export class BiblesService {
         endHeading = headings.at(hIdx)!
         wordCount += endHeading.wordCount
         hIdx++
-        minInCommon = endHeading.to.book < 39 ? 3 : 5
-        if(endHeading.missingTranslations?.length! <= minInCommon || hIdx === headings.length) {
+        minInCommon = endHeading.to.book < 39 ? 3 : 4
+        if(endHeading.missingTranslations?.length! > (6 - minInCommon) || hIdx === headings.length) {
           if(wordCount >= wordGoal || hIdx === headings.length) {
             break;
           }
