@@ -121,109 +121,6 @@ export class BiblesService {
   getBooksFor(translation: Translation): string[] {
     return this.books.get(translation)!
   }
-  // getScheduleFor(translation: Translation, numberOfDays: number): Heading[] {
-  //   if(translation === 'all-translations')
-  //     return this.getScheduleForAllTranslations(this.getHeading("all-translations"), numberOfDays);
-  //   let headingsSchedule: Heading[] = []
-  //   let daysRemaining: number = numberOfDays
-  //   let wordsRemaining: number = this.totalWordCounts.get(translation)!
-  //   let headings: Heading[] = this.getHeading(translation)
-  //   let hIdx = 0;
-  //   while(daysRemaining > 0 && hIdx < headings.length) {
-  //     let wordGoal: number = wordsRemaining / daysRemaining
-  //     daysRemaining--
-  //     let startHeading: Heading = headings.at(hIdx)!
-  //     let endHeading: Heading;
-  //     let wordCount: number = 0
-  //     do {
-  //       endHeading = headings.at(hIdx)!
-  //       wordCount += endHeading.wordCount
-  //       hIdx++
-  //     } while(wordCount < wordGoal && hIdx < headings.length);
-  //     let h: Heading
-  //     if(startHeading === endHeading) {
-  //       h = this.newHeading(startHeading, endHeading)
-  //       h.wordCount = wordCount
-  //       headingsSchedule.push(h)
-  //     }
-  //     else if(wordCount === wordGoal || hIdx === headings.length) {
-  //       h = this.newHeading(startHeading, endHeading)
-  //       h.wordCount = wordCount
-  //       headingsSchedule.push(h)
-  //     }
-  //     else {
-  //       let prevWordCount = wordCount - endHeading.wordCount
-  //       if(wordGoal - prevWordCount < wordCount - wordGoal) {
-  //         hIdx--
-  //         endHeading = headings.at(hIdx - 1)!
-  //         wordCount = prevWordCount
-  //       }
-  //       h = this.newHeading(startHeading, endHeading)
-  //       h.wordCount = wordCount
-  //       headingsSchedule.push(h)
-  //     }
-  //     wordsRemaining -= wordCount
-  //   }
-  //   return headingsSchedule
-  // }
-  private getScheduleForAllTranslations(headings: Heading[], numberOfDays: number): Heading[] {
-    let headingsSchedule: Heading[] = []
-    let daysRemaining: number = numberOfDays
-    let wordsRemaining: number = 0
-    for(let h of headings)
-      wordsRemaining += h.wordCount
-    let hIdx = 0
-    let minInCommon = 3
-    while(daysRemaining > 0 && hIdx < headings.length) {
-      let wordGoal: number = wordsRemaining / daysRemaining
-      daysRemaining--
-      let startHeading: Heading = headings.at(hIdx)!
-      let prevEndHeading: Heading | undefined
-      let endHeading: Heading
-      let wordCount: number = 0
-      do {
-        endHeading = headings.at(hIdx)!
-        wordCount += endHeading.wordCount
-        hIdx++
-        minInCommon = endHeading.to.book < 39 ? 3 : 4
-        if(endHeading.missingTranslations?.length! > (6 - minInCommon) || hIdx === headings.length) {
-          if(wordCount >= wordGoal || hIdx === headings.length) {
-            break;
-          }
-          else {
-            prevEndHeading = endHeading
-          }
-        }
-      } while(true);
-      let h: Heading
-      if(startHeading === endHeading || wordCount === wordGoal || hIdx === headings.length) {
-        h = this.newHeading(startHeading, endHeading)
-        h.wordCount = wordCount
-        headingsSchedule.push(h)
-      }
-      else {
-        if(prevEndHeading !== undefined) {
-          let prevWordCount: number = wordCount
-          let prevIdx = hIdx - 1
-          while(headings.at(prevIdx) !== prevEndHeading) {
-            prevWordCount -= headings.at(prevIdx)?.wordCount!
-            prevIdx--
-          }
-          prevIdx++
-          if(wordGoal - prevWordCount < wordCount - wordGoal) {
-            hIdx = prevIdx
-            endHeading = prevEndHeading
-            wordCount = prevWordCount
-          }
-        }
-        h = this.newHeading(startHeading, endHeading)
-        h.wordCount = wordCount
-        headingsSchedule.push(h)
-      }
-      wordsRemaining -= wordCount
-    }
-    return headingsSchedule
-  }
 
   getScheduleForRange(translation: Translation, fromBook: string, toBook: string, numberOfDays: number): Heading[] | string {
     if(!fromBook.includes(" ") || !toBook.includes(" "))
@@ -456,16 +353,9 @@ export class BiblesService {
         wordCount: 1
       })
     }
-    for(let i = 0; i < headings.length; i++) {
-      let h = headings.at(i)!
-      let aH = allHeadings.at(i)!
-      if(h !== aH) {
-        // console.log(h)
-        // console.log(aH)
-      }
-    }
     if(translation === 'all-translations')
-      return this.getScheduleForAllTranslations(headings, numberOfDays)
+      this.reduceAllTranslationHeadings(headings)
+    
     // Calculate word count
     let wordsRemaining: number = 0
     for(let heading of headings) {
@@ -511,6 +401,31 @@ export class BiblesService {
       wordsRemaining -= wordCount
     }
     return headingsSchedule
+  }
+
+  private reduceAllTranslationHeadings(headings: Heading[]): Heading[] {
+    let reducedHeadings: Heading[] = []
+    let wordCount = 0;
+    let leftIdx = 0;
+    let h: Heading;
+    let minInCommon;
+    for(let i = 0; i < headings.length; i++) {
+      h = headings.at(i)!
+      wordCount += h.wordCount
+      minInCommon = h.to.book < 39 ? 3 : 4
+      if(h.missingTranslations?.length! <= ((BIBLES.length - 1) - minInCommon) || i === headings.length - 1) {
+        if(leftIdx === i){
+          reducedHeadings.push(h)
+          leftIdx++
+        } else {
+          h = this.newHeading(headings.at(leftIdx)!, h)
+          h.wordCount = wordCount
+          leftIdx = i + 1
+        }
+        wordCount = 0
+      }
+    }
+    return headings
   }
 
   private newHeading(fromheading: Heading, toHeading: Heading): Heading {
