@@ -63,7 +63,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 17,
             "verse": 32
         },
-        "wordCount": 1855.3333333333333
+        "wordCount": 1855.3333333333335
     },
     {
         "from": {
@@ -86,49 +86,49 @@ export const YEAR_PLAN: Heading[] = [
         },
         "to": {
             "book": 0,
-            "chapter": 23,
-            "verse": 13
+            "chapter": 22,
+            "verse": 19
         },
-        "wordCount": 1707.9999999999998
+        "wordCount": 1307.5
     },
     {
         "from": {
             "book": 0,
             "chapter": 23,
-            "verse": 14
+            "verse": 0
         },
         "to": {
             "book": 0,
             "chapter": 24,
-            "verse": 33
+            "verse": 17
         },
-        "wordCount": 1945.4999999999998
+        "wordCount": 2009.8333333333333
     },
     {
         "from": {
             "book": 0,
-            "chapter": 25,
-            "verse": 0
+            "chapter": 24,
+            "verse": 18
         },
         "to": {
             "book": 0,
             "chapter": 26,
-            "verse": 45
+            "verse": 39
         },
-        "wordCount": 2007.9999999999998
+        "wordCount": 2174
     },
     {
         "from": {
             "book": 0,
-            "chapter": 27,
-            "verse": 0
+            "chapter": 26,
+            "verse": 40
         },
         "to": {
             "book": 0,
             "chapter": 29,
             "verse": 23
         },
-        "wordCount": 1859.5000000000005
+        "wordCount": 2029.6666666666667
     },
     {
         "from": {
@@ -138,23 +138,23 @@ export const YEAR_PLAN: Heading[] = [
         },
         "to": {
             "book": 0,
-            "chapter": 31,
-            "verse": 1
+            "chapter": 30,
+            "verse": 54
         },
-        "wordCount": 1936.3333333333333
+        "wordCount": 1906.1666666666665
     },
     {
         "from": {
             "book": 0,
             "chapter": 31,
-            "verse": 2
+            "verse": 0
         },
         "to": {
             "book": 0,
             "chapter": 33,
             "verse": 30
         },
-        "wordCount": 1949.6666666666667
+        "wordCount": 1979.8333333333337
     },
     {
         "from": {
@@ -165,347 +165,347 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 0,
             "chapter": 36,
-            "verse": 16
+            "verse": 35
         },
-        "wordCount": 1836.166666666667
+        "wordCount": 2294.1666666666665
     },
     {
         "from": {
             "book": 0,
-            "chapter": 36,
+            "chapter": 37,
+            "verse": 0
+        },
+        "to": {
+            "book": 0,
+            "chapter": 39,
+            "verse": 22
+        },
+        "wordCount": 1893.6666666666663
+    },
+    {
+        "from": {
+            "book": 0,
+            "chapter": 40,
+            "verse": 0
+        },
+        "to": {
+            "book": 0,
+            "chapter": 41,
+            "verse": 37
+        },
+        "wordCount": 2309.6666666666665
+    },
+    {
+        "from": {
+            "book": 0,
+            "chapter": 42,
+            "verse": 0
+        },
+        "to": {
+            "book": 0,
+            "chapter": 43,
+            "verse": 33
+        },
+        "wordCount": 1755.1666666666665
+    },
+    {
+        "from": {
+            "book": 0,
+            "chapter": 44,
+            "verse": 0
+        },
+        "to": {
+            "book": 0,
+            "chapter": 46,
+            "verse": 30
+        },
+        "wordCount": 2289.166666666667
+    },
+    {
+        "from": {
+            "book": 0,
+            "chapter": 47,
+            "verse": 0
+        },
+        "to": {
+            "book": 0,
+            "chapter": 49,
+            "verse": 25
+        },
+        "wordCount": 1939.6666666666665
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 0,
+            "verse": 0
+        },
+        "to": {
+            "book": 1,
+            "chapter": 3,
+            "verse": 16
+        },
+        "wordCount": 2241.3333333333335
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 3,
             "verse": 17
         },
         "to": {
-            "book": 0,
-            "chapter": 38,
-            "verse": 22
+            "book": 1,
+            "chapter": 6,
+            "verse": 12
         },
-        "wordCount": 1831.166666666666
+        "wordCount": 1893.333333333333
     },
     {
         "from": {
-            "book": 0,
-            "chapter": 39,
+            "book": 1,
+            "chapter": 6,
+            "verse": 13
+        },
+        "to": {
+            "book": 1,
+            "chapter": 8,
+            "verse": 34
+        },
+        "wordCount": 2185.1666666666665
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 9,
             "verse": 0
         },
         "to": {
-            "book": 0,
-            "chapter": 40,
-            "verse": 56
-        },
-        "wordCount": 1851.1666666666665
-    },
-    {
-        "from": {
-            "book": 0,
-            "chapter": 41,
-            "verse": 0
-        },
-        "to": {
-            "book": 0,
-            "chapter": 42,
-            "verse": 33
-        },
-        "wordCount": 1883.166666666667
-    },
-    {
-        "from": {
-            "book": 0,
-            "chapter": 43,
-            "verse": 0
-        },
-        "to": {
-            "book": 0,
-            "chapter": 45,
-            "verse": 26
-        },
-        "wordCount": 2047.0000000000002
-    },
-    {
-        "from": {
-            "book": 0,
-            "chapter": 45,
+            "book": 1,
+            "chapter": 11,
             "verse": 27
         },
-        "to": {
-            "book": 0,
-            "chapter": 48,
-            "verse": 26
-        },
-        "wordCount": 2226
-    },
-    {
-        "from": {
-            "book": 0,
-            "chapter": 48,
-            "verse": 27
-        },
-        "to": {
-            "book": 1,
-            "chapter": 2,
-            "verse": 8
-        },
-        "wordCount": 2119
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 2,
-            "verse": 9
-        },
-        "to": {
-            "book": 1,
-            "chapter": 5,
-            "verse": 0
-        },
-        "wordCount": 1908.6666666666667
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 5,
-            "verse": 1
-        },
-        "to": {
-            "book": 1,
-            "chapter": 7,
-            "verse": 31
-        },
-        "wordCount": 2175.666666666667
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 8,
-            "verse": 0
-        },
-        "to": {
-            "book": 1,
-            "chapter": 10,
-            "verse": 9
-        },
-        "wordCount": 2073.1666666666665
+        "wordCount": 1974.1666666666665
     },
     {
         "from": {
             "book": 1,
             "chapter": 11,
-            "verse": 0
+            "verse": 28
         },
         "to": {
-            "book": 1,
-            "chapter": 12,
-            "verse": 21
-        },
-        "wordCount": 2021.4999999999998
-    },
-    {
-        "from": {
             "book": 1,
             "chapter": 13,
+            "verse": 30
+        },
+        "wordCount": 2061.1666666666665
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 14,
             "verse": 0
         },
         "to": {
             "book": 1,
-            "chapter": 15,
-            "verse": 20
-        },
-        "wordCount": 2087.8333333333335
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 15,
-            "verse": 21
-        },
-        "to": {
-            "book": 1,
-            "chapter": 18,
-            "verse": 16
-        },
-        "wordCount": 1989.8333333333337
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 18,
-            "verse": 17
-        },
-        "to": {
-            "book": 1,
-            "chapter": 21,
-            "verse": 14
-        },
-        "wordCount": 2106.5
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 21,
+            "chapter": 16,
             "verse": 15
         },
-        "to": {
-            "book": 1,
-            "chapter": 24,
-            "verse": 21
-        },
-        "wordCount": 2054.1666666666665
+        "wordCount": 2051.8333333333335
     },
     {
         "from": {
             "book": 1,
-            "chapter": 24,
-            "verse": 22
+            "chapter": 17,
+            "verse": 0
         },
         "to": {
             "book": 1,
-            "chapter": 27,
+            "chapter": 19,
+            "verse": 25
+        },
+        "wordCount": 1928.8333333333333
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 20,
+            "verse": 0
+        },
+        "to": {
+            "book": 1,
+            "chapter": 22,
+            "verse": 12
+        },
+        "wordCount": 1967.666666666667
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 22,
             "verse": 13
         },
-        "wordCount": 2058.8333333333335
+        "to": {
+            "book": 1,
+            "chapter": 24,
+            "verse": 39
+        },
+        "wordCount": 1811.1666666666665
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 25,
+            "verse": 0
+        },
+        "to": {
+            "book": 1,
+            "chapter": 27,
+            "verse": 29
+        },
+        "wordCount": 2075.8333333333335
     },
     {
         "from": {
             "book": 1,
             "chapter": 27,
-            "verse": 14
+            "verse": 30
         },
         "to": {
             "book": 1,
-            "chapter": 28,
-            "verse": 45
+            "chapter": 29,
+            "verse": 15
         },
-        "wordCount": 1972.3333333333333
+        "wordCount": 1984.3333333333333
     },
     {
         "from": {
             "book": 1,
             "chapter": 29,
-            "verse": 0
+            "verse": 16
         },
         "to": {
             "book": 1,
-            "chapter": 31,
-            "verse": 28
+            "chapter": 32,
+            "verse": 5
         },
-        "wordCount": 2151.166666666667
+        "wordCount": 2066
     },
     {
         "from": {
             "book": 1,
-            "chapter": 31,
+            "chapter": 32,
+            "verse": 6
+        },
+        "to": {
+            "book": 1,
+            "chapter": 34,
+            "verse": 28
+        },
+        "wordCount": 2074.5
+    },
+    {
+        "from": {
+            "book": 1,
+            "chapter": 34,
             "verse": 29
         },
         "to": {
             "book": 1,
-            "chapter": 34,
-            "verse": 8
+            "chapter": 37,
+            "verse": 19
         },
-        "wordCount": 1972.6666666666667
+        "wordCount": 2064.3333333333335
     },
     {
         "from": {
             "book": 1,
-            "chapter": 34,
-            "verse": 9
+            "chapter": 37,
+            "verse": 20
         },
         "to": {
-            "book": 1,
-            "chapter": 36,
-            "verse": 27
-        },
-        "wordCount": 2017
-    },
-    {
-        "from": {
-            "book": 1,
-            "chapter": 36,
-            "verse": 28
-        },
-        "to": {
-            "book": 1,
-            "chapter": 38,
-            "verse": 42
-        },
-        "wordCount": 1742.3333333333335
-    },
-    {
-        "from": {
             "book": 1,
             "chapter": 39,
-            "verse": 0
+            "verse": 37
         },
-        "to": {
-            "book": 2,
-            "chapter": 2,
-            "verse": 16
-        },
-        "wordCount": 2162
+        "wordCount": 2025.3333333333335
     },
     {
         "from": {
+            "book": 2,
+            "chapter": 0,
+            "verse": 0
+        },
+        "to": {
             "book": 2,
             "chapter": 3,
-            "verse": 0
+            "verse": 34
         },
-        "to": {
-            "book": 2,
-            "chapter": 5,
-            "verse": 6
-        },
-        "wordCount": 1959.6666666666663
+        "wordCount": 2481.1666666666665
     },
     {
         "from": {
             "book": 2,
-            "chapter": 5,
-            "verse": 7
+            "chapter": 4,
+            "verse": 0
         },
         "to": {
             "book": 2,
             "chapter": 6,
-            "verse": 37
+            "verse": 20
         },
-        "wordCount": 1601.6666666666665
+        "wordCount": 2079
     },
     {
         "from": {
             "book": 2,
-            "chapter": 7,
-            "verse": 0
+            "chapter": 6,
+            "verse": 21
         },
         "to": {
+            "book": 2,
+            "chapter": 8,
+            "verse": 23
+        },
+        "wordCount": 1986.3333333333333
+    },
+    {
+        "from": {
             "book": 2,
             "chapter": 9,
-            "verse": 19
+            "verse": 0
         },
-        "wordCount": 2204.5
+        "to": {
+            "book": 2,
+            "chapter": 11,
+            "verse": 7
+        },
+        "wordCount": 1875.6666666666667
     },
     {
         "from": {
             "book": 2,
-            "chapter": 10,
+            "chapter": 12,
             "verse": 0
         },
         "to": {
             "book": 2,
             "chapter": 12,
-            "verse": 45
+            "verse": 58
         },
-        "wordCount": 2591.333333333333
+        "wordCount": 1728.833333333333
     },
     {
         "from": {
             "book": 2,
-            "chapter": 12,
-            "verse": 46
+            "chapter": 13,
+            "verse": 0
         },
         "to": {
             "book": 2,
             "chapter": 13,
             "verse": 56
         },
-        "wordCount": 1967.3333333333335
+        "wordCount": 1574.3333333333335
     },
     {
         "from": {
@@ -518,7 +518,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 15,
             "verse": 33
         },
-        "wordCount": 1966.4999999999998
+        "wordCount": 1966.5000000000002
     },
     {
         "from": {
@@ -555,74 +555,87 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 2,
             "chapter": 24,
-            "verse": 16
+            "verse": 6
         },
-        "wordCount": 2133.1666666666665
+        "wordCount": 1865.3333333333333
     },
     {
         "from": {
             "book": 2,
             "chapter": 24,
-            "verse": 17
+            "verse": 7
         },
         "to": {
             "book": 2,
             "chapter": 25,
-            "verse": 45
+            "verse": 12
         },
-        "wordCount": 2199.8333333333335
+        "wordCount": 1572.5
     },
     {
         "from": {
             "book": 2,
-            "chapter": 26,
-            "verse": 0
+            "chapter": 25,
+            "verse": 13
         },
         "to": {
+            "book": 2,
+            "chapter": 26,
+            "verse": 33
+        },
+        "wordCount": 1796.833333333333
+    },
+    {
+        "from": {
             "book": 3,
             "chapter": 0,
-            "verse": 53
-        },
-        "wordCount": 1893.166666666667
-    },
-    {
-        "from": {
-            "book": 3,
-            "chapter": 1,
             "verse": 0
         },
         "to": {
             "book": 3,
-            "chapter": 3,
-            "verse": 19
+            "chapter": 2,
+            "verse": 12
         },
-        "wordCount": 2232.5
+        "wordCount": 1863.6666666666665
     },
     {
         "from": {
             "book": 3,
+            "chapter": 2,
+            "verse": 13
+        },
+        "to": {
+            "book": 3,
             "chapter": 3,
-            "verse": 20
+            "verse": 48
+        },
+        "wordCount": 2022.5
+    },
+    {
+        "from": {
+            "book": 3,
+            "chapter": 4,
+            "verse": 0
         },
         "to": {
             "book": 3,
             "chapter": 5,
-            "verse": 20
+            "verse": 26
         },
-        "wordCount": 2180.6666666666665
+        "wordCount": 1590.5
     },
     {
         "from": {
             "book": 3,
-            "chapter": 5,
-            "verse": 21
+            "chapter": 6,
+            "verse": 0
         },
         "to": {
             "book": 3,
             "chapter": 7,
             "verse": 3
         },
-        "wordCount": 2048.5
+        "wordCount": 1976.5
     },
     {
         "from": {
@@ -635,7 +648,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 9,
             "verse": 35
         },
-        "wordCount": 2006.5
+        "wordCount": 2006.5000000000002
     },
     {
         "from": {
@@ -661,7 +674,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 14,
             "verse": 35
         },
-        "wordCount": 2018.3333333333337
+        "wordCount": 2018.3333333333335
     },
     {
         "from": {
@@ -674,7 +687,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 17,
             "verse": 6
         },
-        "wordCount": 1923.8333333333333
+        "wordCount": 1923.833333333333
     },
     {
         "from": {
@@ -698,79 +711,79 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 3,
             "chapter": 21,
-            "verse": 39
-        },
-        "wordCount": 2116.5
-    },
-    {
-        "from": {
-            "book": 3,
-            "chapter": 21,
             "verse": 40
         },
+        "wordCount": 2141.8333333333335
+    },
+    {
+        "from": {
+            "book": 3,
+            "chapter": 22,
+            "verse": 0
+        },
         "to": {
             "book": 3,
-            "chapter": 25,
+            "chapter": 24,
             "verse": 17
         },
-        "wordCount": 2027.9999999999998
+        "wordCount": 1665.5000000000002
     },
     {
         "from": {
             "book": 3,
             "chapter": 25,
-            "verse": 18
+            "verse": 0
         },
         "to": {
             "book": 3,
             "chapter": 27,
-            "verse": 24
+            "verse": 9
         },
-        "wordCount": 2047.5
+        "wordCount": 2018.1666666666665
     },
     {
         "from": {
             "book": 3,
             "chapter": 27,
-            "verse": 25
+            "verse": 10
         },
         "to": {
             "book": 3,
-            "chapter": 30,
-            "verse": 23
+            "chapter": 29,
+            "verse": 15
         },
-        "wordCount": 1997.1666666666672
+        "wordCount": 1843.833333333333
     },
     {
         "from": {
             "book": 3,
             "chapter": 30,
-            "verse": 24
+            "verse": 0
         },
         "to": {
             "book": 3,
-            "chapter": 32,
-            "verse": 48
+            "chapter": 31,
+            "verse": 41
         },
-        "wordCount": 2125.166666666667
+        "wordCount": 1983
     },
     {
         "from": {
             "book": 3,
             "chapter": 32,
-            "verse": 49
+            "verse": 0
         },
         "to": {
+            "book": 3,
+            "chapter": 34,
+            "verse": 33
+        },
+        "wordCount": 2283.3333333333335
+    },
+    {
+        "from": {
             "book": 3,
             "chapter": 35,
-            "verse": 12
-        },
-        "wordCount": 2010.3333333333333
-    },
-    {
-        "from": {
-            "book": 4,
-            "chapter": 0,
             "verse": 0
         },
         "to": {
@@ -778,7 +791,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 1,
             "verse": 24
         },
-        "wordCount": 1869.8333333333333
+        "wordCount": 2258.8333333333335
     },
     {
         "from": {
@@ -804,7 +817,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 5,
             "verse": 24
         },
-        "wordCount": 1979.4999999999998
+        "wordCount": 1979.5000000000002
     },
     {
         "from": {
@@ -815,131 +828,131 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 4,
             "chapter": 8,
-            "verse": 11
+            "verse": 28
         },
-        "wordCount": 1801.666666666667
+        "wordCount": 2282.166666666667
     },
     {
         "from": {
             "book": 4,
-            "chapter": 8,
-            "verse": 12
-        },
-        "to": {
-            "book": 4,
-            "chapter": 10,
-            "verse": 31
-        },
-        "wordCount": 1957.1666666666667
-    },
-    {
-        "from": {
-            "book": 4,
-            "chapter": 11,
+            "chapter": 9,
             "verse": 0
         },
         "to": {
             "book": 4,
-            "chapter": 13,
-            "verse": 20
+            "chapter": 11,
+            "verse": 31
         },
-        "wordCount": 1922.8333333333337
+        "wordCount": 2465.833333333333
     },
     {
         "from": {
             "book": 4,
-            "chapter": 13,
-            "verse": 21
+            "chapter": 12,
+            "verse": 0
         },
         "to": {
             "book": 4,
-            "chapter": 16,
-            "verse": 12
+            "chapter": 15,
+            "verse": 7
         },
-        "wordCount": 1993.9999999999998
+        "wordCount": 2119
     },
     {
         "from": {
             "book": 4,
-            "chapter": 16,
+            "chapter": 15,
+            "verse": 8
+        },
+        "to": {
+            "book": 4,
+            "chapter": 18,
+            "verse": 12
+        },
+        "wordCount": 2015.8333333333335
+    },
+    {
+        "from": {
+            "book": 4,
+            "chapter": 18,
             "verse": 13
         },
         "to": {
             "book": 4,
-            "chapter": 19,
-            "verse": 19
+            "chapter": 21,
+            "verse": 11
         },
-        "wordCount": 1979.6666666666665
+        "wordCount": 1777.3333333333335
     },
     {
         "from": {
             "book": 4,
-            "chapter": 20,
-            "verse": 0
+            "chapter": 21,
+            "verse": 12
         },
         "to": {
             "book": 4,
-            "chapter": 22,
-            "verse": 19
+            "chapter": 24,
+            "verse": 3
         },
-        "wordCount": 2013.6666666666665
+        "wordCount": 1875
     },
     {
         "from": {
             "book": 4,
-            "chapter": 22,
-            "verse": 20
-        },
-        "to": {
-            "book": 4,
-            "chapter": 25,
-            "verse": 18
-        },
-        "wordCount": 1913.166666666666
-    },
-    {
-        "from": {
-            "book": 4,
-            "chapter": 26,
-            "verse": 0
+            "chapter": 24,
+            "verse": 4
         },
         "to": {
             "book": 4,
             "chapter": 27,
-            "verse": 67
+            "verse": 13
         },
-        "wordCount": 2447
+        "wordCount": 1985.8333333333333
     },
     {
         "from": {
             "book": 4,
+            "chapter": 27,
+            "verse": 14
+        },
+        "to": {
+            "book": 4,
             "chapter": 28,
+            "verse": 28
+        },
+        "wordCount": 2318
+    },
+    {
+        "from": {
+            "book": 4,
+            "chapter": 29,
             "verse": 0
         },
         "to": {
             "book": 4,
             "chapter": 30,
-            "verse": 21
+            "verse": 29
         },
-        "wordCount": 2166.5
+        "wordCount": 1590.3333333333335
     },
     {
         "from": {
             "book": 4,
-            "chapter": 30,
-            "verse": 22
+            "chapter": 31,
+            "verse": 0
         },
         "to": {
             "book": 4,
-            "chapter": 32,
-            "verse": 28
+            "chapter": 33,
+            "verse": 11
         },
-        "wordCount": 2042.1666666666665
+        "wordCount": 2114.1666666666665
     },
     {
         "from": {
-            "book": 4,
-            "chapter": 33,
+            "book": 5,
+            "chapter": 0,
             "verse": 0
         },
         "to": {
@@ -947,7 +960,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 2,
             "verse": 16
         },
-        "wordCount": 2075.833333333333
+        "wordCount": 1770.1666666666665
     },
     {
         "from": {
@@ -960,7 +973,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 5,
             "verse": 26
         },
-        "wordCount": 1971.8333333333337
+        "wordCount": 1971.8333333333335
     },
     {
         "from": {
@@ -973,7 +986,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 7,
             "verse": 34
         },
-        "wordCount": 1987.0000000000002
+        "wordCount": 1987
     },
     {
         "from": {
@@ -1022,23 +1035,23 @@ export const YEAR_PLAN: Heading[] = [
         },
         "to": {
             "book": 5,
-            "chapter": 20,
-            "verse": 7
+            "chapter": 19,
+            "verse": 8
         },
-        "wordCount": 2031.1666666666667
+        "wordCount": 1810.666666666667
     },
     {
         "from": {
             "book": 5,
             "chapter": 20,
-            "verse": 8
+            "verse": 0
         },
         "to": {
             "book": 5,
             "chapter": 21,
             "verse": 33
         },
-        "wordCount": 1858
+        "wordCount": 2078.5
     },
     {
         "from": {
@@ -1049,22 +1062,22 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 6,
             "chapter": 0,
-            "verse": 19
+            "verse": 25
         },
-        "wordCount": 1996.0000000000002
+        "wordCount": 2133.8333333333335
     },
     {
         "from": {
             "book": 6,
             "chapter": 0,
-            "verse": 20
+            "verse": 26
         },
         "to": {
             "book": 6,
             "chapter": 2,
             "verse": 30
         },
-        "wordCount": 1832.833333333333
+        "wordCount": 1695
     },
     {
         "from": {
@@ -1075,217 +1088,204 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 6,
             "chapter": 5,
-            "verse": 23
+            "verse": 26
         },
-        "wordCount": 2019.333333333333
+        "wordCount": 2139.6666666666665
     },
     {
         "from": {
             "book": 6,
             "chapter": 5,
-            "verse": 24
+            "verse": 27
         },
         "to": {
             "book": 6,
             "chapter": 7,
-            "verse": 20
+            "verse": 34
         },
-        "wordCount": 1959.3333333333333
+        "wordCount": 2184
     },
     {
         "from": {
             "book": 6,
-            "chapter": 7,
-            "verse": 21
-        },
-        "to": {
-            "book": 6,
-            "chapter": 9,
-            "verse": 4
-        },
-        "wordCount": 1937.666666666667
-    },
-    {
-        "from": {
-            "book": 6,
-            "chapter": 9,
-            "verse": 5
-        },
-        "to": {
-            "book": 6,
-            "chapter": 11,
-            "verse": 14
-        },
-        "wordCount": 1827.3333333333335
-    },
-    {
-        "from": {
-            "book": 6,
-            "chapter": 12,
+            "chapter": 8,
             "verse": 0
         },
         "to": {
             "book": 6,
-            "chapter": 14,
-            "verse": 19
+            "chapter": 9,
+            "verse": 17
         },
-        "wordCount": 1972.9999999999998
+        "wordCount": 1926.166666666667
+    },
+    {
+        "from": {
+            "book": 6,
+            "chapter": 10,
+            "verse": 0
+        },
+        "to": {
+            "book": 6,
+            "chapter": 12,
+            "verse": 24
+        },
+        "wordCount": 2208.5
+    },
+    {
+        "from": {
+            "book": 6,
+            "chapter": 13,
+            "verse": 0
+        },
+        "to": {
+            "book": 6,
+            "chapter": 15,
+            "verse": 21
+        },
+        "wordCount": 2016
     },
     {
         "from": {
             "book": 6,
             "chapter": 15,
+            "verse": 22
+        },
+        "to": {
+            "book": 6,
+            "chapter": 17,
+            "verse": 30
+        },
+        "wordCount": 1604.8333333333335
+    },
+    {
+        "from": {
+            "book": 6,
+            "chapter": 18,
             "verse": 0
         },
         "to": {
             "book": 6,
-            "chapter": 17,
-            "verse": 12
+            "chapter": 19,
+            "verse": 47
         },
-        "wordCount": 1811.1666666666667
+        "wordCount": 2252
     },
     {
         "from": {
             "book": 6,
-            "chapter": 17,
-            "verse": 13
-        },
-        "to": {
-            "book": 6,
-            "chapter": 19,
-            "verse": 16
-        },
-        "wordCount": 1974
-    },
-    {
-        "from": {
-            "book": 6,
-            "chapter": 19,
-            "verse": 17
+            "chapter": 20,
+            "verse": 0
         },
         "to": {
             "book": 7,
-            "chapter": 0,
-            "verse": 17
+            "chapter": 1,
+            "verse": 22
         },
-        "wordCount": 1998.1666666666667
+        "wordCount": 1991.1666666666667
     },
     {
         "from": {
             "book": 7,
-            "chapter": 0,
-            "verse": 18
-        },
-        "to": {
-            "book": 8,
-            "chapter": 0,
-            "verse": 6
-        },
-        "wordCount": 2096.166666666667
-    },
-    {
-        "from": {
-            "book": 8,
-            "chapter": 0,
-            "verse": 7
-        },
-        "to": {
-            "book": 8,
             "chapter": 2,
-            "verse": 13
-        },
-        "wordCount": 1948.1666666666667
-    },
-    {
-        "from": {
-            "book": 8,
-            "chapter": 2,
-            "verse": 14
+            "verse": 0
         },
         "to": {
             "book": 8,
-            "chapter": 6,
-            "verse": 1
+            "chapter": 1,
+            "verse": 10
         },
-        "wordCount": 1998.5000000000002
+        "wordCount": 2077.8333333333335
     },
     {
         "from": {
             "book": 8,
-            "chapter": 6,
-            "verse": 2
+            "chapter": 1,
+            "verse": 11
         },
         "to": {
             "book": 8,
-            "chapter": 9,
-            "verse": 7
+            "chapter": 3,
+            "verse": 21
         },
-        "wordCount": 2118.1666666666665
+        "wordCount": 1968.833333333333
     },
     {
         "from": {
             "book": 8,
-            "chapter": 9,
-            "verse": 8
+            "chapter": 4,
+            "verse": 0
         },
         "to": {
             "book": 8,
-            "chapter": 12,
-            "verse": 6
+            "chapter": 7,
+            "verse": 21
         },
-        "wordCount": 1945.6666666666663
+        "wordCount": 2098.5
     },
     {
         "from": {
             "book": 8,
-            "chapter": 12,
-            "verse": 7
+            "chapter": 8,
+            "verse": 0
+        },
+        "to": {
+            "book": 8,
+            "chapter": 10,
+            "verse": 10
+        },
+        "wordCount": 2071.3333333333335
+    },
+    {
+        "from": {
+            "book": 8,
+            "chapter": 10,
+            "verse": 11
         },
         "to": {
             "book": 8,
             "chapter": 13,
-            "verse": 51
+            "verse": 22
         },
-        "wordCount": 1908.666666666667
+        "wordCount": 2127.666666666667
     },
     {
         "from": {
             "book": 8,
-            "chapter": 14,
-            "verse": 0
+            "chapter": 13,
+            "verse": 23
         },
         "to": {
             "book": 8,
-            "chapter": 16,
-            "verse": 18
+            "chapter": 15,
+            "verse": 12
         },
-        "wordCount": 2013.3333333333333
+        "wordCount": 2167.8333333333335
     },
     {
         "from": {
             "book": 8,
-            "chapter": 16,
-            "verse": 19
+            "chapter": 15,
+            "verse": 13
         },
         "to": {
             "book": 8,
             "chapter": 17,
-            "verse": 29
+            "verse": 15
         },
-        "wordCount": 1890.666666666667
+        "wordCount": 2184
     },
     {
         "from": {
             "book": 8,
-            "chapter": 18,
-            "verse": 0
+            "chapter": 17,
+            "verse": 16
         },
         "to": {
             "book": 8,
             "chapter": 19,
             "verse": 41
         },
-        "wordCount": 1854.3333333333337
+        "wordCount": 2255.3333333333335
     },
     {
         "from": {
@@ -1360,23 +1360,23 @@ export const YEAR_PLAN: Heading[] = [
         },
         "to": {
             "book": 9,
-            "chapter": 6,
-            "verse": 6
+            "chapter": 5,
+            "verse": 22
         },
-        "wordCount": 2071.3333333333335
+        "wordCount": 1892.6666666666665
     },
     {
         "from": {
             "book": 9,
             "chapter": 6,
-            "verse": 7
+            "verse": 0
         },
         "to": {
             "book": 9,
             "chapter": 9,
             "verse": 18
         },
-        "wordCount": 1981.1666666666667
+        "wordCount": 2159.8333333333335
     },
     {
         "from": {
@@ -1387,22 +1387,22 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 9,
             "chapter": 12,
-            "verse": 19
+            "verse": 21
         },
-        "wordCount": 2275.666666666667
+        "wordCount": 2308.5
     },
     {
         "from": {
             "book": 9,
             "chapter": 12,
-            "verse": 20
+            "verse": 22
         },
         "to": {
             "book": 9,
             "chapter": 14,
             "verse": 11
         },
-        "wordCount": 1843.6666666666665
+        "wordCount": 1810.8333333333335
     },
     {
         "from": {
@@ -1413,100 +1413,100 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 9,
             "chapter": 16,
-            "verse": 22
+            "verse": 13
         },
-        "wordCount": 2115.1666666666665
+        "wordCount": 1801
     },
     {
         "from": {
             "book": 9,
             "chapter": 16,
-            "verse": 23
-        },
-        "to": {
-            "book": 9,
-            "chapter": 18,
-            "verse": 22
-        },
-        "wordCount": 1905.166666666666
-    },
-    {
-        "from": {
-            "book": 9,
-            "chapter": 18,
-            "verse": 23
-        },
-        "to": {
-            "book": 9,
-            "chapter": 20,
-            "verse": 13
-        },
-        "wordCount": 1933.6666666666667
-    },
-    {
-        "from": {
-            "book": 9,
-            "chapter": 20,
             "verse": 14
         },
         "to": {
             "book": 9,
-            "chapter": 23,
-            "verse": 8
+            "chapter": 17,
+            "verse": 32
         },
-        "wordCount": 2110.666666666667
+        "wordCount": 1500.6666666666665
     },
     {
         "from": {
             "book": 9,
-            "chapter": 23,
-            "verse": 9
+            "chapter": 18,
+            "verse": 0
+        },
+        "to": {
+            "book": 9,
+            "chapter": 19,
+            "verse": 25
+        },
+        "wordCount": 2148.333333333333
+    },
+    {
+        "from": {
+            "book": 9,
+            "chapter": 20,
+            "verse": 0
+        },
+        "to": {
+            "book": 9,
+            "chapter": 22,
+            "verse": 6
+        },
+        "wordCount": 1703.3333333333333
+    },
+    {
+        "from": {
+            "book": 9,
+            "chapter": 22,
+            "verse": 7
         },
         "to": {
             "book": 10,
             "chapter": 0,
-            "verse": 52
+            "verse": 26
         },
-        "wordCount": 1972.8333333333333
+        "wordCount": 2171.666666666667
     },
     {
         "from": {
             "book": 10,
+            "chapter": 0,
+            "verse": 27
+        },
+        "to": {
+            "book": 10,
             "chapter": 1,
+            "verse": 45
+        },
+        "wordCount": 2098.166666666667
+    },
+    {
+        "from": {
+            "book": 10,
+            "chapter": 2,
             "verse": 0
         },
         "to": {
             "book": 10,
-            "chapter": 2,
-            "verse": 14
+            "chapter": 4,
+            "verse": 17
         },
-        "wordCount": 1834.5
-    },
-    {
-        "from": {
-            "book": 10,
-            "chapter": 2,
-            "verse": 15
-        },
-        "to": {
-            "book": 10,
-            "chapter": 5,
-            "verse": 12
-        },
-        "wordCount": 1851.3333333333335
+        "wordCount": 1945.3333333333335
     },
     {
         "from": {
             "book": 10,
             "chapter": 5,
-            "verse": 13
+            "verse": 0
         },
         "to": {
             "book": 10,
             "chapter": 6,
             "verse": 50
         },
-        "wordCount": 1888.833333333333
+        "wordCount": 2243.6666666666665
     },
     {
         "from": {
@@ -1558,7 +1558,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 14,
             "verse": 7
         },
-        "wordCount": 1828.1666666666667
+        "wordCount": 1828.1666666666665
     },
     {
         "from": {
@@ -1571,7 +1571,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 16,
             "verse": 15
         },
-        "wordCount": 2110.6666666666665
+        "wordCount": 2110.666666666667
     },
     {
         "from": {
@@ -1597,7 +1597,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 20,
             "verse": 15
         },
-        "wordCount": 1923.8333333333335
+        "wordCount": 1923.8333333333337
     },
     {
         "from": {
@@ -1634,35 +1634,35 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 11,
             "chapter": 4,
-            "verse": 18
+            "verse": 26
         },
-        "wordCount": 1925.666666666667
+        "wordCount": 2202.6666666666665
     },
     {
         "from": {
             "book": 11,
-            "chapter": 4,
-            "verse": 19
+            "chapter": 5,
+            "verse": 0
         },
         "to": {
             "book": 11,
-            "chapter": 6,
-            "verse": 19
+            "chapter": 7,
+            "verse": 5
         },
-        "wordCount": 2040.0000000000005
+        "wordCount": 1992.9999999999998
     },
     {
         "from": {
             "book": 11,
             "chapter": 7,
-            "verse": 0
+            "verse": 6
         },
         "to": {
             "book": 11,
             "chapter": 8,
             "verse": 36
         },
-        "wordCount": 2042.3333333333333
+        "wordCount": 1812.3333333333335
     },
     {
         "from": {
@@ -1686,35 +1686,35 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 11,
             "chapter": 13,
-            "verse": 26
+            "verse": 21
         },
-        "wordCount": 2072.5
+        "wordCount": 1919.6666666666667
     },
     {
         "from": {
             "book": 11,
             "chapter": 13,
-            "verse": 27
+            "verse": 22
         },
         "to": {
             "book": 11,
             "chapter": 16,
-            "verse": 5
+            "verse": 4
         },
-        "wordCount": 1884.1666666666667
+        "wordCount": 1998.1666666666667
     },
     {
         "from": {
             "book": 11,
             "chapter": 16,
-            "verse": 6
+            "verse": 5
         },
         "to": {
             "book": 11,
             "chapter": 17,
             "verse": 36
         },
-        "wordCount": 2176.166666666667
+        "wordCount": 2215
     },
     {
         "from": {
@@ -1725,412 +1725,399 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 11,
             "chapter": 20,
-            "verse": 8
+            "verse": 17
         },
-        "wordCount": 1949
+        "wordCount": 2208.8333333333335
     },
     {
         "from": {
             "book": 11,
             "chapter": 20,
-            "verse": 9
+            "verse": 18
         },
         "to": {
             "book": 11,
             "chapter": 22,
-            "verse": 22
+            "verse": 29
         },
-        "wordCount": 1997.4999999999998
+        "wordCount": 2008.8333333333335
     },
     {
         "from": {
             "book": 11,
             "chapter": 22,
-            "verse": 23
-        },
-        "to": {
-            "book": 12,
-            "chapter": 0,
-            "verse": 15
-        },
-        "wordCount": 2030.333333333333
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 0,
-            "verse": 16
-        },
-        "to": {
-            "book": 12,
-            "chapter": 3,
-            "verse": 22
-        },
-        "wordCount": 1969.1666666666667
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 3,
-            "verse": 23
-        },
-        "to": {
-            "book": 12,
-            "chapter": 5,
-            "verse": 80
-        },
-        "wordCount": 2049.6666666666665
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 6,
-            "verse": 0
-        },
-        "to": {
-            "book": 12,
-            "chapter": 8,
-            "verse": 43
-        },
-        "wordCount": 1984.666666666667
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 9,
-            "verse": 0
-        },
-        "to": {
-            "book": 12,
-            "chapter": 11,
-            "verse": 39
-        },
-        "wordCount": 2114.6666666666665
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 12,
-            "verse": 0
-        },
-        "to": {
-            "book": 12,
-            "chapter": 15,
-            "verse": 35
-        },
-        "wordCount": 1951.3333333333333
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 15,
-            "verse": 36
-        },
-        "to": {
-            "book": 12,
-            "chapter": 19,
-            "verse": 2
-        },
-        "wordCount": 1999.1666666666667
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 19,
-            "verse": 3
-        },
-        "to": {
-            "book": 12,
-            "chapter": 22,
-            "verse": 22
-        },
-        "wordCount": 1955.0000000000002
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 22,
-            "verse": 23
-        },
-        "to": {
-            "book": 12,
-            "chapter": 25,
-            "verse": 31
-        },
-        "wordCount": 1952.833333333333
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 26,
-            "verse": 0
-        },
-        "to": {
-            "book": 12,
-            "chapter": 28,
-            "verse": 19
-        },
-        "wordCount": 2157
-    },
-    {
-        "from": {
-            "book": 12,
-            "chapter": 28,
-            "verse": 20
-        },
-        "to": {
-            "book": 13,
-            "chapter": 3,
-            "verse": 9
-        },
-        "wordCount": 2032.3333333333335
-    },
-    {
-        "from": {
-            "book": 13,
-            "chapter": 3,
-            "verse": 10
-        },
-        "to": {
-            "book": 13,
-            "chapter": 5,
-            "verse": 41
-        },
-        "wordCount": 1968.6666666666667
-    },
-    {
-        "from": {
-            "book": 13,
-            "chapter": 6,
-            "verse": 0
-        },
-        "to": {
-            "book": 13,
-            "chapter": 8,
             "verse": 30
         },
-        "wordCount": 2004.1666666666665
+        "to": {
+            "book": 12,
+            "chapter": 0,
+            "verse": 36
+        },
+        "wordCount": 1965.9999999999998
     },
     {
         "from": {
-            "book": 13,
-            "chapter": 9,
+            "book": 12,
+            "chapter": 0,
+            "verse": 37
+        },
+        "to": {
+            "book": 12,
+            "chapter": 3,
+            "verse": 42
+        },
+        "wordCount": 2082.6666666666665
+    },
+    {
+        "from": {
+            "book": 12,
+            "chapter": 4,
             "verse": 0
         },
         "to": {
-            "book": 13,
-            "chapter": 12,
-            "verse": 21
+            "book": 12,
+            "chapter": 6,
+            "verse": 12
         },
-        "wordCount": 2004
+        "wordCount": 1985.4999999999998
     },
     {
         "from": {
-            "book": 13,
+            "book": 12,
+            "chapter": 6,
+            "verse": 13
+        },
+        "to": {
+            "book": 12,
+            "chapter": 9,
+            "verse": 13
+        },
+        "wordCount": 2071.1666666666665
+    },
+    {
+        "from": {
+            "book": 12,
+            "chapter": 10,
+            "verse": 0
+        },
+        "to": {
+            "book": 12,
+            "chapter": 12,
+            "verse": 13
+        },
+        "wordCount": 2141
+    },
+    {
+        "from": {
+            "book": 12,
             "chapter": 13,
             "verse": 0
         },
         "to": {
-            "book": 13,
-            "chapter": 17,
-            "verse": 7
-        },
-        "wordCount": 2005.9999999999998
-    },
-    {
-        "from": {
-            "book": 13,
-            "chapter": 17,
-            "verse": 8
-        },
-        "to": {
-            "book": 13,
-            "chapter": 19,
-            "verse": 29
-        },
-        "wordCount": 1985.666666666667
-    },
-    {
-        "from": {
-            "book": 13,
-            "chapter": 19,
-            "verse": 30
-        },
-        "to": {
-            "book": 13,
-            "chapter": 23,
-            "verse": 2
-        },
-        "wordCount": 1988.3333333333333
-    },
-    {
-        "from": {
-            "book": 13,
-            "chapter": 23,
-            "verse": 3
-        },
-        "to": {
-            "book": 13,
-            "chapter": 25,
+            "book": 12,
+            "chapter": 16,
             "verse": 14
         },
-        "wordCount": 2092.666666666667
+        "wordCount": 2171.8333333333335
     },
     {
         "from": {
-            "book": 13,
-            "chapter": 25,
+            "book": 12,
+            "chapter": 16,
             "verse": 15
         },
         "to": {
-            "book": 13,
-            "chapter": 28,
-            "verse": 18
+            "book": 12,
+            "chapter": 20,
+            "verse": 16
         },
-        "wordCount": 1919
+        "wordCount": 2055
+    },
+    {
+        "from": {
+            "book": 12,
+            "chapter": 20,
+            "verse": 17
+        },
+        "to": {
+            "book": 12,
+            "chapter": 23,
+            "verse": 30
+        },
+        "wordCount": 2085.5
+    },
+    {
+        "from": {
+            "book": 12,
+            "chapter": 24,
+            "verse": 0
+        },
+        "to": {
+            "book": 12,
+            "chapter": 26,
+            "verse": 33
+        },
+        "wordCount": 1901.6666666666667
+    },
+    {
+        "from": {
+            "book": 12,
+            "chapter": 27,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 0,
+            "verse": 12
+        },
+        "wordCount": 2067.6666666666665
     },
     {
         "from": {
             "book": 13,
-            "chapter": 28,
-            "verse": 19
+            "chapter": 0,
+            "verse": 13
         },
         "to": {
             "book": 13,
-            "chapter": 30,
-            "verse": 20
+            "chapter": 4,
+            "verse": 13
         },
-        "wordCount": 2051
+        "wordCount": 2093.6666666666665
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 5,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 6,
+            "verse": 21
+        },
+        "wordCount": 1964.5
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 7,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 10,
+            "verse": 3
+        },
+        "wordCount": 1926.0000000000002
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 10,
+            "verse": 4
+        },
+        "to": {
+            "book": 13,
+            "chapter": 13,
+            "verse": 14
+        },
+        "wordCount": 1830.4999999999998
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 14,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 17,
+            "verse": 26
+        },
+        "wordCount": 2094
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 17,
+            "verse": 27
+        },
+        "to": {
+            "book": 13,
+            "chapter": 20,
+            "verse": 19
+        },
+        "wordCount": 2223.5
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 21,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 23,
+            "verse": 26
+        },
+        "wordCount": 2040.6666666666667
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 24,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 27,
+            "verse": 3
+        },
+        "wordCount": 1895
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 27,
+            "verse": 4
+        },
+        "to": {
+            "book": 13,
+            "chapter": 28,
+            "verse": 35
+        },
+        "wordCount": 1814.1666666666667
+    },
+    {
+        "from": {
+            "book": 13,
+            "chapter": 29,
+            "verse": 0
+        },
+        "to": {
+            "book": 13,
+            "chapter": 31,
+            "verse": 18
+        },
+        "wordCount": 2126.6666666666665
     },
     {
         "from": {
             "book": 13,
             "chapter": 31,
-            "verse": 0
+            "verse": 19
         },
         "to": {
             "book": 13,
             "chapter": 33,
-            "verse": 6
+            "verse": 27
         },
-        "wordCount": 1984.8333333333337
+        "wordCount": 2115.5
     },
     {
         "from": {
             "book": 13,
             "chapter": 33,
-            "verse": 7
-        },
-        "to": {
-            "book": 13,
-            "chapter": 35,
-            "verse": 8
-        },
-        "wordCount": 2025.3333333333333
-    },
-    {
-        "from": {
-            "book": 13,
-            "chapter": 35,
-            "verse": 9
+            "verse": 28
         },
         "to": {
             "book": 14,
-            "chapter": 2,
-            "verse": 12
-        },
-        "wordCount": 1994.5000000000002
-    },
-    {
-        "from": {
-            "book": 14,
-            "chapter": 3,
-            "verse": 0
-        },
-        "to": {
-            "book": 14,
-            "chapter": 5,
-            "verse": 21
-        },
-        "wordCount": 1981
-    },
-    {
-        "from": {
-            "book": 14,
-            "chapter": 6,
-            "verse": 0
-        },
-        "to": {
-            "book": 14,
-            "chapter": 8,
-            "verse": 3
-        },
-        "wordCount": 1843.6666666666667
-    },
-    {
-        "from": {
-            "book": 14,
-            "chapter": 8,
-            "verse": 4
-        },
-        "to": {
-            "book": 15,
-            "chapter": 1,
-            "verse": 9
-        },
-        "wordCount": 1967.1666666666667
-    },
-    {
-        "from": {
-            "book": 15,
-            "chapter": 1,
+            "chapter": 0,
             "verse": 10
         },
-        "to": {
-            "book": 15,
-            "chapter": 3,
-            "verse": 22
-        },
-        "wordCount": 1842.8333333333333
+        "wordCount": 2101.6666666666665
     },
     {
         "from": {
-            "book": 15,
-            "chapter": 4,
+            "book": 14,
+            "chapter": 1,
             "verse": 0
         },
         "to": {
-            "book": 15,
-            "chapter": 6,
-            "verse": 72
+            "book": 14,
+            "chapter": 4,
+            "verse": 4
         },
-        "wordCount": 2005.4999999999998
+        "wordCount": 2056.5
     },
     {
         "from": {
-            "book": 15,
+            "book": 14,
+            "chapter": 4,
+            "verse": 5
+        },
+        "to": {
+            "book": 14,
+            "chapter": 6,
+            "verse": 27
+        },
+        "wordCount": 1920.6666666666667
+    },
+    {
+        "from": {
+            "book": 14,
             "chapter": 7,
             "verse": 0
         },
         "to": {
-            "book": 15,
+            "book": 14,
             "chapter": 9,
-            "verse": 26
+            "verse": 16
         },
-        "wordCount": 1981
+        "wordCount": 2038.333333333333
+    },
+    {
+        "from": {
+            "book": 14,
+            "chapter": 9,
+            "verse": 17
+        },
+        "to": {
+            "book": 15,
+            "chapter": 2,
+            "verse": 31
+        },
+        "wordCount": 2171.8333333333335
     },
     {
         "from": {
             "book": 15,
-            "chapter": 9,
-            "verse": 27
+            "chapter": 3,
+            "verse": 0
+        },
+        "to": {
+            "book": 15,
+            "chapter": 6,
+            "verse": 2
+        },
+        "wordCount": 1899.833333333333
+    },
+    {
+        "from": {
+            "book": 15,
+            "chapter": 6,
+            "verse": 3
+        },
+        "to": {
+            "book": 15,
+            "chapter": 8,
+            "verse": 36
+        },
+        "wordCount": 2580.5
+    },
+    {
+        "from": {
+            "book": 15,
+            "chapter": 8,
+            "verse": 37
         },
         "to": {
             "book": 15,
             "chapter": 11,
             "verse": 42
         },
-        "wordCount": 1946.333333333333
+        "wordCount": 2095.1666666666665
     },
     {
         "from": {
@@ -2140,36 +2127,36 @@ export const YEAR_PLAN: Heading[] = [
         },
         "to": {
             "book": 16,
-            "chapter": 1,
-            "verse": 6
+            "chapter": 0,
+            "verse": 21
         },
-        "wordCount": 1975.9999999999998
+        "wordCount": 1766.166666666667
     },
     {
         "from": {
             "book": 16,
             "chapter": 1,
-            "verse": 7
+            "verse": 0
         },
         "to": {
             "book": 16,
             "chapter": 4,
-            "verse": 13
+            "verse": 7
         },
-        "wordCount": 2023.1666666666665
+        "wordCount": 2035.5
     },
     {
         "from": {
             "book": 16,
-            "chapter": 5,
-            "verse": 0
+            "chapter": 4,
+            "verse": 8
         },
         "to": {
             "book": 16,
             "chapter": 8,
             "verse": 18
         },
-        "wordCount": 1884.1666666666663
+        "wordCount": 2081.6666666666665
     },
     {
         "from": {
@@ -2206,274 +2193,274 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 17,
             "chapter": 14,
-            "verse": 15
+            "verse": 34
         },
-        "wordCount": 1942.666666666667
+        "wordCount": 2221.166666666667
     },
     {
         "from": {
             "book": 17,
-            "chapter": 14,
-            "verse": 16
+            "chapter": 15,
+            "verse": 0
         },
         "to": {
-            "book": 17,
-            "chapter": 19,
-            "verse": 28
-        },
-        "wordCount": 1961.666666666667
-    },
-    {
-        "from": {
             "book": 17,
             "chapter": 20,
-            "verse": 0
-        },
-        "to": {
-            "book": 17,
-            "chapter": 26,
-            "verse": 5
-        },
-        "wordCount": 1922.1666666666667
-    },
-    {
-        "from": {
-            "book": 17,
-            "chapter": 26,
-            "verse": 6
-        },
-        "to": {
-            "book": 17,
-            "chapter": 30,
-            "verse": 39
-        },
-        "wordCount": 2092.5
-    },
-    {
-        "from": {
-            "book": 17,
-            "chapter": 31,
-            "verse": 0
-        },
-        "to": {
-            "book": 17,
-            "chapter": 35,
-            "verse": 32
-        },
-        "wordCount": 2031.1666666666667
-    },
-    {
-        "from": {
-            "book": 17,
-            "chapter": 36,
-            "verse": 0
-        },
-        "to": {
-            "book": 17,
-            "chapter": 40,
             "verse": 33
         },
-        "wordCount": 2124.166666666667
+        "wordCount": 2156.1666666666665
+    },
+    {
+        "from": {
+            "book": 17,
+            "chapter": 21,
+            "verse": 0
+        },
+        "to": {
+            "book": 17,
+            "chapter": 27,
+            "verse": 27
+        },
+        "wordCount": 2090.6666666666665
+    },
+    {
+        "from": {
+            "book": 17,
+            "chapter": 28,
+            "verse": 0
+        },
+        "to": {
+            "book": 17,
+            "chapter": 31,
+            "verse": 21
+        },
+        "wordCount": 1793.6666666666667
+    },
+    {
+        "from": {
+            "book": 17,
+            "chapter": 32,
+            "verse": 0
+        },
+        "to": {
+            "book": 17,
+            "chapter": 36,
+            "verse": 23
+        },
+        "wordCount": 2037.6666666666667
+    },
+    {
+        "from": {
+            "book": 17,
+            "chapter": 37,
+            "verse": 0
+        },
+        "to": {
+            "book": 17,
+            "chapter": 41,
+            "verse": 8
+        },
+        "wordCount": 1987.1666666666667
     },
     {
         "from": {
             "book": 17,
             "chapter": 41,
-            "verse": 0
+            "verse": 9
         },
         "to": {
-            "book": 18,
-            "chapter": 8,
-            "verse": 19
-        },
-        "wordCount": 2031.166666666667
-    },
-    {
-        "from": {
             "book": 18,
             "chapter": 9,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 17,
-            "verse": 49
-        },
-        "wordCount": 2107
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 18,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 26,
-            "verse": 13
-        },
-        "wordCount": 2124.3333333333335
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 27,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 33,
-            "verse": 21
-        },
-        "wordCount": 1836.0000000000002
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 34,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 38,
-            "verse": 12
-        },
-        "wordCount": 1849.9999999999998
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 39,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 47,
-            "verse": 13
-        },
-        "wordCount": 2099
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 48,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 56,
-            "verse": 10
-        },
-        "wordCount": 2085
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 57,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 66,
-            "verse": 6
-        },
-        "wordCount": 1926.166666666667
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 67,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 71,
-            "verse": 19
-        },
-        "wordCount": 2003.166666666667
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 72,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 77,
-            "verse": 71
-        },
-        "wordCount": 2434.166666666667
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 78,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 86,
-            "verse": 6
-        },
-        "wordCount": 1888.0000000000002
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 87,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 92,
-            "verse": 4
-        },
-        "wordCount": 1871.5
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 93,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 102,
-            "verse": 21
-        },
-        "wordCount": 2098.8333333333335
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 103,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 105,
-            "verse": 47
-        },
-        "wordCount": 1786.5
-    },
-    {
-        "from": {
-            "book": 18,
-            "chapter": 106,
-            "verse": 0
-        },
-        "to": {
-            "book": 18,
-            "chapter": 114,
             "verse": 17
         },
-        "wordCount": 2129.6666666666665
+        "wordCount": 2131.5
     },
     {
         "from": {
             "book": 18,
-            "chapter": 115,
+            "chapter": 10,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 18,
+            "verse": 13
+        },
+        "wordCount": 2036.5
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 19,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 27,
+            "verse": 8
+        },
+        "wordCount": 2071.5
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 28,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 34,
+            "verse": 27
+        },
+        "wordCount": 2126.166666666667
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 35,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 40,
+            "verse": 12
+        },
+        "wordCount": 1941.666666666667
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 41,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 49,
+            "verse": 22
+        },
+        "wordCount": 2171.6666666666665
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 50,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 58,
+            "verse": 16
+        },
+        "wordCount": 1924
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 59,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 67,
+            "verse": 34
+        },
+        "wordCount": 2032.8333333333335
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 68,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 73,
+            "verse": 22
+        },
+        "wordCount": 2149.5
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 74,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 78,
+            "verse": 12
+        },
+        "wordCount": 1943.0000000000002
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 79,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 87,
+            "verse": 17
+        },
+        "wordCount": 1915.8333333333335
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 88,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 94,
+            "verse": 10
+        },
+        "wordCount": 2082.833333333333
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 95,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 103,
+            "verse": 34
+        },
+        "wordCount": 2146.6666666666665
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 104,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 107,
+            "verse": 12
+        },
+        "wordCount": 2045.6666666666667
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 108,
+            "verse": 0
+        },
+        "to": {
+            "book": 18,
+            "chapter": 117,
+            "verse": 28
+        },
+        "wordCount": 2029.4999999999998
+    },
+    {
+        "from": {
+            "book": 18,
+            "chapter": 118,
             "verse": 0
         },
         "to": {
@@ -2481,7 +2468,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 118,
             "verse": 175
         },
-        "wordCount": 2851
+        "wordCount": 2160.5
     },
     {
         "from": {
@@ -2570,22 +2557,22 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 19,
             "chapter": 21,
-            "verse": 28
+            "verse": 15
         },
-        "wordCount": 2102.5
+        "wordCount": 1910
     },
     {
         "from": {
             "book": 19,
-            "chapter": 22,
-            "verse": 0
+            "chapter": 21,
+            "verse": 16
         },
         "to": {
             "book": 19,
             "chapter": 25,
             "verse": 27
         },
-        "wordCount": 1885.8333333333333
+        "wordCount": 2078.3333333333335
     },
     {
         "from": {
@@ -2611,7 +2598,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 3,
             "verse": 11
         },
-        "wordCount": 2018.1666666666665
+        "wordCount": 2018.1666666666663
     },
     {
         "from": {
@@ -2621,478 +2608,491 @@ export const YEAR_PLAN: Heading[] = [
         },
         "to": {
             "book": 20,
-            "chapter": 8,
-            "verse": 5
+            "chapter": 7,
+            "verse": 16
         },
-        "wordCount": 2100.3333333333335
+        "wordCount": 1894.5000000000002
     },
     {
         "from": {
             "book": 20,
             "chapter": 8,
-            "verse": 6
+            "verse": 0
         },
         "to": {
             "book": 21,
-            "chapter": 2,
-            "verse": 10
+            "chapter": 1,
+            "verse": 16
         },
-        "wordCount": 2056.666666666667
+        "wordCount": 2019.6666666666667
     },
     {
         "from": {
             "book": 21,
-            "chapter": 3,
+            "chapter": 2,
             "verse": 0
         },
         "to": {
             "book": 22,
             "chapter": 0,
-            "verse": 30
-        },
-        "wordCount": 2106.8333333333335
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 1,
-            "verse": 0
-        },
-        "to": {
-            "book": 22,
-            "chapter": 5,
-            "verse": 6
-        },
-        "wordCount": 2031.5
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 5,
-            "verse": 7
-        },
-        "to": {
-            "book": 22,
-            "chapter": 9,
-            "verse": 10
-        },
-        "wordCount": 2035.5
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 9,
-            "verse": 11
-        },
-        "to": {
-            "book": 22,
-            "chapter": 13,
-            "verse": 20
-        },
-        "wordCount": 2090.5
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 13,
-            "verse": 21
-        },
-        "to": {
-            "book": 22,
-            "chapter": 18,
-            "verse": 24
-        },
-        "wordCount": 2025.8333333333333
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 19,
-            "verse": 0
-        },
-        "to": {
-            "book": 22,
-            "chapter": 23,
-            "verse": 22
-        },
-        "wordCount": 1990.3333333333337
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 24,
-            "verse": 0
-        },
-        "to": {
-            "book": 22,
-            "chapter": 28,
-            "verse": 7
-        },
-        "wordCount": 2002.3333333333333
-    },
-    {
-        "from": {
-            "book": 22,
-            "chapter": 28,
-            "verse": 8
-        },
-        "to": {
-            "book": 22,
-            "chapter": 31,
             "verse": 19
         },
-        "wordCount": 1939.4999999999998
+        "wordCount": 2135.5
     },
     {
         "from": {
             "book": 22,
-            "chapter": 32,
+            "chapter": 0,
+            "verse": 20
+        },
+        "to": {
+            "book": 22,
+            "chapter": 4,
+            "verse": 29
+        },
+        "wordCount": 2066.6666666666665
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 5,
             "verse": 0
         },
         "to": {
             "book": 22,
-            "chapter": 36,
+            "chapter": 8,
+            "verse": 20
+        },
+        "wordCount": 1992.166666666667
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 9,
+            "verse": 0
+        },
+        "to": {
+            "book": 22,
+            "chapter": 13,
+            "verse": 1
+        },
+        "wordCount": 1906
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 13,
+            "verse": 2
+        },
+        "to": {
+            "book": 22,
+            "chapter": 17,
             "verse": 6
         },
-        "wordCount": 2062.1666666666665
+        "wordCount": 1805.166666666667
     },
     {
         "from": {
             "book": 22,
-            "chapter": 36,
-            "verse": 7
+            "chapter": 18,
+            "verse": 0
         },
         "to": {
             "book": 22,
-            "chapter": 39,
-            "verse": 10
+            "chapter": 22,
+            "verse": 17
         },
-        "wordCount": 1836.3333333333333
+        "wordCount": 2147.666666666667
     },
     {
         "from": {
             "book": 22,
-            "chapter": 39,
-            "verse": 11
+            "chapter": 23,
+            "verse": 0
         },
         "to": {
             "book": 22,
-            "chapter": 42,
+            "chapter": 27,
             "verse": 12
         },
-        "wordCount": 2074.333333333333
+        "wordCount": 1886.833333333333
     },
     {
         "from": {
             "book": 22,
-            "chapter": 42,
+            "chapter": 27,
             "verse": 13
         },
         "to": {
             "book": 22,
-            "chapter": 45,
-            "verse": 12
+            "chapter": 29,
+            "verse": 32
         },
-        "wordCount": 2075.6666666666665
+        "wordCount": 1883.6666666666663
     },
     {
         "from": {
             "book": 22,
-            "chapter": 46,
+            "chapter": 30,
             "verse": 0
         },
         "to": {
             "book": 22,
-            "chapter": 49,
-            "verse": 10
+            "chapter": 34,
+            "verse": 9
         },
-        "wordCount": 1994.5000000000002
+        "wordCount": 1823.333333333333
     },
     {
         "from": {
             "book": 22,
-            "chapter": 50,
+            "chapter": 35,
             "verse": 0
         },
         "to": {
             "book": 22,
-            "chapter": 54,
-            "verse": 12
+            "chapter": 37,
+            "verse": 21
         },
-        "wordCount": 2113.3333333333335
+        "wordCount": 2232.8333333333335
     },
     {
         "from": {
             "book": 22,
-            "chapter": 55,
+            "chapter": 38,
             "verse": 0
         },
         "to": {
             "book": 22,
-            "chapter": 59,
+            "chapter": 41,
+            "verse": 16
+        },
+        "wordCount": 2045.5
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 41,
             "verse": 17
         },
-        "wordCount": 2240
+        "to": {
+            "book": 22,
+            "chapter": 44,
+            "verse": 12
+        },
+        "wordCount": 1952.5
     },
     {
         "from": {
             "book": 22,
-            "chapter": 59,
-            "verse": 18
+            "chapter": 44,
+            "verse": 13
         },
         "to": {
             "book": 22,
-            "chapter": 64,
-            "verse": 15
+            "chapter": 48,
+            "verse": 12
         },
-        "wordCount": 1927.1666666666665
+        "wordCount": 1956.6666666666663
     },
     {
         "from": {
             "book": 22,
-            "chapter": 64,
+            "chapter": 48,
+            "verse": 13
+        },
+        "to": {
+            "book": 22,
+            "chapter": 52,
+            "verse": 11
+        },
+        "wordCount": 2022.1666666666667
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 53,
+            "verse": 0
+        },
+        "to": {
+            "book": 22,
+            "chapter": 57,
+            "verse": 13
+        },
+        "wordCount": 2017.5
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 58,
+            "verse": 0
+        },
+        "to": {
+            "book": 22,
+            "chapter": 62,
+            "verse": 13
+        },
+        "wordCount": 2079.666666666667
+    },
+    {
+        "from": {
+            "book": 22,
+            "chapter": 62,
+            "verse": 14
+        },
+        "to": {
+            "book": 23,
+            "chapter": 0,
+            "verse": 2
+        },
+        "wordCount": 1895
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 0,
+            "verse": 3
+        },
+        "to": {
+            "book": 23,
+            "chapter": 2,
+            "verse": 24
+        },
+        "wordCount": 2008.1666666666667
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 3,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 5,
+            "verse": 20
+        },
+        "wordCount": 1988
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 5,
+            "verse": 21
+        },
+        "to": {
+            "book": 23,
+            "chapter": 8,
+            "verse": 15
+        },
+        "wordCount": 2153.1666666666665
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 8,
             "verse": 16
         },
         "to": {
             "book": 23,
-            "chapter": 1,
-            "verse": 21
+            "chapter": 11,
+            "verse": 16
         },
-        "wordCount": 1971.5
+        "wordCount": 2013.833333333333
     },
     {
         "from": {
             "book": 23,
-            "chapter": 1,
+            "chapter": 12,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 14,
+            "verse": 20
+        },
+        "wordCount": 1881.0000000000002
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 15,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 17,
             "verse": 22
         },
-        "to": {
-            "book": 23,
-            "chapter": 4,
-            "verse": 12
-        },
-        "wordCount": 2136.3333333333335
+        "wordCount": 1991.833333333333
     },
     {
         "from": {
             "book": 23,
-            "chapter": 4,
-            "verse": 13
-        },
-        "to": {
-            "book": 23,
-            "chapter": 6,
-            "verse": 33
-        },
-        "wordCount": 2085.5
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 7,
+            "chapter": 18,
             "verse": 0
         },
         "to": {
             "book": 23,
-            "chapter": 9,
-            "verse": 24
-        },
-        "wordCount": 1868.166666666667
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 10,
-            "verse": 0
-        },
-        "to": {
-            "book": 23,
-            "chapter": 13,
-            "verse": 9
-        },
-        "wordCount": 2047.8333333333333
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 13,
-            "verse": 10
-        },
-        "to": {
-            "book": 23,
-            "chapter": 16,
-            "verse": 12
-        },
-        "wordCount": 1974.1666666666663
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 16,
-            "verse": 13
-        },
-        "to": {
-            "book": 23,
-            "chapter": 19,
-            "verse": 17
-        },
-        "wordCount": 2054.1666666666665
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 20,
-            "verse": 0
-        },
-        "to": {
-            "book": 23,
-            "chapter": 22,
-            "verse": 31
-        },
-        "wordCount": 2112.1666666666665
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 22,
-            "verse": 32
-        },
-        "to": {
-            "book": 23,
-            "chapter": 25,
-            "verse": 14
-        },
-        "wordCount": 2060.5
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 25,
-            "verse": 15
-        },
-        "to": {
-            "book": 23,
-            "chapter": 28,
+            "chapter": 21,
             "verse": 22
         },
-        "wordCount": 2205.3333333333335
+        "wordCount": 2090.666666666667
     },
     {
         "from": {
             "book": 23,
-            "chapter": 28,
+            "chapter": 21,
             "verse": 23
         },
         "to": {
             "book": 23,
-            "chapter": 30,
-            "verse": 39
+            "chapter": 24,
+            "verse": 13
         },
-        "wordCount": 1976.8333333333333
+        "wordCount": 2038.6666666666667
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 24,
+            "verse": 14
+        },
+        "to": {
+            "book": 23,
+            "chapter": 26,
+            "verse": 21
+        },
+        "wordCount": 2091.833333333333
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 27,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 29,
+            "verse": 23
+        },
+        "wordCount": 2050.5
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 30,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 31,
+            "verse": 14
+        },
+        "wordCount": 1566
     },
     {
         "from": {
             "book": 23,
             "chapter": 31,
-            "verse": 0
+            "verse": 15
         },
         "to": {
             "book": 23,
-            "chapter": 32,
-            "verse": 17
-        },
-        "wordCount": 1897.3333333333333
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 32,
-            "verse": 18
-        },
-        "to": {
-            "book": 23,
-            "chapter": 35,
-            "verse": 9
-        },
-        "wordCount": 1904.9999999999998
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 35,
-            "verse": 10
-        },
-        "to": {
-            "book": 23,
-            "chapter": 37,
-            "verse": 26
-        },
-        "wordCount": 2108.166666666667
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 37,
-            "verse": 27
-        },
-        "to": {
-            "book": 23,
-            "chapter": 41,
-            "verse": 5
-        },
-        "wordCount": 1933.5
-    },
-    {
-        "from": {
-            "book": 23,
-            "chapter": 41,
+            "chapter": 33,
             "verse": 6
         },
-        "to": {
-            "book": 23,
-            "chapter": 43,
-            "verse": 29
-        },
-        "wordCount": 2042.8333333333333
+        "wordCount": 1917.5
     },
     {
         "from": {
             "book": 23,
-            "chapter": 44,
+            "chapter": 33,
+            "verse": 7
+        },
+        "to": {
+            "book": 23,
+            "chapter": 35,
+            "verse": 31
+        },
+        "wordCount": 2102.5
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 36,
             "verse": 0
         },
         "to": {
             "book": 23,
-            "chapter": 47,
-            "verse": 46
+            "chapter": 38,
+            "verse": 17
         },
-        "wordCount": 2034.5
+        "wordCount": 1977.6666666666665
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 39,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 41,
+            "verse": 21
+        },
+        "wordCount": 1899.5
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 42,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 44,
+            "verse": 4
+        },
+        "wordCount": 1699
+    },
+    {
+        "from": {
+            "book": 23,
+            "chapter": 45,
+            "verse": 0
+        },
+        "to": {
+            "book": 23,
+            "chapter": 48,
+            "verse": 5
+        },
+        "wordCount": 2054.833333333333
     },
     {
         "from": {
             "book": 23,
             "chapter": 48,
-            "verse": 0
+            "verse": 6
         },
         "to": {
             "book": 23,
             "chapter": 49,
-            "verse": 39
+            "verse": 45
         },
-        "wordCount": 2088.5
+        "wordCount": 2105.666666666667
     },
     {
         "from": {
             "book": 23,
-            "chapter": 49,
-            "verse": 40
+            "chapter": 50,
+            "verse": 0
         },
         "to": {
             "book": 23,
             "chapter": 51,
             "verse": 10
         },
-        "wordCount": 2047.8333333333335
+        "wordCount": 1859.666666666667
     },
     {
         "from": {
@@ -3105,7 +3105,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 1,
             "verse": 21
         },
-        "wordCount": 1975.8333333333328
+        "wordCount": 1975.833333333333
     },
     {
         "from": {
@@ -3116,87 +3116,87 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 25,
             "chapter": 0,
-            "verse": 20
+            "verse": 27
         },
-        "wordCount": 2068
+        "wordCount": 2297.3333333333335
     },
     {
         "from": {
             "book": 25,
-            "chapter": 0,
-            "verse": 21
-        },
-        "to": {
-            "book": 25,
-            "chapter": 3,
-            "verse": 16
-        },
-        "wordCount": 1731.666666666667
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 4,
+            "chapter": 1,
             "verse": 0
         },
         "to": {
             "book": 25,
-            "chapter": 7,
-            "verse": 3
+            "chapter": 4,
+            "verse": 16
         },
-        "wordCount": 1829.8333333333333
+        "wordCount": 2075.5
     },
     {
         "from": {
             "book": 25,
-            "chapter": 7,
-            "verse": 4
+            "chapter": 5,
+            "verse": 0
         },
         "to": {
             "book": 25,
-            "chapter": 10,
-            "verse": 20
-        },
-        "wordCount": 1997.8333333333333
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 10,
-            "verse": 21
-        },
-        "to": {
-            "book": 25,
-            "chapter": 13,
+            "chapter": 8,
             "verse": 10
         },
-        "wordCount": 1907.666666666667
+        "wordCount": 2074
     },
     {
         "from": {
             "book": 25,
-            "chapter": 13,
-            "verse": 11
+            "chapter": 9,
+            "verse": 0
+        },
+        "to": {
+            "book": 25,
+            "chapter": 11,
+            "verse": 27
+        },
+        "wordCount": 2041.6666666666667
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 12,
+            "verse": 0
+        },
+        "to": {
+            "book": 25,
+            "chapter": 14,
+            "verse": 7
+        },
+        "wordCount": 1615.3333333333333
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 15,
+            "verse": 0
         },
         "to": {
             "book": 25,
             "chapter": 15,
-            "verse": 57
+            "verse": 62
         },
-        "wordCount": 2096
+        "wordCount": 1661.6666666666667
     },
     {
         "from": {
             "book": 25,
-            "chapter": 15,
-            "verse": 58
+            "chapter": 16,
+            "verse": 0
         },
         "to": {
             "book": 25,
             "chapter": 18,
             "verse": 13
         },
-        "wordCount": 1993.3333333333335
+        "wordCount": 1858.833333333333
     },
     {
         "from": {
@@ -3207,893 +3207,893 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 25,
             "chapter": 20,
-            "verse": 16
+            "verse": 31
         },
-        "wordCount": 1929.5000000000002
+        "wordCount": 2366.1666666666665
     },
     {
         "from": {
             "book": 25,
-            "chapter": 20,
-            "verse": 17
+            "chapter": 21,
+            "verse": 0
         },
         "to": {
             "book": 25,
             "chapter": 22,
-            "verse": 34
-        },
-        "wordCount": 2083.6666666666665
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 22,
-            "verse": 35
-        },
-        "to": {
-            "book": 25,
-            "chapter": 25,
-            "verse": 13
-        },
-        "wordCount": 1965.8333333333333
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 25,
-            "verse": 14
-        },
-        "to": {
-            "book": 25,
-            "chapter": 28,
-            "verse": 15
-        },
-        "wordCount": 2144
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 28,
-            "verse": 16
-        },
-        "to": {
-            "book": 25,
-            "chapter": 31,
-            "verse": 15
-        },
-        "wordCount": 1837
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 31,
-            "verse": 16
-        },
-        "to": {
-            "book": 25,
-            "chapter": 33,
-            "verse": 9
-        },
-        "wordCount": 1832.3333333333333
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 33,
-            "verse": 10
-        },
-        "to": {
-            "book": 25,
-            "chapter": 35,
-            "verse": 37
-        },
-        "wordCount": 2098.8333333333335
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 36,
-            "verse": 0
-        },
-        "to": {
-            "book": 25,
-            "chapter": 38,
-            "verse": 15
-        },
-        "wordCount": 2012.6666666666667
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 38,
-            "verse": 16
-        },
-        "to": {
-            "book": 25,
-            "chapter": 40,
-            "verse": 3
-        },
-        "wordCount": 1919.8333333333335
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 40,
-            "verse": 4
-        },
-        "to": {
-            "book": 25,
-            "chapter": 42,
-            "verse": 26
-        },
-        "wordCount": 1984.166666666667
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 43,
-            "verse": 0
-        },
-        "to": {
-            "book": 25,
-            "chapter": 44,
-            "verse": 24
-        },
-        "wordCount": 1765.5
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 45,
-            "verse": 0
-        },
-        "to": {
-            "book": 25,
-            "chapter": 47,
-            "verse": 19
-        },
-        "wordCount": 2111.1666666666665
-    },
-    {
-        "from": {
-            "book": 25,
-            "chapter": 47,
-            "verse": 20
-        },
-        "to": {
-            "book": 26,
-            "chapter": 1,
-            "verse": 38
-        },
-        "wordCount": 2019.8333333333333
-    },
-    {
-        "from": {
-            "book": 26,
-            "chapter": 1,
-            "verse": 39
-        },
-        "to": {
-            "book": 26,
-            "chapter": 3,
-            "verse": 26
-        },
-        "wordCount": 2121.6666666666665
-    },
-    {
-        "from": {
-            "book": 26,
-            "chapter": 3,
-            "verse": 27
-        },
-        "to": {
-            "book": 26,
-            "chapter": 5,
-            "verse": 23
-        },
-        "wordCount": 2021.6666666666663
-    },
-    {
-        "from": {
-            "book": 26,
-            "chapter": 5,
-            "verse": 24
-        },
-        "to": {
-            "book": 26,
-            "chapter": 7,
-            "verse": 26
-        },
-        "wordCount": 1783.3333333333335
-    },
-    {
-        "from": {
-            "book": 26,
-            "chapter": 8,
-            "verse": 0
-        },
-        "to": {
-            "book": 26,
-            "chapter": 10,
-            "verse": 3
-        },
-        "wordCount": 1635.8333333333335
-    },
-    {
-        "from": {
-            "book": 26,
-            "chapter": 10,
-            "verse": 4
-        },
-        "to": {
-            "book": 27,
-            "chapter": 1,
-            "verse": 0
-        },
-        "wordCount": 2009.1666666666665
-    },
-    {
-        "from": {
-            "book": 27,
-            "chapter": 1,
-            "verse": 1
-        },
-        "to": {
-            "book": 27,
-            "chapter": 6,
-            "verse": 15
-        },
-        "wordCount": 1999.1666666666667
-    },
-    {
-        "from": {
-            "book": 27,
-            "chapter": 7,
-            "verse": 0
-        },
-        "to": {
-            "book": 27,
-            "chapter": 13,
-            "verse": 2
-        },
-        "wordCount": 2033
-    },
-    {
-        "from": {
-            "book": 27,
-            "chapter": 13,
-            "verse": 3
-        },
-        "to": {
-            "book": 29,
-            "chapter": 0,
-            "verse": 1
-        },
-        "wordCount": 1910
-    },
-    {
-        "from": {
-            "book": 29,
-            "chapter": 0,
-            "verse": 2
-        },
-        "to": {
-            "book": 29,
-            "chapter": 4,
-            "verse": 26
-        },
-        "wordCount": 1989.3333333333333
-    },
-    {
-        "from": {
-            "book": 29,
-            "chapter": 5,
-            "verse": 0
-        },
-        "to": {
-            "book": 30,
-            "chapter": 0,
-            "verse": 15
-        },
-        "wordCount": 2002.833333333333
-    },
-    {
-        "from": {
-            "book": 30,
-            "chapter": 0,
-            "verse": 16
-        },
-        "to": {
-            "book": 32,
-            "chapter": 1,
-            "verse": 10
-        },
-        "wordCount": 2023.0000000000002
-    },
-    {
-        "from": {
-            "book": 32,
-            "chapter": 1,
-            "verse": 11
-        },
-        "to": {
-            "book": 33,
-            "chapter": 0,
-            "verse": 0
-        },
-        "wordCount": 2001.8333333333337
-    },
-    {
-        "from": {
-            "book": 33,
-            "chapter": 0,
-            "verse": 1
-        },
-        "to": {
-            "book": 34,
-            "chapter": 2,
-            "verse": 14
-        },
-        "wordCount": 2119.666666666667
-    },
-    {
-        "from": {
-            "book": 34,
-            "chapter": 2,
-            "verse": 15
-        },
-        "to": {
-            "book": 36,
-            "chapter": 0,
-            "verse": 14
-        },
-        "wordCount": 1910.1666666666667
-    },
-    {
-        "from": {
-            "book": 36,
-            "chapter": 1,
-            "verse": 0
-        },
-        "to": {
-            "book": 37,
-            "chapter": 3,
-            "verse": 13
-        },
-        "wordCount": 2117.3333333333335
-    },
-    {
-        "from": {
-            "book": 37,
-            "chapter": 4,
-            "verse": 0
-        },
-        "to": {
-            "book": 37,
-            "chapter": 8,
-            "verse": 12
-        },
-        "wordCount": 2004.3333333333333
-    },
-    {
-        "from": {
-            "book": 37,
-            "chapter": 8,
-            "verse": 13
-        },
-        "to": {
-            "book": 37,
-            "chapter": 13,
-            "verse": 14
-        },
-        "wordCount": 2097.5
-    },
-    {
-        "from": {
-            "book": 37,
-            "chapter": 13,
-            "verse": 15
-        },
-        "to": {
-            "book": 39,
-            "chapter": 0,
-            "verse": 4
+            "verse": 48
         },
         "wordCount": 2010.3333333333333
     },
     {
         "from": {
-            "book": 39,
-            "chapter": 0,
-            "verse": 5
+            "book": 25,
+            "chapter": 23,
+            "verse": 0
         },
         "to": {
-            "book": 39,
-            "chapter": 4,
-            "verse": 11
-        },
-        "wordCount": 2042.3333333333335
-    },
-    {
-        "from": {
-            "book": 39,
-            "chapter": 4,
-            "verse": 12
-        },
-        "to": {
-            "book": 39,
-            "chapter": 6,
-            "verse": 19
-        },
-        "wordCount": 2032.6666666666667
-    },
-    {
-        "from": {
-            "book": 39,
-            "chapter": 6,
+            "book": 25,
+            "chapter": 25,
             "verse": 20
         },
-        "to": {
-            "book": 39,
-            "chapter": 9,
-            "verse": 14
-        },
-        "wordCount": 2015.8333333333337
+        "wordCount": 1849.8333333333335
     },
     {
         "from": {
-            "book": 39,
-            "chapter": 9,
-            "verse": 15
+            "book": 25,
+            "chapter": 26,
+            "verse": 0
         },
         "to": {
-            "book": 39,
-            "chapter": 11,
-            "verse": 36
-        },
-        "wordCount": 2033.6666666666663
-    },
-    {
-        "from": {
-            "book": 39,
-            "chapter": 11,
-            "verse": 37
-        },
-        "to": {
-            "book": 39,
-            "chapter": 13,
+            "book": 25,
+            "chapter": 28,
             "verse": 20
         },
-        "wordCount": 2038.1666666666667
+        "wordCount": 2062.3333333333335
     },
     {
         "from": {
-            "book": 39,
-            "chapter": 13,
-            "verse": 21
+            "book": 25,
+            "chapter": 29,
+            "verse": 0
         },
         "to": {
-            "book": 39,
-            "chapter": 16,
-            "verse": 12
+            "book": 25,
+            "chapter": 31,
+            "verse": 31
         },
-        "wordCount": 1954.1666666666667
+        "wordCount": 2189.5
     },
     {
         "from": {
-            "book": 39,
-            "chapter": 16,
+            "book": 25,
+            "chapter": 32,
+            "verse": 0
+        },
+        "to": {
+            "book": 25,
+            "chapter": 33,
+            "verse": 30
+        },
+        "wordCount": 1927.1666666666667
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 34,
+            "verse": 0
+        },
+        "to": {
+            "book": 25,
+            "chapter": 36,
             "verse": 13
         },
-        "to": {
-            "book": 39,
-            "chapter": 19,
-            "verse": 15
-        },
-        "wordCount": 2153.8333333333335
+        "wordCount": 1894
     },
     {
         "from": {
-            "book": 39,
-            "chapter": 19,
+            "book": 25,
+            "chapter": 36,
+            "verse": 14
+        },
+        "to": {
+            "book": 25,
+            "chapter": 38,
+            "verse": 28
+        },
+        "wordCount": 1996.6666666666667
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 39,
+            "verse": 0
+        },
+        "to": {
+            "book": 25,
+            "chapter": 40,
+            "verse": 25
+        },
+        "wordCount": 2138.3333333333335
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 41,
+            "verse": 0
+        },
+        "to": {
+            "book": 25,
+            "chapter": 43,
+            "verse": 13
+        },
+        "wordCount": 1832.6666666666667
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 43,
+            "verse": 14
+        },
+        "to": {
+            "book": 25,
+            "chapter": 45,
+            "verse": 17
+        },
+        "wordCount": 1970.833333333333
+    },
+    {
+        "from": {
+            "book": 25,
+            "chapter": 45,
+            "verse": 18
+        },
+        "to": {
+            "book": 26,
+            "chapter": 0,
+            "verse": 6
+        },
+        "wordCount": 2061.3333333333335
+    },
+    {
+        "from": {
+            "book": 26,
+            "chapter": 0,
+            "verse": 7
+        },
+        "to": {
+            "book": 26,
+            "chapter": 2,
+            "verse": 6
+        },
+        "wordCount": 1960.6666666666667
+    },
+    {
+        "from": {
+            "book": 26,
+            "chapter": 2,
+            "verse": 7
+        },
+        "to": {
+            "book": 26,
+            "chapter": 3,
+            "verse": 36
+        },
+        "wordCount": 1906.5
+    },
+    {
+        "from": {
+            "book": 26,
+            "chapter": 4,
+            "verse": 0
+        },
+        "to": {
+            "book": 26,
+            "chapter": 6,
+            "verse": 7
+        },
+        "wordCount": 2071.5000000000005
+    },
+    {
+        "from": {
+            "book": 26,
+            "chapter": 6,
+            "verse": 8
+        },
+        "to": {
+            "book": 26,
+            "chapter": 8,
+            "verse": 18
+        },
+        "wordCount": 1998.8333333333335
+    },
+    {
+        "from": {
+            "book": 26,
+            "chapter": 8,
+            "verse": 19
+        },
+        "to": {
+            "book": 26,
+            "chapter": 10,
+            "verse": 44
+        },
+        "wordCount": 2332.333333333333
+    },
+    {
+        "from": {
+            "book": 26,
+            "chapter": 11,
+            "verse": 0
+        },
+        "to": {
+            "book": 27,
+            "chapter": 4,
+            "verse": 14
+        },
+        "wordCount": 2148.8333333333335
+    },
+    {
+        "from": {
+            "book": 27,
+            "chapter": 5,
+            "verse": 0
+        },
+        "to": {
+            "book": 27,
+            "chapter": 10,
+            "verse": 11
+        },
+        "wordCount": 1895
+    },
+    {
+        "from": {
+            "book": 27,
+            "chapter": 11,
+            "verse": 0
+        },
+        "to": {
+            "book": 28,
+            "chapter": 1,
+            "verse": 31
+        },
+        "wordCount": 2055.1666666666665
+    },
+    {
+        "from": {
+            "book": 28,
+            "chapter": 2,
+            "verse": 0
+        },
+        "to": {
+            "book": 29,
+            "chapter": 3,
+            "verse": 12
+        },
+        "wordCount": 1956.333333333333
+    },
+    {
+        "from": {
+            "book": 29,
+            "chapter": 4,
+            "verse": 0
+        },
+        "to": {
+            "book": 29,
+            "chapter": 8,
+            "verse": 9
+        },
+        "wordCount": 2031.3333333333333
+    },
+    {
+        "from": {
+            "book": 29,
+            "chapter": 8,
+            "verse": 10
+        },
+        "to": {
+            "book": 32,
+            "chapter": 0,
+            "verse": 0
+        },
+        "wordCount": 1961.6666666666663
+    },
+    {
+        "from": {
+            "book": 32,
+            "chapter": 0,
+            "verse": 1
+        },
+        "to": {
+            "book": 32,
+            "chapter": 5,
+            "verse": 7
+        },
+        "wordCount": 1915.6666666666663
+    },
+    {
+        "from": {
+            "book": 32,
+            "chapter": 5,
+            "verse": 8
+        },
+        "to": {
+            "book": 34,
+            "chapter": 0,
             "verse": 16
         },
+        "wordCount": 2057.333333333333
+    },
+    {
+        "from": {
+            "book": 34,
+            "chapter": 1,
+            "verse": 0
+        },
+        "to": {
+            "book": 35,
+            "chapter": 2,
+            "verse": 7
+        },
+        "wordCount": 1938.3333333333328
+    },
+    {
+        "from": {
+            "book": 35,
+            "chapter": 2,
+            "verse": 8
+        },
+        "to": {
+            "book": 37,
+            "chapter": 0,
+            "verse": 20
+        },
+        "wordCount": 1937.9999999999998
+    },
+    {
+        "from": {
+            "book": 37,
+            "chapter": 1,
+            "verse": 0
+        },
+        "to": {
+            "book": 37,
+            "chapter": 6,
+            "verse": 13
+        },
+        "wordCount": 1934.833333333333
+    },
+    {
+        "from": {
+            "book": 37,
+            "chapter": 7,
+            "verse": 0
+        },
+        "to": {
+            "book": 37,
+            "chapter": 10,
+            "verse": 16
+        },
+        "wordCount": 1888.833333333333
+    },
+    {
+        "from": {
+            "book": 37,
+            "chapter": 11,
+            "verse": 0
+        },
+        "to": {
+            "book": 38,
+            "chapter": 1,
+            "verse": 8
+        },
+        "wordCount": 2131.5
+    },
+    {
+        "from": {
+            "book": 38,
+            "chapter": 1,
+            "verse": 9
+        },
         "to": {
             "book": 39,
-            "chapter": 21,
-            "verse": 32
+            "chapter": 1,
+            "verse": 22
         },
-        "wordCount": 2108
+        "wordCount": 2037.9999999999995
     },
     {
         "from": {
             "book": 39,
-            "chapter": 21,
-            "verse": 33
-        },
-        "to": {
-            "book": 39,
-            "chapter": 23,
-            "verse": 50
-        },
-        "wordCount": 2040.833333333333
-    },
-    {
-        "from": {
-            "book": 39,
-            "chapter": 24,
+            "chapter": 2,
             "verse": 0
         },
         "to": {
             "book": 39,
-            "chapter": 25,
+            "chapter": 5,
+            "verse": 3
+        },
+        "wordCount": 2055.8333333333335
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 5,
+            "verse": 4
+        },
+        "to": {
+            "book": 39,
+            "chapter": 7,
+            "verse": 33
+        },
+        "wordCount": 1989.666666666667
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 8,
+            "verse": 0
+        },
+        "to": {
+            "book": 39,
+            "chapter": 10,
+            "verse": 18
+        },
+        "wordCount": 2066.6666666666665
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 10,
+            "verse": 19
+        },
+        "to": {
+            "book": 39,
+            "chapter": 12,
+            "verse": 29
+        },
+        "wordCount": 2046.833333333333
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 12,
+            "verse": 30
+        },
+        "to": {
+            "book": 39,
+            "chapter": 14,
+            "verse": 38
+        },
+        "wordCount": 2071.6666666666665
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 15,
+            "verse": 0
+        },
+        "to": {
+            "book": 39,
+            "chapter": 17,
+            "verse": 34
+        },
+        "wordCount": 2077.5
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 18,
+            "verse": 0
+        },
+        "to": {
+            "book": 39,
+            "chapter": 20,
+            "verse": 26
+        },
+        "wordCount": 2049.8333333333335
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 20,
+            "verse": 27
+        },
+        "to": {
+            "book": 39,
+            "chapter": 22,
+            "verse": 35
+        },
+        "wordCount": 1989.0000000000002
+    },
+    {
+        "from": {
+            "book": 39,
+            "chapter": 22,
+            "verse": 36
+        },
+        "to": {
+            "book": 39,
+            "chapter": 24,
             "verse": 45
         },
-        "wordCount": 1945.3333333333333
+        "wordCount": 2110.833333333333
     },
     {
         "from": {
             "book": 39,
             "chapter": 25,
-            "verse": 46
+            "verse": 0
         },
         "to": {
             "book": 39,
             "chapter": 26,
-            "verse": 65
+            "verse": 25
         },
-        "wordCount": 1983
+        "wordCount": 2125.666666666667
     },
     {
         "from": {
             "book": 39,
-            "chapter": 27,
-            "verse": 0
+            "chapter": 26,
+            "verse": 26
         },
         "to": {
             "book": 40,
-            "chapter": 1,
-            "verse": 27
-        },
-        "wordCount": 1967.3333333333333
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 2,
-            "verse": 0
-        },
-        "to": {
-            "book": 40,
-            "chapter": 4,
-            "verse": 19
-        },
-        "wordCount": 1925.4999999999998
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 4,
-            "verse": 20
-        },
-        "to": {
-            "book": 40,
-            "chapter": 6,
-            "verse": 12
-        },
-        "wordCount": 1981.833333333333
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 6,
-            "verse": 13
-        },
-        "to": {
-            "book": 40,
-            "chapter": 8,
-            "verse": 31
-        },
-        "wordCount": 1988.4999999999998
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 8,
-            "verse": 32
-        },
-        "to": {
-            "book": 40,
-            "chapter": 10,
-            "verse": 23
-        },
-        "wordCount": 2072.5
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 10,
-            "verse": 24
-        },
-        "to": {
-            "book": 40,
-            "chapter": 13,
-            "verse": 1
-        },
-        "wordCount": 2020.9999999999998
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 13,
-            "verse": 2
-        },
-        "to": {
-            "book": 40,
-            "chapter": 14,
-            "verse": 31
-        },
-        "wordCount": 2071
-    },
-    {
-        "from": {
-            "book": 40,
-            "chapter": 14,
-            "verse": 32
-        },
-        "to": {
-            "book": 41,
             "chapter": 0,
-            "verse": 65
-        },
-        "wordCount": 2053.8333333333335
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 0,
-            "verse": 66
-        },
-        "to": {
-            "book": 41,
-            "chapter": 2,
-            "verse": 37
-        },
-        "wordCount": 2107.666666666666
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 3,
-            "verse": 0
-        },
-        "to": {
-            "book": 41,
-            "chapter": 5,
-            "verse": 4
-        },
-        "wordCount": 1995.5
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 5,
-            "verse": 5
-        },
-        "to": {
-            "book": 41,
-            "chapter": 6,
             "verse": 38
         },
-        "wordCount": 1979.6666666666665
+        "wordCount": 1957.9999999999998
     },
     {
         "from": {
-            "book": 41,
-            "chapter": 6,
+            "book": 40,
+            "chapter": 0,
             "verse": 39
         },
         "to": {
+            "book": 40,
+            "chapter": 3,
+            "verse": 24
+        },
+        "wordCount": 1974.6666666666665
+    },
+    {
+        "from": {
+            "book": 40,
+            "chapter": 3,
+            "verse": 25
+        },
+        "to": {
+            "book": 40,
+            "chapter": 5,
+            "verse": 28
+        },
+        "wordCount": 1890.5
+    },
+    {
+        "from": {
+            "book": 40,
+            "chapter": 5,
+            "verse": 29
+        },
+        "to": {
+            "book": 40,
+            "chapter": 7,
+            "verse": 29
+        },
+        "wordCount": 1929.4999999999998
+    },
+    {
+        "from": {
+            "book": 40,
+            "chapter": 7,
+            "verse": 30
+        },
+        "to": {
+            "book": 40,
+            "chapter": 9,
+            "verse": 33
+        },
+        "wordCount": 2035.6666666666665
+    },
+    {
+        "from": {
+            "book": 40,
+            "chapter": 9,
+            "verse": 34
+        },
+        "to": {
+            "book": 40,
+            "chapter": 11,
+            "verse": 36
+        },
+        "wordCount": 1991.3333333333337
+    },
+    {
+        "from": {
+            "book": 40,
+            "chapter": 11,
+            "verse": 37
+        },
+        "to": {
+            "book": 40,
+            "chapter": 13,
+            "verse": 51
+        },
+        "wordCount": 2047.0000000000002
+    },
+    {
+        "from": {
+            "book": 40,
+            "chapter": 13,
+            "verse": 52
+        },
+        "to": {
+            "book": 41,
+            "chapter": 0,
+            "verse": 3
+        },
+        "wordCount": 1872.8333333333333
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 0,
+            "verse": 4
+        },
+        "to": {
+            "book": 41,
+            "chapter": 1,
+            "verse": 37
+        },
+        "wordCount": 2174.6666666666665
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 1,
+            "verse": 38
+        },
+        "to": {
+            "book": 41,
+            "chapter": 3,
+            "verse": 43
+        },
+        "wordCount": 2080.333333333333
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 4,
+            "verse": 0
+        },
+        "to": {
+            "book": 41,
+            "chapter": 5,
+            "verse": 44
+        },
+        "wordCount": 1954.5000000000002
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 5,
+            "verse": 45
+        },
+        "to": {
+            "book": 41,
+            "chapter": 7,
+            "verse": 24
+        },
+        "wordCount": 1933.8333333333335
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 7,
+            "verse": 25
+        },
+        "to": {
             "book": 41,
             "chapter": 8,
-            "verse": 16
+            "verse": 55
         },
-        "wordCount": 2001.6666666666663
+        "wordCount": 1981.1666666666667
     },
     {
         "from": {
             "book": 41,
             "chapter": 8,
+            "verse": 56
+        },
+        "to": {
+            "book": 41,
+            "chapter": 10,
+            "verse": 35
+        },
+        "wordCount": 1955.5
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 10,
+            "verse": 36
+        },
+        "to": {
+            "book": 41,
+            "chapter": 12,
+            "verse": 8
+        },
+        "wordCount": 1944.0000000000002
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 12,
+            "verse": 9
+        },
+        "to": {
+            "book": 41,
+            "chapter": 14,
+            "verse": 31
+        },
+        "wordCount": 2148.8333333333335
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 15,
+            "verse": 0
+        },
+        "to": {
+            "book": 41,
+            "chapter": 17,
+            "verse": 16
+        },
+        "wordCount": 1880.9999999999998
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 17,
             "verse": 17
         },
         "to": {
             "book": 41,
-            "chapter": 10,
-            "verse": 3
-        },
-        "wordCount": 2025.6666666666667
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 10,
-            "verse": 4
-        },
-        "to": {
-            "book": 41,
-            "chapter": 11,
-            "verse": 39
-        },
-        "wordCount": 2087.3333333333335
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 11,
-            "verse": 40
-        },
-        "to": {
-            "book": 41,
-            "chapter": 13,
-            "verse": 32
-        },
-        "wordCount": 2038.0000000000002
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 13,
-            "verse": 33
-        },
-        "to": {
-            "book": 41,
-            "chapter": 16,
-            "verse": 18
-        },
-        "wordCount": 1893.1666666666665
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 16,
-            "verse": 19
-        },
-        "to": {
-            "book": 41,
-            "chapter": 18,
-            "verse": 39
-        },
-        "wordCount": 2057.5
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 18,
-            "verse": 40
-        },
-        "to": {
-            "book": 41,
-            "chapter": 21,
-            "verse": 5
-        },
-        "wordCount": 1972.5
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 21,
-            "verse": 6
-        },
-        "to": {
-            "book": 41,
-            "chapter": 22,
-            "verse": 42
-        },
-        "wordCount": 2107.333333333333
-    },
-    {
-        "from": {
-            "book": 41,
-            "chapter": 22,
-            "verse": 43
-        },
-        "to": {
-            "book": 42,
-            "chapter": 0,
-            "verse": 41
-        },
-        "wordCount": 2061.833333333333
-    },
-    {
-        "from": {
-            "book": 42,
-            "chapter": 0,
-            "verse": 42
-        },
-        "to": {
-            "book": 42,
-            "chapter": 3,
+            "chapter": 19,
             "verse": 25
         },
-        "wordCount": 1953.0000000000002
+        "wordCount": 2047.6666666666665
     },
     {
         "from": {
-            "book": 42,
-            "chapter": 3,
+            "book": 41,
+            "chapter": 19,
             "verse": 26
         },
         "to": {
-            "book": 42,
-            "chapter": 5,
-            "verse": 23
+            "book": 41,
+            "chapter": 21,
+            "verse": 45
         },
-        "wordCount": 2026.3333333333333
+        "wordCount": 2041.1666666666665
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 21,
+            "verse": 46
+        },
+        "to": {
+            "book": 41,
+            "chapter": 23,
+            "verse": 11
+        },
+        "wordCount": 1784.333333333333
+    },
+    {
+        "from": {
+            "book": 41,
+            "chapter": 23,
+            "verse": 12
+        },
+        "to": {
+            "book": 42,
+            "chapter": 1,
+            "verse": 11
+        },
+        "wordCount": 2014
     },
     {
         "from": {
             "book": 42,
-            "chapter": 5,
-            "verse": 24
+            "chapter": 1,
+            "verse": 12
         },
         "to": {
             "book": 42,
-            "chapter": 7,
+            "chapter": 3,
+            "verse": 53
+        },
+        "wordCount": 2082.3333333333335
+    },
+    {
+        "from": {
+            "book": 42,
+            "chapter": 4,
             "verse": 0
         },
-        "wordCount": 2005.3333333333333
+        "to": {
+            "book": 42,
+            "chapter": 5,
+            "verse": 58
+        },
+        "wordCount": 2204
+    },
+    {
+        "from": {
+            "book": 42,
+            "chapter": 5,
+            "verse": 59
+        },
+        "to": {
+            "book": 42,
+            "chapter": 7,
+            "verse": 29
+        },
+        "wordCount": 1918.1666666666665
     },
     {
         "from": {
             "book": 42,
             "chapter": 7,
-            "verse": 1
+            "verse": 30
         },
         "to": {
             "book": 42,
-            "chapter": 8,
-            "verse": 33
+            "chapter": 9,
+            "verse": 20
         },
-        "wordCount": 1996.0000000000002
+        "wordCount": 1921.1666666666663
     },
     {
         "from": {
             "book": 42,
-            "chapter": 8,
-            "verse": 34
+            "chapter": 9,
+            "verse": 21
         },
         "to": {
             "book": 42,
-            "chapter": 10,
-            "verse": 56
+            "chapter": 11,
+            "verse": 18
         },
-        "wordCount": 2078.166666666667
+        "wordCount": 1904.9999999999995
     },
     {
         "from": {
             "book": 42,
             "chapter": 11,
-            "verse": 0
+            "verse": 19
         },
         "to": {
             "book": 42,
             "chapter": 13,
-            "verse": 5
+            "verse": 13
         },
-        "wordCount": 2013
+        "wordCount": 1813
     },
     {
         "from": {
             "book": 42,
             "chapter": 13,
-            "verse": 6
+            "verse": 14
         },
         "to": {
             "book": 42,
             "chapter": 15,
             "verse": 32
         },
-        "wordCount": 1999.3333333333337
+        "wordCount": 1795.3333333333333
     },
     {
         "from": {
@@ -4104,22 +4104,22 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 42,
             "chapter": 18,
-            "verse": 15
+            "verse": 14
         },
-        "wordCount": 1924.3333333333333
+        "wordCount": 1910.4999999999998
     },
     {
         "from": {
             "book": 42,
             "chapter": 18,
-            "verse": 16
+            "verse": 15
         },
         "to": {
             "book": 42,
             "chapter": 20,
             "verse": 24
         },
-        "wordCount": 2035.1666666666667
+        "wordCount": 2049
     },
     {
         "from": {
@@ -4156,22 +4156,22 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 43,
             "chapter": 7,
-            "verse": 23
+            "verse": 24
         },
-        "wordCount": 2042.0000000000002
+        "wordCount": 2069.3333333333335
     },
     {
         "from": {
             "book": 43,
             "chapter": 7,
-            "verse": 24
+            "verse": 25
         },
         "to": {
             "book": 43,
             "chapter": 9,
             "verse": 32
         },
-        "wordCount": 2050
+        "wordCount": 2022.6666666666667
     },
     {
         "from": {
@@ -4184,7 +4184,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 12,
             "verse": 11
         },
-        "wordCount": 1921.1666666666665
+        "wordCount": 1921.166666666667
     },
     {
         "from": {
@@ -4234,477 +4234,477 @@ export const YEAR_PLAN: Heading[] = [
         "to": {
             "book": 43,
             "chapter": 21,
-            "verse": 4
+            "verse": 20
         },
-        "wordCount": 1869
+        "wordCount": 2224.5
     },
     {
         "from": {
             "book": 43,
             "chapter": 21,
-            "verse": 5
+            "verse": 21
         },
         "to": {
             "book": 43,
-            "chapter": 23,
-            "verse": 26
+            "chapter": 24,
+            "verse": 11
         },
-        "wordCount": 2066.8333333333335
+        "wordCount": 2014.6666666666667
     },
     {
         "from": {
             "book": 43,
             "chapter": 24,
-            "verse": 0
+            "verse": 12
         },
         "to": {
             "book": 43,
             "chapter": 26,
-            "verse": 25
+            "verse": 43
         },
-        "wordCount": 2111.166666666667
+        "wordCount": 2231
     },
     {
         "from": {
             "book": 43,
-            "chapter": 26,
-            "verse": 26
-        },
-        "to": {
-            "book": 44,
-            "chapter": 0,
-            "verse": 31
-        },
-        "wordCount": 1927.5000000000002
-    },
-    {
-        "from": {
-            "book": 44,
-            "chapter": 1,
+            "chapter": 27,
             "verse": 0
         },
         "to": {
             "book": 44,
-            "chapter": 4,
-            "verse": 10
-        },
-        "wordCount": 2003.9999999999998
-    },
-    {
-        "from": {
-            "book": 44,
-            "chapter": 4,
-            "verse": 11
-        },
-        "to": {
-            "book": 44,
-            "chapter": 7,
-            "verse": 24
-        },
-        "wordCount": 2076.333333333333
-    },
-    {
-        "from": {
-            "book": 44,
-            "chapter": 7,
-            "verse": 25
-        },
-        "to": {
-            "book": 44,
-            "chapter": 10,
-            "verse": 23
-        },
-        "wordCount": 2114.3333333333335
-    },
-    {
-        "from": {
-            "book": 44,
-            "chapter": 10,
-            "verse": 24
-        },
-        "to": {
-            "book": 44,
-            "chapter": 14,
-            "verse": 20
-        },
-        "wordCount": 2055.1666666666665
-    },
-    {
-        "from": {
-            "book": 44,
-            "chapter": 14,
-            "verse": 21
-        },
-        "to": {
-            "book": 45,
-            "chapter": 2,
-            "verse": 3
-        },
-        "wordCount": 1920.5
-    },
-    {
-        "from": {
-            "book": 45,
-            "chapter": 2,
-            "verse": 4
-        },
-        "to": {
-            "book": 45,
-            "chapter": 6,
-            "verse": 15
-        },
-        "wordCount": 2094.3333333333335
-    },
-    {
-        "from": {
-            "book": 45,
-            "chapter": 6,
-            "verse": 16
-        },
-        "to": {
-            "book": 45,
-            "chapter": 9,
-            "verse": 21
-        },
-        "wordCount": 2059.3333333333335
-    },
-    {
-        "from": {
-            "book": 45,
-            "chapter": 9,
-            "verse": 22
-        },
-        "to": {
-            "book": 45,
-            "chapter": 13,
-            "verse": 4
-        },
-        "wordCount": 1964.8333333333333
-    },
-    {
-        "from": {
-            "book": 45,
-            "chapter": 13,
-            "verse": 5
-        },
-        "to": {
-            "book": 45,
-            "chapter": 15,
-            "verse": 3
-        },
-        "wordCount": 2049.6666666666665
-    },
-    {
-        "from": {
-            "book": 45,
-            "chapter": 15,
-            "verse": 4
-        },
-        "to": {
-            "book": 46,
-            "chapter": 3,
-            "verse": 5
-        },
-        "wordCount": 1931.0000000000002
-    },
-    {
-        "from": {
-            "book": 46,
-            "chapter": 3,
-            "verse": 6
-        },
-        "to": {
-            "book": 46,
-            "chapter": 7,
-            "verse": 14
-        },
-        "wordCount": 1938.1666666666663
-    },
-    {
-        "from": {
-            "book": 46,
-            "chapter": 7,
-            "verse": 15
-        },
-        "to": {
-            "book": 46,
-            "chapter": 11,
-            "verse": 9
-        },
-        "wordCount": 2029.333333333333
-    },
-    {
-        "from": {
-            "book": 46,
-            "chapter": 11,
-            "verse": 10
-        },
-        "to": {
-            "book": 47,
-            "chapter": 2,
-            "verse": 13
-        },
-        "wordCount": 2074.6666666666665
-    },
-    {
-        "from": {
-            "book": 47,
-            "chapter": 2,
-            "verse": 14
-        },
-        "to": {
-            "book": 48,
-            "chapter": 0,
-            "verse": 1
-        },
-        "wordCount": 1909.5000000000002
-    },
-    {
-        "from": {
-            "book": 48,
-            "chapter": 0,
-            "verse": 2
-        },
-        "to": {
-            "book": 48,
-            "chapter": 3,
-            "verse": 31
-        },
-        "wordCount": 1998.1666666666663
-    },
-    {
-        "from": {
-            "book": 48,
-            "chapter": 4,
-            "verse": 0
-        },
-        "to": {
-            "book": 49,
-            "chapter": 1,
-            "verse": 17
-        },
-        "wordCount": 2081
-    },
-    {
-        "from": {
-            "book": 49,
-            "chapter": 1,
-            "verse": 18
-        },
-        "to": {
-            "book": 50,
-            "chapter": 1,
-            "verse": 4
-        },
-        "wordCount": 2008.0000000000002
-    },
-    {
-        "from": {
-            "book": 50,
-            "chapter": 1,
-            "verse": 5
-        },
-        "to": {
-            "book": 51,
-            "chapter": 1,
-            "verse": 19
-        },
-        "wordCount": 2015.5
-    },
-    {
-        "from": {
-            "book": 51,
-            "chapter": 2,
-            "verse": 0
-        },
-        "to": {
-            "book": 52,
-            "chapter": 2,
-            "verse": 4
-        },
-        "wordCount": 1962.0000000000002
-    },
-    {
-        "from": {
-            "book": 52,
-            "chapter": 2,
-            "verse": 5
-        },
-        "to": {
-            "book": 53,
-            "chapter": 4,
-            "verse": 15
-        },
-        "wordCount": 1995.8333333333333
-    },
-    {
-        "from": {
-            "book": 53,
-            "chapter": 4,
-            "verse": 16
-        },
-        "to": {
-            "book": 54,
-            "chapter": 3,
-            "verse": 4
-        },
-        "wordCount": 2069.5000000000005
-    },
-    {
-        "from": {
-            "book": 54,
-            "chapter": 3,
-            "verse": 5
-        },
-        "to": {
-            "book": 57,
-            "chapter": 0,
-            "verse": 13
-        },
-        "wordCount": 2056.1666666666665
-    },
-    {
-        "from": {
-            "book": 57,
-            "chapter": 1,
-            "verse": 0
-        },
-        "to": {
-            "book": 57,
-            "chapter": 5,
-            "verse": 19
-        },
-        "wordCount": 1974.3333333333333
-    },
-    {
-        "from": {
-            "book": 57,
-            "chapter": 6,
-            "verse": 0
-        },
-        "to": {
-            "book": 57,
-            "chapter": 9,
-            "verse": 9
-        },
-        "wordCount": 1954.0000000000002
-    },
-    {
-        "from": {
-            "book": 57,
-            "chapter": 9,
-            "verse": 10
-        },
-        "to": {
-            "book": 57,
-            "chapter": 11,
-            "verse": 23
-        },
-        "wordCount": 2106.3333333333335
-    },
-    {
-        "from": {
-            "book": 57,
-            "chapter": 11,
-            "verse": 24
-        },
-        "to": {
-            "book": 58,
-            "chapter": 2,
-            "verse": 11
-        },
-        "wordCount": 2013.9999999999998
-    },
-    {
-        "from": {
-            "book": 58,
-            "chapter": 2,
-            "verse": 12
-        },
-        "to": {
-            "book": 59,
-            "chapter": 1,
-            "verse": 19
-        },
-        "wordCount": 2036.1666666666663
-    },
-    {
-        "from": {
-            "book": 59,
-            "chapter": 1,
-            "verse": 20
-        },
-        "to": {
-            "book": 60,
-            "chapter": 1,
-            "verse": 2
-        },
-        "wordCount": 1995.3333333333333
-    },
-    {
-        "from": {
-            "book": 60,
-            "chapter": 1,
-            "verse": 3
-        },
-        "to": {
-            "book": 61,
-            "chapter": 2,
-            "verse": 2
-        },
-        "wordCount": 2066.1666666666665
-    },
-    {
-        "from": {
-            "book": 61,
-            "chapter": 2,
-            "verse": 3
-        },
-        "to": {
-            "book": 63,
-            "chapter": 0,
-            "verse": 11
-        },
-        "wordCount": 2054
-    },
-    {
-        "from": {
-            "book": 63,
-            "chapter": 0,
-            "verse": 12
-        },
-        "to": {
-            "book": 65,
             "chapter": 1,
             "verse": 28
         },
-        "wordCount": 2044.3333333333333
+        "wordCount": 2129.833333333333
     },
     {
         "from": {
-            "book": 65,
+            "book": 44,
             "chapter": 2,
             "verse": 0
         },
         "to": {
-            "book": 65,
+            "book": 44,
+            "chapter": 5,
+            "verse": 13
+        },
+        "wordCount": 1974.8333333333333
+    },
+    {
+        "from": {
+            "book": 44,
+            "chapter": 5,
+            "verse": 14
+        },
+        "to": {
+            "book": 44,
+            "chapter": 7,
+            "verse": 38
+        },
+        "wordCount": 1820.6666666666667
+    },
+    {
+        "from": {
+            "book": 44,
+            "chapter": 8,
+            "verse": 0
+        },
+        "to": {
+            "book": 44,
+            "chapter": 10,
+            "verse": 35
+        },
+        "wordCount": 2005.0000000000002
+    },
+    {
+        "from": {
+            "book": 44,
+            "chapter": 11,
+            "verse": 0
+        },
+        "to": {
+            "book": 44,
+            "chapter": 14,
+            "verse": 32
+        },
+        "wordCount": 2099.6666666666665
+    },
+    {
+        "from": {
+            "book": 44,
+            "chapter": 15,
+            "verse": 0
+        },
+        "to": {
+            "book": 45,
+            "chapter": 2,
+            "verse": 22
+        },
+        "wordCount": 2015.8333333333333
+    },
+    {
+        "from": {
+            "book": 45,
+            "chapter": 3,
+            "verse": 0
+        },
+        "to": {
+            "book": 45,
             "chapter": 6,
+            "verse": 23
+        },
+        "wordCount": 1890.4999999999998
+    },
+    {
+        "from": {
+            "book": 45,
+            "chapter": 6,
+            "verse": 24
+        },
+        "to": {
+            "book": 45,
+            "chapter": 9,
+            "verse": 32
+        },
+        "wordCount": 2111
+    },
+    {
+        "from": {
+            "book": 45,
+            "chapter": 10,
+            "verse": 0
+        },
+        "to": {
+            "book": 45,
+            "chapter": 13,
+            "verse": 24
+        },
+        "wordCount": 2225.6666666666665
+    },
+    {
+        "from": {
+            "book": 45,
+            "chapter": 13,
+            "verse": 25
+        },
+        "to": {
+            "book": 46,
+            "chapter": 0,
+            "verse": 1
+        },
+        "wordCount": 1976.3333333333335
+    },
+    {
+        "from": {
+            "book": 46,
+            "chapter": 0,
             "verse": 2
         },
-        "wordCount": 1992.5000000000002
+        "to": {
+            "book": 46,
+            "chapter": 3,
+            "verse": 17
+        },
+        "wordCount": 1787.8333333333337
+    },
+    {
+        "from": {
+            "book": 46,
+            "chapter": 4,
+            "verse": 0
+        },
+        "to": {
+            "book": 46,
+            "chapter": 7,
+            "verse": 23
+        },
+        "wordCount": 1889
+    },
+    {
+        "from": {
+            "book": 46,
+            "chapter": 8,
+            "verse": 0
+        },
+        "to": {
+            "book": 46,
+            "chapter": 11,
+            "verse": 20
+        },
+        "wordCount": 2151.166666666667
+    },
+    {
+        "from": {
+            "book": 46,
+            "chapter": 12,
+            "verse": 0
+        },
+        "to": {
+            "book": 47,
+            "chapter": 2,
+            "verse": 28
+        },
+        "wordCount": 2093.333333333333
+    },
+    {
+        "from": {
+            "book": 47,
+            "chapter": 3,
+            "verse": 0
+        },
+        "to": {
+            "book": 48,
+            "chapter": 0,
+            "verse": 22
+        },
+        "wordCount": 2024.0000000000002
+    },
+    {
+        "from": {
+            "book": 48,
+            "chapter": 1,
+            "verse": 0
+        },
+        "to": {
+            "book": 48,
+            "chapter": 4,
+            "verse": 32
+        },
+        "wordCount": 2089.166666666667
+    },
+    {
+        "from": {
+            "book": 48,
+            "chapter": 5,
+            "verse": 0
+        },
+        "to": {
+            "book": 49,
+            "chapter": 2,
+            "verse": 10
+        },
+        "wordCount": 2035.666666666667
+    },
+    {
+        "from": {
+            "book": 49,
+            "chapter": 2,
+            "verse": 11
+        },
+        "to": {
+            "book": 50,
+            "chapter": 1,
+            "verse": 22
+        },
+        "wordCount": 1904.5
+    },
+    {
+        "from": {
+            "book": 50,
+            "chapter": 2,
+            "verse": 0
+        },
+        "to": {
+            "book": 51,
+            "chapter": 2,
+            "verse": 12
+        },
+        "wordCount": 1916.5000000000002
+    },
+    {
+        "from": {
+            "book": 51,
+            "chapter": 3,
+            "verse": 0
+        },
+        "to": {
+            "book": 53,
+            "chapter": 0,
+            "verse": 1
+        },
+        "wordCount": 1975.9999999999998
+    },
+    {
+        "from": {
+            "book": 53,
+            "chapter": 0,
+            "verse": 2
+        },
+        "to": {
+            "book": 53,
+            "chapter": 5,
+            "verse": 9
+        },
+        "wordCount": 2095
+    },
+    {
+        "from": {
+            "book": 53,
+            "chapter": 5,
+            "verse": 10
+        },
+        "to": {
+            "book": 54,
+            "chapter": 3,
+            "verse": 21
+        },
+        "wordCount": 1962.4999999999998
+    },
+    {
+        "from": {
+            "book": 55,
+            "chapter": 0,
+            "verse": 0
+        },
+        "to": {
+            "book": 57,
+            "chapter": 1,
+            "verse": 3
+        },
+        "wordCount": 1832.666666666667
+    },
+    {
+        "from": {
+            "book": 57,
+            "chapter": 1,
+            "verse": 4
+        },
+        "to": {
+            "book": 57,
+            "chapter": 6,
+            "verse": 9
+        },
+        "wordCount": 2106.5000000000005
+    },
+    {
+        "from": {
+            "book": 57,
+            "chapter": 6,
+            "verse": 10
+        },
+        "to": {
+            "book": 57,
+            "chapter": 9,
+            "verse": 17
+        },
+        "wordCount": 1865.6666666666665
+    },
+    {
+        "from": {
+            "book": 57,
+            "chapter": 9,
+            "verse": 18
+        },
+        "to": {
+            "book": 57,
+            "chapter": 11,
+            "verse": 28
+        },
+        "wordCount": 2094
+    },
+    {
+        "from": {
+            "book": 57,
+            "chapter": 12,
+            "verse": 0
+        },
+        "to": {
+            "book": 58,
+            "chapter": 2,
+            "verse": 17
+        },
+        "wordCount": 2001.6666666666665
+    },
+    {
+        "from": {
+            "book": 58,
+            "chapter": 3,
+            "verse": 0
+        },
+        "to": {
+            "book": 59,
+            "chapter": 1,
+            "verse": 24
+        },
+        "wordCount": 2030
+    },
+    {
+        "from": {
+            "book": 59,
+            "chapter": 2,
+            "verse": 0
+        },
+        "to": {
+            "book": 60,
+            "chapter": 0,
+            "verse": 20
+        },
+        "wordCount": 1807
+    },
+    {
+        "from": {
+            "book": 60,
+            "chapter": 1,
+            "verse": 0
+        },
+        "to": {
+            "book": 61,
+            "chapter": 1,
+            "verse": 26
+        },
+        "wordCount": 2011.1666666666667
+    },
+    {
+        "from": {
+            "book": 61,
+            "chapter": 1,
+            "verse": 27
+        },
+        "to": {
+            "book": 63,
+            "chapter": 0,
+            "verse": 3
+        },
+        "wordCount": 1990.333333333334
+    },
+    {
+        "from": {
+            "book": 63,
+            "chapter": 0,
+            "verse": 4
+        },
+        "to": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 16
+        },
+        "wordCount": 1959.333333333333
+    },
+    {
+        "from": {
+            "book": 65,
+            "chapter": 1,
+            "verse": 17
+        },
+        "to": {
+            "book": 65,
+            "chapter": 5,
+            "verse": 16
+        },
+        "wordCount": 2176.5
     },
     {
         "from": {
             "book": 65,
             "chapter": 6,
-            "verse": 3
+            "verse": 0
         },
         "to": {
             "book": 65,
             "chapter": 10,
             "verse": 13
         },
-        "wordCount": 1958.3333333333333
+        "wordCount": 2058.3333333333335
     },
     {
         "from": {
@@ -4717,7 +4717,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 14,
             "verse": 7
         },
-        "wordCount": 2016.333333333333
+        "wordCount": 2016.3333333333335
     },
     {
         "from": {
@@ -4730,7 +4730,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 18,
             "verse": 9
         },
-        "wordCount": 2015.0000000000002
+        "wordCount": 2015
     },
     {
         "from": {
@@ -4743,7 +4743,7 @@ export const YEAR_PLAN: Heading[] = [
             "chapter": 21,
             "verse": 20
         },
-        "wordCount": 2041.1666666666663
+        "wordCount": 2041.1666666666665
     }
 ]
 export const DATES = [

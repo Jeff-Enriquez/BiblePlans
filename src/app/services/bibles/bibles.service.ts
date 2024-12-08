@@ -354,7 +354,7 @@ export class BiblesService {
       })
     }
     if(translation === 'all-translations')
-      this.reduceAllTranslationHeadings(headings)
+      headings = this.reduceAllTranslationHeadings(headings)
     
     // Calculate word count
     let wordsRemaining: number = 0
@@ -415,17 +415,17 @@ export class BiblesService {
       minInCommon = h.to.book < 39 ? 3 : 4
       if(h.missingTranslations?.length! <= ((BIBLES.length - 1) - minInCommon) || i === headings.length - 1) {
         if(leftIdx === i){
-          reducedHeadings.push(h)
           leftIdx++
         } else {
           h = this.newHeading(headings.at(leftIdx)!, h)
           h.wordCount = wordCount
           leftIdx = i + 1
         }
+        reducedHeadings.push(h)
         wordCount = 0
       }
     }
-    return headings
+    return reducedHeadings
   }
 
   private newHeading(fromheading: Heading, toHeading: Heading): Heading {
