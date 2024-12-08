@@ -81,16 +81,23 @@
     vertical-align: 50%;
     font-size: 10px;
 }
-#error-message {
-    color: #e70000;
+#error-message, #warn-message {
     font-weight: 600;
     font-size: 12px;
-    margin-left: 20px
+}
+#error-message {
+    color: #e70000;
+}
+#warn-message {
+    color: #ff9900;
+    animation: fadeInAnimation cubic-bezier(1, 0, 1, 1) 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 #new-plan-message {
     color: rgb(0, 58, 0);
     font-size: 15px;
-    animation: fadeInAnimation cubic-bezier(1, 0, 1, 1) 4s;
+    animation: fadeInAnimation cubic-bezier(1, 0, 1, 1) 10s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

@@ -2,12 +2,12 @@
 <div id="main-container">
     <h1>Today's Reading</h1>
     <p id="todays-reading" *ngIf="yearPlan.at(dayOfYear)?.from?.book! !== yearPlan.at(dayOfYear)?.to?.book!">
-        <a (click)="scrollToElementWithOffset('today', 70)"><span class="reading-parts">{{
+        <a (click)="scrollToElementWithOffset('today', 70)" class="link"><span class="reading-parts">{{
         books.at(yearPlan.at(dayOfYear)?.from?.book!) + " " + (yearPlan.at(dayOfYear)?.from?.chapter!+1) + ":" + (yearPlan.at(dayOfYear)?.from?.verse!+1)}}&nbsp;</span><span class="reading-parts">- {{
         books.at(yearPlan.at(dayOfYear)?.to?.book!) + " " + (yearPlan.at(dayOfYear)?.to?.chapter!+1) + ":" + (yearPlan.at(dayOfYear)?.to?.verse!+1)
     }}</span></a></p>
     <p id="todays-reading" *ngIf="yearPlan.at(dayOfYear)?.from?.book! === yearPlan.at(dayOfYear)?.to?.book!">
-        <a (click)="scrollToElementWithOffset('today', 70)"><span class="reading-parts">{{
+        <a (click)="scrollToElementWithOffset('today', 70)" class="link"><span class="reading-parts">{{
         books.at(yearPlan.at(dayOfYear)?.from?.book!) + " " + (yearPlan.at(dayOfYear)?.from?.chapter!+1) + ":" + (yearPlan.at(dayOfYear)?.from?.verse!+1)}}&nbsp;</span><span class="reading-parts">- {{
         (yearPlan.at(dayOfYear)?.to?.chapter!+1) + ":" + (yearPlan.at(dayOfYear)?.to?.verse!+1)
     }}</span></a></p>

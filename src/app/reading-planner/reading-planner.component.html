@@ -38,6 +38,8 @@
         <button id="submit-button" type="submit" class="primary">Create</button>
     </form>
     <p *ngIf="errorMessage !== ''" id="error-message">{{errorMessage}}</p>
+    <!-- <p *ngIf="warnMessage !== ''" id="warn-message">{{warnMessage}}</p> -->
+    <p *ngFor="let warn of warnMessage" id="warn-message">{{warn.value}}</p>
     <p *ngFor="let planMessage of newPlanMessage" id="new-plan-message">Reading plan for '{{planMessage.value}}' was created!</p>
     <div id="table-container" *ngIf="bibleSchedule.length > 0">
         <button id="download-button" (click)="downloadPlan()">download</button>

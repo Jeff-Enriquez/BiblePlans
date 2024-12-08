@@ -15,8 +15,9 @@ import { ActivatedRoute, Router, RouterModule } from '@angular/router';
   styleUrl: './reading-planner.component.scss'
 })
 export class ReadingPlannerComponent {
-  newPlanMessage: Plan[] = []
+  newPlanMessage: String[] = []
   errorMessage: string = ""
+  warnMessage: String[] = []
   dates: DateParts[] = []
   books: string[] = []
   bibleSchedule: Heading[] = []
@@ -127,6 +128,7 @@ export class ReadingPlannerComponent {
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
+    this.warnMessage = []
     if(numberOfDays < 1) {
       this.errorMessage = "'From' date must be before 'To' date."
       this.bibleSchedule = []
@@ -181,6 +183,10 @@ export class ReadingPlannerComponent {
           this.errorMessage = temp
         else
           this.bibleSchedule = temp
+    }
+    if(this.bibleSchedule.length > 0 && this.bibleSchedule.length < numberOfDays) {
+      this.warnMessage.push({value:"'" + fromBook + " - " + toBook + "' is too short to divide from '" + this.applyForm.value.fromDate + "' to '"
+        + this.applyForm.value.toDate + "'."})
     }
   }
   private getDatesInRange(startDate: string, endDate: string): Date[] {
@@ -302,6 +308,6 @@ interface DateParts {
 }
 
 // Need interface so that Angular recognizes the changes
-interface Plan {
+interface String {
   value: string
 }

@@ -56,5 +56,11 @@
 }
 .reading-parts {
     display: inline-block;
+}
+.link {
     cursor: pointer;
+    color: #3445a1;
+}
+.link:hover {
+    color: #020b37;
 }
