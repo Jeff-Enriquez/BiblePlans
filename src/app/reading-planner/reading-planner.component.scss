@@ -23,11 +23,13 @@
     width: fit-content;
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto; 
+    grid-template-rows: auto auto auto auto auto; 
     column-gap: 10px;
     row-gap: 15px;
     grid-template-areas: 
         "date1 date2" 
+        "fromBook1 fromBook1"
+        "fromBook2 fromBook2"
         "translation translation"
         "submitButton submitButton";
     margin: 0 0 20px 10px;
@@ -56,8 +58,20 @@
 #date-div1 {
     grid-area: date1;
 }
-#date-div {
+#date-div2 {
     grid-area: date2;
+}
+#from-book-div1 {
+    grid-area: fromBook1;
+}
+#from-book-div2 {
+    grid-area: fromBook2;
+}
+#from-book-div1 > input::placeholder {
+    font-style:italic; 
+}
+#from-book-div2 > input::placeholder {
+    font-style:italic; 
 }
 #form > div > label {
     font-size: 12px;

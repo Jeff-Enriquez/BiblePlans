@@ -24,8 +24,15 @@ export class ReadingPlannerComponent {
   applyForm = new FormGroup({
     translation: new FormControl('all-translations'),
     fromDate: new FormControl(new Date(new Date().getFullYear(), 0, 1).toISOString().slice(0,10)),
-    toDate: new FormControl(new Date(new Date().getFullYear(), 11, 31).toISOString().slice(0,10))
+    toDate: new FormControl(new Date(new Date().getFullYear(), 11, 31).toISOString().slice(0,10)),
+    fromBook: new FormControl(''),
+    toBook: new FormControl('')
   })
+  initDate(addDays: number): string {
+    let date = new Date()
+    date.setDate(date.getDate() + addDays)
+    return date.toISOString().slice(0,10)
+  }
 
   constructor(private route: ActivatedRoute, private viewportScroller: ViewportScroller, 
     private router: Router) {}
