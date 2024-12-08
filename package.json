@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:BiblePlans": "node dist/bible-plans/server/server.mjs"
+    "serve:ssr:UnityInBibleReading": "node dist/bible-plans/server/server.mjs"
   },
   "private": true,
   "dependencies": {

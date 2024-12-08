@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BiblePlans": {
+    "UnityInBibleReading": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "BiblePlans:build:production"
+              "buildTarget": "UnityInBibleReading:build:production"
             },
             "development": {
-              "buildTarget": "BiblePlans:build:development"
+              "buildTarget": "UnityInBibleReading:build:development"
             }
           },
           "defaultConfiguration": "development"

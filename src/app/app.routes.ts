@@ -21,7 +21,7 @@ export const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: '/todays-reading',
+        redirectTo: '/introduction',
         pathMatch: 'full'
     }
 ];
