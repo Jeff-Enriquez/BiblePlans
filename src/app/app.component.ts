@@ -10,7 +10,7 @@ import { SessionStorageService } from './services/session-storage/session-storag
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'BiblePlans';
+  title = 'UnityInBibleReading';
   sessionStorage: SessionStorageService = inject(SessionStorageService)
   constructor() {
     this.sessionStorage.removeItem("isSideNavOpen")
