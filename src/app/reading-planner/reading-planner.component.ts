@@ -49,22 +49,18 @@ export class ReadingPlannerComponent {
       let from = params.get('from')
       let to = params.get('to')
       let translation = params.get('translation')
+      let fromBook = params.get('fromBook')
+      fromBook = fromBook === null ? '' : fromBook
+      let toBook = params.get('toBook')
+      toBook = toBook === null ? '' : toBook
       if(from === null || to === null || !this.isValidDate(from) || !this.isValidDate(to) || translation === null)
-        return
-      let isValidTranslation = false
-      for(let t of translations) {
-        if(t.toLowerCase() === translation.toLowerCase()) {
-          isValidTranslation = true
-          translation = t
-          break
-        }
-      }
-      if(!isValidTranslation)
         return
       this.applyForm.patchValue({
         fromDate: from,
         toDate: to,
-        translation: translation
+        translation: translation,
+        fromBook: fromBook,
+        toBook: toBook
       })
       this.buildPlan()
     })
@@ -88,18 +84,43 @@ export class ReadingPlannerComponent {
   }
 
   submitForm() {
-    let queryParams = {
-      from: [this.applyForm.value.fromDate],
-      to: [this.applyForm.value.toDate],
-      translation: [this.applyForm.value.translation]
-    }
+    let queryParams
+    this.applyForm.value.fromBook = this.applyForm.value.fromBook?.trim()
+    this.applyForm.value.toBook = this.applyForm.value.toBook?.trim()
+    if(this.applyForm.value.fromBook!.length > 0 && this.applyForm.value.toBook!.length > 0)
+      queryParams = {
+        from: [this.applyForm.value.fromDate],
+        to: [this.applyForm.value.toDate],
+        translation: [this.applyForm.value.translation],
+        fromBook: this.applyForm.value.fromBook!,
+        toBook: this.applyForm.value.toBook!
+      }
+    else if(this.applyForm.value.fromBook!.length > 0)
+      queryParams = {
+        from: [this.applyForm.value.fromDate],
+        to: [this.applyForm.value.toDate],
+        translation: [this.applyForm.value.translation],
+        fromBook: this.applyForm.value.fromBook!
+      }
+    else if(this.applyForm.value.toBook!.length > 0)
+      queryParams = {
+        from: [this.applyForm.value.fromDate],
+        to: [this.applyForm.value.toDate],
+        translation: [this.applyForm.value.translation],
+        toBook: this.applyForm.value.toBook!
+      }
+    else
+      queryParams = {
+        from: [this.applyForm.value.fromDate],
+        to: [this.applyForm.value.toDate],
+        translation: [this.applyForm.value.translation]
+      }
     this.router.navigate([], {
       relativeTo: this.route,
       queryParams: queryParams,
-      queryParamsHandling: 'merge' // Preserves existing query parameters
+      queryParamsHandling: 'replace' 
     })
     this.buildPlan()
-    
   }
 
   buildPlan() {
@@ -126,7 +147,11 @@ export class ReadingPlannerComponent {
     })
     this.dates = dates
     let translation: Translation = this.applyForm.value.translation as Translation
-    this.books = this.biblesService.getBooksFor(translation)
+    this.books = this.biblesService.getBooksFor(translation)   
+    let fromBook = this.applyForm.value.fromBook!
+    fromBook = fromBook === '' ? 'Genesis 1:1' : fromBook
+    let toBook = this.applyForm.value.toBook!
+    toBook = toBook === '' ? 'Revelation 22:21' : toBook
     const leapIndex = this.includesLeapDay(this.dates)
     if(leapIndex >= 0) {
       let heading: Heading = {
@@ -142,13 +167,20 @@ export class ReadingPlannerComponent {
         },
         wordCount: -100
       }
-      let temp: Heading[] = this.biblesService.getScheduleFor(
-        translation, numberOfDays - 1)
-      this.bibleSchedule = [...temp.slice(0, leapIndex), heading, ...temp.slice(leapIndex)]
+      let temp: Heading[] | string = this.biblesService.getScheduleForRange(
+        translation, fromBook, toBook, numberOfDays - 1)
+      if(typeof temp === 'string')
+        this.errorMessage = temp
+      else
+        this.bibleSchedule = [...temp.slice(0, leapIndex), heading, ...temp.slice(leapIndex)]
     }
     else {
-      this.bibleSchedule = this.biblesService.getScheduleFor(
-        translation, numberOfDays)
+      let temp: Heading[] | string = this.biblesService.getScheduleForRange(
+        translation, fromBook, toBook, numberOfDays)
+        if(typeof temp === 'string')
+          this.errorMessage = temp
+        else
+          this.bibleSchedule = temp
     }
   }
   private getDatesInRange(startDate: string, endDate: string): Date[] {
