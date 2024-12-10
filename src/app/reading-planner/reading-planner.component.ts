@@ -19,6 +19,7 @@ export class ReadingPlannerComponent {
   errorMessage: string = ""
   warnMessage: String[] = []
   dates: DateParts[] = []
+  isTodayIdx: number = -1
   books: string[] = []
   bibleSchedule: Heading[] = []
   biblesService: BiblesService = inject(BiblesService)
@@ -125,6 +126,7 @@ export class ReadingPlannerComponent {
   }
 
   buildPlan() {
+    this.isTodayIdx = -1
     const fromDate = this.applyForm.value.fromDate!
     const toDate = this.applyForm.value.toDate!
     const numberOfDays = this.getDaysBetweenDates(fromDate, toDate)
@@ -143,10 +145,22 @@ export class ReadingPlannerComponent {
       else
         this.newPlanMessage.push({value:this.applyForm.value.translation!})
     }
+    let rawDates: Date[] = []
     let dates: DateParts[] = []
     this.getDatesInRange(fromDate, toDate).forEach(date => {
+      rawDates.push(date)
       dates.push(this.formatDate(date))
     })
+
+    let today = new Date()
+    for(let i = 0; i < rawDates.length; i++) {
+      let date: Date = rawDates.at(i)!
+      if(date.getDay() === today.getDay() && date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
+        this.isTodayIdx = i
+        break;
+      }
+    }
+
     this.dates = dates
     let translation: Translation = this.applyForm.value.translation as Translation
     this.books = this.biblesService.getBooksFor(translation)   
@@ -154,36 +168,12 @@ export class ReadingPlannerComponent {
     fromBook = fromBook === '' ? 'Genesis 1:1' : fromBook
     let toBook = this.applyForm.value.toBook!
     toBook = toBook === '' ? 'Revelation 22:21' : toBook
-    const leapIndex = this.includesLeapDay(this.dates)
-    if(leapIndex >= 0) {
-      let heading: Heading = {
-        from: {
-          book: 0,
-          chapter: 0,
-          verse: 0
-        },
-        to: {
-          book: 0,
-          chapter: 0,
-          verse: 0
-        },
-        wordCount: -100
-      }
-      let temp: Heading[] | string = this.biblesService.getScheduleForRange(
-        translation, fromBook, toBook, numberOfDays - 1)
+    let temp: Heading[] | string = this.biblesService.getScheduleForRange(
+      translation, fromBook, toBook, numberOfDays)
       if(typeof temp === 'string')
         this.errorMessage = temp
       else
-        this.bibleSchedule = [...temp.slice(0, leapIndex), heading, ...temp.slice(leapIndex)]
-    }
-    else {
-      let temp: Heading[] | string = this.biblesService.getScheduleForRange(
-        translation, fromBook, toBook, numberOfDays)
-        if(typeof temp === 'string')
-          this.errorMessage = temp
-        else
-          this.bibleSchedule = temp
-    }
+        this.bibleSchedule = temp
     if(this.bibleSchedule.length > 0 && this.bibleSchedule.length < numberOfDays) {
       this.warnMessage.push({value:"'" + fromBook + " - " + toBook + "' is too short to divide from '" + this.applyForm.value.fromDate + "' to '"
         + this.applyForm.value.toDate + "'."})
@@ -229,15 +219,6 @@ export class ReadingPlannerComponent {
       daySuffix: suffix,
       year: year
     }
-  }
-  private includesLeapDay(dates: DateParts[]): number {
-    let date: DateParts;
-    for(let i = 0; i < dates.length; i++) {
-      date = dates.at(i)!
-      if(date.day === 29 && date.month === "February")
-        return i
-    }
-    return -1
   }
   // Returns number of days between the dates, includes the dates given
   private getDaysBetweenDates(startDate: string, endDate: string): number {
