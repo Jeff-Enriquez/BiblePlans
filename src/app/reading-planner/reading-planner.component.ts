@@ -155,9 +155,9 @@ export class ReadingPlannerComponent {
     let today = new Date()
     for(let i = 0; i < rawDates.length; i++) {
       let date: Date = rawDates.at(i)!
-      if(date.getDay() === today.getDay() && date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
+      if(date.getDate() === today.getDate() && date.getMonth() === today.getMonth() && date.getFullYear() === today.getFullYear()) {
         this.isTodayIdx = i
-        break;
+        break
       }
     }
 
